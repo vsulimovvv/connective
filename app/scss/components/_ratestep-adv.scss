@@ -1,0 +1,116 @@
+.ratestep-adv {
+  @include adaptive-value('padding-top', 70, 50, 1);
+  @include background(cover);
+  min-height: 500px;
+  color: var(--color-white);
+  background-image: url('../images/content/ratestep-adv.png');
+
+  @include breakpointsMaxW($bp-991) {
+    background-image: none;
+    background-color: var(--color-bg-dark);
+    min-height: auto;
+    @include adaptive-value('padding-bottom', 70, 50, 1);
+  }
+
+  &__title {
+    @include fz35();
+    text-align: center;
+    @include adaptive-value('margin-bottom', 60, 40, 1);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns:
+      minmax(auto, 265px) minmax(auto, 265px) minmax(auto, 280px)
+      minmax(auto, 295px);
+    gap: 50px;
+    justify-content: space-between;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 30px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: minmax(auto, 295px) minmax(auto, 295px);
+      justify-content: center;
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      gap: 30px 20px;
+    }
+  }
+
+  .ratestep-adv-item {
+    padding-top: 75px;
+    position: relative;
+
+    @include breakpointsMaxW($bp-768) {
+      padding-top: 50px;
+    }
+    @include breakpointsMaxW($bp-991) {
+      text-align: center;
+    }
+
+    &::after {
+      @include elDef();
+      width: 47px;
+      height: 47px;
+      top: 0;
+      left: 0;
+
+      @include breakpointsMaxW($bp-991) {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      @include breakpointsMaxW($bp-768) {
+        width: 32px;
+        height: 32px;
+      }
+    }
+
+    &__text {
+      font-size: 17px;
+      color: #c0c8cc;
+
+      @include breakpointsMaxW($bp-768) {
+        font-size: 15px;
+      }
+      @include breakpointsMaxW($bp-576) {
+        font-size: 13px;
+      }
+    }
+    &:nth-child(1) {
+      &::after {
+        @include backgroundImage(
+          url('../images/content/ratestep-adv/1.png'),
+          contain
+        );
+      }
+    }
+    &:nth-child(2) {
+      &::after {
+        @include backgroundImage(
+          url('../images/content/ratestep-adv/2.png'),
+          contain
+        );
+      }
+    }
+    &:nth-child(3) {
+      &::after {
+        @include backgroundImage(
+          url('../images/content/ratestep-adv/3.png'),
+          contain
+        );
+      }
+    }
+    &:nth-child(4) {
+      &::after {
+        @include backgroundImage(
+          url('../images/content/ratestep-adv/4.png'),
+          contain
+        );
+      }
+    }
+  }
+}

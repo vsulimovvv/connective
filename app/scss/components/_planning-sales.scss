@@ -1,0 +1,41 @@
+.planning-sales {
+  @include adaptive-value('padding-top', 80, 50, 1);
+  @include adaptive-value('padding-bottom', 80, 50, 1);
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 0.95fr;
+    gap: 45px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 30px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    @include fz40();
+    color: var(--color-bg-dark);
+    @include adaptive-value('margin-bottom', 30, 20, 1);
+  }
+
+  &__text {
+    font-weight: 300;
+    color: var(--color-bg-dark);
+
+    @include adaptive-value('font-size', 20, 16, 1);
+  }
+
+  &__preview {
+    @include background(cover);
+    height: 450px;
+
+    @include breakpointsMaxW($bp-991) {
+      @include adaptive-value('height', 600, 260, 1);
+    }
+  }
+}

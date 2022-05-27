@@ -41,7 +41,7 @@
   position: relative;
   overflow: hidden;
   @include adaptive-value('height', 345, 200, 1);
-  @include adaptive-value('padding-left', 40, 20, 1);
+  @include adaptive-value('padding-left', 40, 10, 1);
   @include adaptive-value('padding-right', 40, 20, 1);
   @include adaptive-value('padding-top', 40, 20, 1);
   position: relative;
@@ -78,7 +78,7 @@
     position: relative;
     line-height: 1;
     font-weight: 700;
-    padding-right: 25px;
+    padding-right: 25px;text-transform: uppercase;
 
     &::before {
       @include elDef();

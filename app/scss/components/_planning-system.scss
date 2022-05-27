@@ -1,0 +1,26 @@
+.planning-system {
+  @include adaptive-value('padding-top', 70, 50, 1);
+  @include adaptive-value('padding-bottom', 40, 30, 1);
+
+  &__text {
+    font-size: 18px;
+    color: var(--color-bg-dark);
+    @include adaptive-value('margin-bottom', 50, 40, 1);
+    @include adaptive-value('font-size', 18, 16, 1);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @include breakpointsMaxW($bp-991) {
+      gap: 20px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      gap: 20px 10px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
