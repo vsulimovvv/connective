@@ -1,0 +1,132 @@
+.invite {
+  @include adaptive-value('padding-top', 80, 50, 1);
+  @include adaptive-value('padding-bottom', 80, 50, 1);
+
+  &__top {
+    text-align: center;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding-bottom: 130px;
+    position: relative;
+    @include adaptive-value('margin-bottom', 45, 30, 1);
+
+    @include breakpointsMaxW($bp-768) {
+      padding-bottom: 70px;
+    }
+
+    &::after {
+      @include elDef();
+      width: 8px;
+      height: 90px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      @include backgroundImage(
+        url('../images/content/arrow-long.png'),
+        contain
+      );
+
+      @include breakpointsMaxW($bp-768) {
+        height: 50px;
+      }
+    }
+  }
+
+  &__title {
+    @include fz40();
+    @include adaptive-value('margin-bottom', 35, 25, 1);
+  }
+
+  &__text {
+    @include adaptive-value('font-size', 20, 16, 1);
+    line-height: 1.5;
+    font-weight: 300;
+    color: #4c5159;
+  }
+
+  .invite-item {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+
+      @include breakpointsMaxW($bp-991) {
+        margin-bottom: 50px;
+      }
+    }
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 30px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+    }
+
+    &--reverse {
+      .invite-item__preview {
+        order: 1;
+      }
+    }
+
+    &__preview {
+      @include background(cover);
+      position: relative;
+      overflow: hidden;
+      padding-right: 11px;
+      padding-bottom: 11px;
+
+      @include breakpointsMaxW($bp-991) {
+        order: 1;
+      }
+
+      &::after {
+        @include elDef();
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-accent);
+        bottom: -11px;
+        right: -11px;
+        z-index: -1;
+
+        @include breakpointsMaxW($bp-768) {
+          display: none;
+        }
+      }
+
+      &--first {
+        height: 340px;
+      }
+
+      &--second {
+        height: 360px;
+      }
+
+      @include breakpointsMaxW($bp-576) {
+        height: 250px;
+      }
+    }
+
+    &__info {
+      font-size: 22px;
+      font-weight: 300;
+      color: #4c5159;
+
+      @include adaptive-value('font-size', 22, 18, 1);
+
+      a {
+        color: var(--color-accent);
+      }
+      span {
+        font-weight: 700;
+      }
+      p {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

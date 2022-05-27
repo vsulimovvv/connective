@@ -1,0 +1,34 @@
+.become-member {
+  @include background(cover);
+  @include adaptive-value('padding-top', 90, 50, 1);
+  @include adaptive-value('padding-bottom', 90, 50, 1);
+  color: var(--color-white);
+
+  &__top {
+    @include adaptive-value('margin-bottom', 50, 40, 1);
+    text-align: center;
+  }
+
+  &__title {
+    @include adaptive-value('font-size', 40, 25, 1);
+    @include adaptive-value('margin-bottom', 35, 25, 1);
+    font-weight: 400;
+    line-height: 1.1;
+  }
+
+  &__text {
+    font-size: 16px;
+    font-weight: 400;
+    p {
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__wrapper {
+    max-width: 610px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}

@@ -1,6 +1,7 @@
 .form-submit {
   display: grid;
   @include adaptive-value('gap', 40, 25, 1);
+  width: 100%;
 
   &__group {
     width: 100%;

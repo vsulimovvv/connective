@@ -1,5 +1,5 @@
 .contacts {
-padding-top: 30px;
+  padding-top: 30px;
   @include adaptive-value('padding-bottom', 70, 40, 1);
 
   &__wrapper {
@@ -28,7 +28,7 @@ padding-top: 30px;
       left: 0;
       width: 107px;
       height: 3px;
-      background-color: #00e398;
+      background-color: var(--color-accent);
     }
   }
 
@@ -36,7 +36,7 @@ padding-top: 30px;
     @include fz35();
     margin-bottom: 20px;
 
-    @include breakpointsMaxW($bp-768){
+    @include breakpointsMaxW($bp-768) {
       margin-bottom: 15px;
     }
   }
@@ -129,7 +129,7 @@ padding-top: 30px;
       @include elDef();
       width: 120%;
       height: 120%;
-      background-color: #00e398;
+      background-color: var(--color-accent);
       top: -25px;
       left: -25px;
       z-index: -1;

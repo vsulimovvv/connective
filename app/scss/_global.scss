@@ -160,3 +160,22 @@ body {
     }
   }
 }
+
+.rating {
+  &__stars {
+    display: flex;
+    align-items: center;
+  }
+
+  &__star {
+    position: relative;
+    @include maskImage(url('../images/icons/star.svg'), contain);
+    width: 20px;
+    height: 20px;
+    background-color: #fabd3b;
+
+    &--disabled {
+      background-color: #c1c1c1;
+    }
+  }
+}

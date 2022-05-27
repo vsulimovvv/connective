@@ -33,12 +33,8 @@ window.addEventListener('DOMContentLoaded', () => {
         type: 'progressbar',
       },
       navigation: {
-        nextEl: document.querySelector(
-          '.events__content .swiper-button-next'
-        ),
-        prevEl: document.querySelector(
-          '.events__content .swiper-button-prev'
-        ),
+        nextEl: document.querySelector('.events__content .swiper-button-next'),
+        prevEl: document.querySelector('.events__content .swiper-button-prev'),
       },
       spaceBetween: 20,
       slidesPerView: 'auto',
@@ -62,6 +58,31 @@ window.addEventListener('DOMContentLoaded', () => {
       },
       spaceBetween: 20,
       slidesPerView: 'auto',
+    });
+  })();
+  // * ===== Slider
+  (function slider() {
+    const sliderEl = document.querySelector('.reviews__slider');
+    new Swiper(sliderEl, {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      navigation: {
+        nextEl: document.querySelector('.reviews__content .swiper-button-next'),
+        prevEl: document.querySelector('.reviews__content .swiper-button-prev'),
+      },
+      spaceBetween: 50,
+      slidesPerView: 'auto',
+
+      breakpoints: {
+        991: {
+          spaceBetween: 50,
+        },
+        319: {
+          spaceBetween: 20,
+        },
+      },
     });
   })();
   // * ===== Slider
@@ -95,7 +116,7 @@ window.addEventListener('DOMContentLoaded', () => {
       });
     });
   })();
-  
+
   // // * ===== Show Menu
   // (function showMenu() {
   //   const menuBtn = document.querySelector('.header__toggle');
