@@ -1,0 +1,22 @@
+// Color
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+
+  --color-dark: #19303d;
+  --color-bg: #f9f9f9;
+  --color-accent: #00e398;
+  --color-bg-dark: #19303d;
+  --color-title: #08202e;
+}
+
+// * breakpointsMaxW
+$bp-container: 1300px;
+$bp-991: 991.98px;
+$bp-768: 767.98px;
+$bp-576: 576px;
+$bp-360: 359.98px;
+
+// *=== Fonts
+$Circe: 'Circe';
+$Oswald: 'Oswald';

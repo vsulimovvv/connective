@@ -1,0 +1,33 @@
+@import 'libs';
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'global';
+
+@import './animations';
+
+// * ===== Other components
+@import './components/breadcrumbs';
+@import './components/swiper-options';
+@import './components/custom-checkbox';
+@import './components/custom-select';
+@import './components/popups';
+
+// * ===== Card Components
+
+// * ===== Section Components
+@import './components/footer';
+@import './components/header';
+@import './components/hero';
+@import './components/contacts';
+@import './components/our-customers';
+@import './components/software-solutions';
+@import './components/target';
+@import './components/services-package';
+@import './components/equipment';
+@import './components/numbers';
+@import './components/events';
+@import './components/contacts';
+@import './components/socials';
+@import './components/news';

@@ -1,0 +1,157 @@
+body {
+  font-family: $Circe;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.5;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  position: relative;
+  overflow-x: hidden;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+.container {
+  max-width: $bp-container;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  max-width: 1920px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(5px);
+  transition: 200ms ease-in;
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 550ms ease;
+  }
+}
+
+// * Заголовок секции
+.section-title {
+  @include adaptive-value('font-size', 40, 24, 1);
+}
+
+// * Кнопки
+.btn {
+  display: inline-block;
+  line-height: 1;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  transition: 150ms ease;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid var(--color-accent);
+  border-radius: 5px;
+  padding: 15px 35px;
+
+  &:hover {
+    background-color: var(--color-white);
+    color: var(--color-dark);
+  }
+
+  &--transparent {
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--color-bg-dark);
+    text-transform: none;
+    padding: 9px 15px;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+// * Карта
+.map {
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}
+
+.badge {
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--color-white);
+  background-color: #00e398;
+  border-radius: 5px;
+  padding: 7px 10px;
+  display: inline-block;
+}
+
+.pagination {
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 400;
+    color: #a8aeb9;
+    width: 41px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 150ms ease;
+
+    &:hover,
+    &--active {
+      background-color: var(--color-accent);
+      color: var(--color-white);
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    &--active {
+      font-size: 22px;
+    }
+
+    &--further {
+      width: auto;
+      margin-left: 10px;
+
+      &:hover {
+        background-color: transparent;
+        color: var(--color-dark);
+        font-weight: 400;
+        font-size: 15px;
+      }
+    }
+  }
+}

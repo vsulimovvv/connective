@@ -1,0 +1,108 @@
+@mixin breakpointsMaxW($bp) {
+  @media (max-width: $bp) {
+    @content;
+  }
+}
+
+@mixin breakpointsMinW($bp) {
+  @media (min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin breakpointsMaxH($bp) {
+  @media (max-height: $bp) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin afterIcon($image, $w, $h) {
+  background-image: $image;
+  width: $w;
+  height: $h;
+}
+
+@mixin background($size) {
+  background: {
+    repeat: no-repeat;
+    position: center;
+    size: $size;
+  }
+}
+
+@mixin img($size) {
+  width: 100%;
+  height: 100%;
+  object-fit: $size;
+}
+
+@mixin backgroundImage($image, $size) {
+  background: {
+    image: $image;
+    repeat: no-repeat;
+    position: center;
+    size: $size;
+  }
+}
+
+@mixin maskImage($image, $size) {
+  mask: $image no-repeat center/$size;
+}
+
+@mixin elDef() {
+  position: absolute;
+  content: '';
+}
+
+@mixin line-clamp($lines: 1) {
+  @if $lines <=1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+  }
+}
+
+$maxWidth: 1920;
+$maxWidthContainer: 1300;
+
+@mixin adaptive-value($property, $starSize, $minSize, $type) {
+  $addSize: $starSize - $minSize;
+
+  @if $type==1 {
+    #{$property}: $starSize + px;
+
+    @media (max-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(
+        #{$minSize + px} + #{$addSize} *
+          ((100vw - 375px) / #{$maxWidthContainer - 375})
+      );
+    }
+  } @else if $type==2 {
+    #{$property}: $starSize + px;
+
+    @media (min-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(
+        #{$minSize + px} + #{$addSize} * ((100vw - 375px) / #{$maxWidth - 375})
+      );
+    }
+  } @else {
+    #{$property}: calc(
+      #{$minSize + px} + #{$addSize} * ((100vw - 375px) / #{$maxWidth - 375})
+    );
+  }
+}
+
+// gap: calc(28px + (36 - 28) * ((100vw - 360px) / (1300 - 360)));
+
+@mixin fz35 {
+  @include adaptive-value('font-size', 35, 25, 1);
+  line-height: 1.3;
+  font-weight: 400;
+  color: #08202e;
+}

@@ -1,0 +1,142 @@
+.contacts {
+padding-top: 30px;
+  @include adaptive-value('padding-bottom', 70, 40, 1);
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: minmax(auto, 400px) 1fr;
+    gap: 80px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 50px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+
+  &__top {
+    position: relative;
+    padding-bottom: 20px;
+    @include adaptive-value('margin-bottom', 50, 30, 1);
+
+    &::after {
+      @include elDef();
+      bottom: 0;
+      left: 0;
+      width: 107px;
+      height: 3px;
+      background-color: #00e398;
+    }
+  }
+
+  &__title {
+    @include fz35();
+    margin-bottom: 20px;
+
+    @include breakpointsMaxW($bp-768){
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    color: #727e86;
+  }
+
+  &__phone {
+    @include adaptive-value('font-size', 45, 25, 1);
+    line-height: 1;
+    font-weight: 400;
+    color: var(--color-title);
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    @include adaptive-value('margin-bottom', 40, 30, 1);
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @include breakpointsMaxW($bp-576) {
+      font-size: 12px;
+    }
+  }
+
+  &__list {
+    display: grid;
+    gap: 30px;
+    @include adaptive-value('margin-bottom', 50, 30, 1);
+  }
+
+  &__item {
+    padding-left: 25px;
+    position: relative;
+
+    &::after {
+      @include elDef();
+      width: 16px;
+      height: 16px;
+      background-color: var(--color-accent);
+      top: 3px;
+      left: 0;
+    }
+
+    &--address {
+      &::after {
+        @include maskImage(url('../images/icons/location.svg'), contain);
+      }
+    }
+
+    &--mail {
+      &::after {
+        @include maskImage(url('../images/icons/mail.svg'), contain);
+      }
+    }
+  }
+
+  &__link {
+    font-size: 17px;
+    font-weight: 400;
+    color: #4f595e;
+  }
+
+  &__map {
+    width: 100%;
+    height: 460px;
+    padding-left: 25px;
+    padding-top: 25px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    @include breakpointsMaxW($bp-991) {
+      padding-left: initial;
+      padding-top: initial;
+      padding-bottom: 25px;
+      padding-right: 25px;
+
+      height: calc(280px + (460 - 280) * ((100vw - 360px) / (991 - 360)));
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      padding: 0;
+    }
+
+    &::after {
+      @include elDef();
+      width: 120%;
+      height: 120%;
+      background-color: #00e398;
+      top: -25px;
+      left: -25px;
+      z-index: -1;
+
+      @include breakpointsMaxW($bp-768) {
+        display: none;
+      }
+    }
+  }
+}

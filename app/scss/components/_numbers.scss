@@ -1,0 +1,85 @@
+.numbers {
+  @include adaptive-value('padding-bottom', 80, 40, 1);
+  @include adaptive-value('padding-top', 80, 40, 1);
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 30px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: repeat(2, auto);
+      justify-content: center;
+      gap: 50px 30px;
+    }
+    @include breakpointsMaxW($bp-360) {
+      gap: 50px 20px;
+    }
+  }
+
+  .numbers-item {
+    &__top {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 20px;
+      padding-bottom: 30px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #e3e3e3;
+      @include adaptive-value('gap', 20, 10, 1);
+      @include adaptive-value('padding-bottom', 30, 20, 1);
+      @include adaptive-value('margin-bottom', 20, 15, 1);
+    }
+
+    &__icon {
+      border-radius: 10px;
+      background-color: var(--color-accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include adaptive-value('height', 74, 56, 1);
+      @include adaptive-value('width', 74, 56, 1);
+
+      img {
+        width: 42px;
+        height: 42px;
+        @include adaptive-value('height', 42, 25, 1);
+        @include adaptive-value('width', 42, 25, 1);
+        object-fit: contain;
+      }
+    }
+
+    &__number {
+      font-size: 50px;
+      font-family: $Oswald;
+
+      line-height: 1;
+      font-weight: 700;
+      color: var(--color-bg-dark);
+
+      @include breakpointsMaxW($bp-container) {
+        font-size: 40px;
+      }
+      @include breakpointsMaxW($bp-768) {
+        font-size: 30px;
+      }
+
+      @include breakpointsMaxW($bp-360) {
+        font-size: 25px;
+      }
+    }
+
+    &__text {
+      font-size: 17px;
+      font-weight: 400;
+      color: #5a656b;
+      @include breakpointsMaxW($bp-360) {
+        font-size: 15px;
+      }
+    }
+  }
+}

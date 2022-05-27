@@ -1,0 +1,44 @@
+.our-customers {
+  background-color: #f9f9f9;
+  padding: 45px 0;
+
+  &__title {
+    @include fz35();
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    gap: 40px;
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__slider {
+    width: 100%;
+  }
+
+  &__slide {
+    max-width: 150px;
+    max-height: 80px;
+
+    img {
+      @include img(contain);
+    }
+  }
+
+  &__slides {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 0;
+  }
+
+  &__slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

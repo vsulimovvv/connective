@@ -1,0 +1,41 @@
+.socials {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  &__link {
+    display: block;
+    padding-left: 25px;
+    position: relative;
+
+    &::after {
+      @include elDef();
+      width: 16px;
+      height: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      background-color: var(--color-accent);
+    }
+
+    &--whatsapp {
+      &::after {
+        @include maskImage(url('../images/icons/whatsapp.svg'), contain);
+      }
+    }
+
+    &--telegram {
+      &::after {
+        @include maskImage(url('../images/icons/telegram.svg'), contain);
+      }
+    }
+
+    &--vk {
+      &::after {
+        @include maskImage(url('../images/icons/vk.svg'), contain);
+      }
+    }
+  }
+}

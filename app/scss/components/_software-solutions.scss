@@ -1,0 +1,217 @@
+.software-solutions {
+  @include adaptive-value('padding-top', 80, 40, 1);
+  @include adaptive-value('padding-bottom', 80, 40, 1);
+
+  &__title {
+    @include fz35();
+    margin-bottom: 20px;
+    @include adaptive-value('margin-bottom', 20, 15, 1);
+
+    span {
+      background-color: var(--color-accent);
+      display: inline-block;
+      line-height: 1;
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpointsMaxW($bp-360) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__descr {
+    font-size: 17px;
+    font-weight: 400;
+
+    @include breakpointsMaxW($bp-768) {
+      font-size: 15px;
+    }
+  }
+
+  &__cell {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 35px;
+    border: 1px solid #e1e2e5;
+    overflow: hidden;
+    position: relative;
+
+    @include breakpointsMaxW($bp-container) {
+      padding: 15px;
+    }
+    @include breakpointsMaxW($bp-991) {
+      padding: 25px 15px;
+    }
+    @include breakpointsMaxW($bp-576) {
+      padding: 20px 15px;
+    }
+
+    &::after {
+      @include elDef();
+      width: 50px;
+      height: 50px;
+      top: 40px;
+      left: 40px;
+      background-color: #969da1;
+      @include adaptive-value('height', 50, 40, 1);
+      @include adaptive-value('width', 50, 40, 1);
+      @include breakpointsMaxW($bp-container) {
+        left: 15px;
+        top: 30px;
+      }
+      @include breakpointsMaxW($bp-576) {
+        top: 20px;
+      }
+    }
+
+    &--offer {
+      overflow: initial;
+      border: none;
+      padding-left: 0;
+      grid-column: 1/3;
+      position: relative;
+
+      @include breakpointsMaxW($bp-768) {
+        grid-column: 1/-1;
+        grid-row: 1/2;
+        height: auto;
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      grid-column: 3/4;
+      grid-row: 1/3;
+      height: auto;
+
+      @include breakpointsMaxW($bp-768) {
+        grid-column: initial;
+        grid-row: 2/4;
+      }
+
+      @include breakpointsMaxW($bp-360) {
+        height: 300px;
+      }
+      @include backgroundImage(
+        url('../images/content/software-solutions/cell-bg.jpg'),
+        cover
+      );
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &:nth-child(3) {
+      &::after {
+        @include maskImage(
+          url('../images/content/software-solutions/1.svg'),
+          contain
+        );
+      }
+    }
+
+    &:nth-child(4) {
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        @include elDef();
+        background-color: #243a46;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        top: -80px;
+        left: -30px;
+        z-index: -1;
+      }
+      &::after {
+        @include maskImage(
+          url('../images/content/software-solutions/2.svg'),
+          contain
+        );
+      }
+    }
+
+    &:nth-child(5) {
+      &::after {
+        @include maskImage(
+          url('../images/content/software-solutions/3.svg'),
+          contain
+        );
+      }
+    }
+
+    &:nth-child(6) {
+      &::after {
+        @include maskImage(
+          url('../images/content/software-solutions/4.svg'),
+          contain
+        );
+      }
+    }
+
+    &:nth-child(7) {
+      &::after {
+        @include maskImage(
+          url('../images/content/software-solutions/5.svg'),
+          contain
+        );
+      }
+    }
+
+    &:nth-child(8) {
+      &::after {
+        @include maskImage(
+          url('../images/content/software-solutions/6.svg'),
+          contain
+        );
+      }
+    }
+
+    &:nth-child(9) {
+      &::after {
+        @include maskImage(
+          url('../images/content/software-solutions/7.svg'),
+          contain
+        );
+      }
+    }
+
+    &:nth-child(10) {
+      &::after {
+        @include maskImage(
+          url('../images/content/software-solutions/8.svg'),
+          contain
+        );
+      }
+    }
+
+    &--color-white {
+      background-color: #19303d;
+      color: var(--color-white);
+
+      &::after {
+        background-color: var(--color-accent);
+      }
+    }
+  }
+}

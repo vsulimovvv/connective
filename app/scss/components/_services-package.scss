@@ -1,0 +1,121 @@
+.services-package {
+  @include adaptive-value('padding-top', 80, 40, 1);
+  @include adaptive-value('padding-bottom', 80, 40, 1);
+  background-color: var(--color-bg-dark);
+  color: var(--color-white);
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 180px;
+    gap: 30px;
+    @include adaptive-value('margin-bottom', 55, 35, 1);
+
+    @include breakpointsMaxW($bp-container) {
+      padding-right: 0;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  }
+
+  &__title {
+    @include fz35();
+    color: var(--color-white);
+    max-width: 385px;
+
+    @include breakpointsMaxW($bp-991) {
+      max-width: 100%;
+    }
+
+    span {
+      background-color: var(--color-accent);
+      color: var(--color-title);
+      display: inline-block;
+      line-height: 1;
+    }
+  }
+
+  &__slider {
+    @include adaptive-value('padding-bottom', 80, 60, 1);
+
+    .swiper-pagination {
+      top: initial;
+      width: calc(100% - 110px);
+    }
+  }
+  &__content {
+    position: relative;
+  }
+
+  &__arrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 82px;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: block;
+      margin-top: initial;
+      top: initial;
+      right: initial;
+      bottom: initial;
+      left: initial;
+      transform: initial;
+    }
+  }
+
+  &__slide {
+    max-width: 410px;
+    box-sizing: border-box;
+
+    @include adaptive-value('max-width', 410, 280, 1);
+  }
+
+  &__text {
+    font-size: 17px;
+    font-weight: 400;
+    color: #abb5ba;
+    max-width: 590px;
+
+    @include breakpointsMaxW($bp-991) {
+      max-width: 100%;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      font-size: 15px;
+    }
+  }
+}
+
+.services-card {
+  background-color: var(--color-white);
+  border: 1px solid #f6f6f6;
+  max-width: 410px;
+  height: 265px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 35px;
+  @include adaptive-value('padding', 35, 20, 1);
+  @include adaptive-value('height', 265, 200, 1);
+
+  &__title {
+    font-size: 22px;
+    @include adaptive-value('font-size', 22, 18, 1);
+
+    font-weight: 400;
+    color: var(--color-bg-dark);
+  }
+}

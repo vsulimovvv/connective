@@ -1,0 +1,138 @@
+.equipments {
+  @include adaptive-value('padding-top', 80, 40, 1);
+  @include adaptive-value('padding-bottom', 80, 40, 1);
+
+  &__top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    @include adaptive-value('margin-bottom', 55, 30, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &-left {
+      max-width: 660px;
+      @include breakpointsMaxW($bp-991) {
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__title {
+    @include fz35();
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @include breakpointsMaxW($bp-991) {
+      gap: 20px 10px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      grid-template-columns: minmax(auto, 410px);
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.equipments-card {
+  max-width: 410px;
+  width: 100%;
+  height: 445px;
+  @include background(cover);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  @include adaptive-value('height', 445, 350, 1);
+  @include adaptive-value('padding', 40, 30, 1);
+  position: relative;
+
+  &:hover {
+    .equipments-card__overlay {
+      transform: translateY(0);
+    }
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 35px;
+    transition: 400ms ease;
+    transform: translateY(100%);
+
+    @include adaptive-value('padding-top', 50, 20, 1);
+    @include adaptive-value('padding-bottom', 50, 25, 1);
+    @include adaptive-value('padding-left', 35, 15, 1);
+    @include adaptive-value('padding-right', 35, 15, 1);
+  }
+
+  &__btn {
+    margin-top: auto;
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #596d78;
+    @include adaptive-value('margin-bottom', 30, 20, 1);
+  }
+
+  &__title {
+    color: var(--color-white);
+    position: relative;
+    line-height: 1;
+    font-weight: 700;
+
+    @include adaptive-value('font-size', 25, 18, 1);
+
+    &--dark {
+      margin-bottom: 30px;
+      color: var(--color-dark);
+      @include adaptive-value('font-size', 30, 23, 1);
+      @include adaptive-value('margin-bottom', 30, 20, 1);
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &::after {
+      @include elDef();
+      width: 100%;
+      height: 5px;
+      bottom: -9px;
+      left: 0;
+      background-color: var(--color-accent);
+    }
+  }
+
+}

@@ -1,0 +1,101 @@
+.target {
+  @include adaptive-value('padding-top', 50, 30, 1);
+  @include adaptive-value('padding-bottom', 80, 40, 1);
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #5a6267;
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+      gap: 120px;
+    }
+    @include breakpointsMaxW($bp-768) {
+      gap: 90px;
+    }
+  }
+
+  &__preview {
+    width: 100%;
+    min-height: 490px;
+    height: 100%;
+    @include background(cover);
+
+    @include breakpointsMaxW($bp-991) {
+      min-height: auto;
+      height: calc(280px + (490 - 280) * ((100vw - 360px) / (991 - 360)));
+      order: 1;
+    }
+  }
+
+  &__title {
+    @include fz35();
+    text-transform: uppercase;
+    @include adaptive-value('margin-bottom', 30, 20, 1);
+
+    span {
+      background-color: var(--color-accent);
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+  }
+
+  &__quote {
+    padding-left: 55px;
+    padding-top: 35px;
+    padding-right: 65px;
+    position: relative;
+    @include breakpointsMaxW($bp-768) {
+      padding-left: 35px;
+      padding-top: 15px;
+      padding-right: 25px;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+
+    span {
+      font-weight: 700;
+    }
+
+    &::after,
+    &::before {
+      @include elDef();
+    }
+
+    &::after {
+      right: 0;
+      bottom: -90px;
+      @include backgroundImage(url('../images/content/quote-big.png'), contain);
+      width: 100px;
+      height: 80px;
+
+      @include breakpointsMaxW($bp-768) {
+        width: 60px;
+        height: 40px;
+        bottom: -50px;
+      }
+    }
+
+    &::before {
+      left: 0;
+      top: 0;
+      @include backgroundImage(
+        url('../images/content/quote-small.png'),
+        contain
+      );
+      width: 48px;
+      height: 36px;
+      @include breakpointsMaxW($bp-768) {
+        width: 28px;
+        height: 20px;
+      }
+    }
+  }
+}
