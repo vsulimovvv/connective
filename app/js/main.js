@@ -64,6 +64,26 @@ window.addEventListener('DOMContentLoaded', () => {
       slidesPerView: 'auto',
     });
   })();
+  // * ===== Slider
+  (function slider() {
+    const sliderEl = document.querySelector('.teaching-team__slider');
+    new Swiper(sliderEl, {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      navigation: {
+        nextEl: document.querySelector(
+          '.teaching-team__slider .swiper-button-next'
+        ),
+        prevEl: document.querySelector(
+          '.teaching-team__slider .swiper-button-prev'
+        ),
+      },
+      spaceBetween: 15,
+      slidesPerView: 'auto',
+    });
+  })();
 
   // * ===== Custom select
   (function customSelect() {

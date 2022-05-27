@@ -1,0 +1,85 @@
+.teaching-team {
+  @include adaptive-value('padding-top', 70, 40, 1);
+  @include adaptive-value('padding-bottom', 70, 40, 1);
+
+  &__top {
+    @include adaptive-value('margin-bottom', 60, 40, 1);
+  }
+
+  &__title {
+    margin-bottom: 25px;
+    @include fz35();
+  }
+
+  &__text {
+    font-size: 19px;
+    font-weight: 300;
+    color: #60656e;
+    @include adaptive-value('font-size', 19, 17, 1);
+  }
+
+  &__slider {
+    @include adaptive-value('padding-bottom', 60, 30, 1);
+
+    .swiper-pagination {
+      top: initial;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      position: absolute;
+      top: 35%;
+      box-shadow: 0px 21px 24px 0px rgba(0, 0, 0, 0.23);
+      background-color: var(--color-white);
+      transition: 200ms ease;
+
+      &::after {
+        background-color: var(--color-accent);
+        transition: 200ms ease;
+      }
+
+      &:hover {
+        background-color: var(--color-accent);
+
+        &::after {
+          background-color: var(--color-white);
+        }
+      }
+    }
+    .swiper-button-prev {
+      right: initial;
+    }
+    .swiper-button-next {
+      left: initial;
+    }
+  }
+
+  &__slide {
+    max-width: 305px;
+  }
+}
+
+.teaching-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__body {
+    text-align: center;
+    width: calc(100% - 40px);
+    padding: 20px 0;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #60656e;
+  }
+
+  &__prof {
+    font-size: 16px;
+    color: #9095a0;
+  }
+}

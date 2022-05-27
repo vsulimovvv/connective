@@ -1,0 +1,86 @@
+.form-submit {
+  display: grid;
+  @include adaptive-value('gap', 40, 25, 1);
+
+  &__group {
+    width: 100%;
+    position: relative;
+  }
+
+  &__line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(191, 199, 203, 0.3);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    &::after {
+      @include elDef();
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      left: 0;
+      background-color: var(--color-white);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: 400ms ease;
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    line-height: 1;
+    font-weight: 400;
+    padding-bottom: 23px;
+    outline: transparent;
+    color: var(--color-white);
+
+    @include breakpointsMaxW($bp-768) {
+      font-size: 16px;
+    }
+
+    &:focus,
+    &:active {
+      + span {
+        &::after {
+          transform: scaleX(1);
+        }
+      }
+    }
+
+    &::placeholder {
+      color: #d2d2d2;
+    }
+  }
+  &__bottom {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    @include breakpointsMaxW($bp-768) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__agree {
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+    color: #d2d2d2;
+    flex-shrink: 0;
+
+    a {
+      color: var(--color-accent);
+    }
+  }
+
+  &__btn {
+    max-width: 270px;
+    width: 100%;
+  }
+}

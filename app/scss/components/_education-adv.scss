@@ -1,0 +1,114 @@
+.education-adv {
+  @include adaptive-value('padding-top', 70, 40, 1);
+  @include adaptive-value('padding-bottom', 70, 40, 1);
+
+  &__title {
+    @include fz35();
+    text-align: center;
+    @include adaptive-value('margin-bottom', 60, 40, 1);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns:
+      minmax(auto, 265px) minmax(auto, 265px) minmax(auto, 280px)
+      minmax(auto, 295px);
+    gap: 50px;
+    justify-content: space-between;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 30px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: minmax(auto, 295px) minmax(auto, 295px);
+      justify-content: center;
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      grid-template-columns: minmax(auto, 295px);
+      justify-content: center;
+    }
+  }
+
+  .education-adv-item {
+    &__top {
+      padding-left: 67px;
+      position: relative;
+      margin-bottom: 25px;
+      @include breakpointsMaxW($bp-768) {
+        margin-bottom: 15px;
+        padding-left: 47px;
+      }
+
+      &::after {
+        @include elDef();
+        width: 42px;
+        height: 42px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        @include breakpointsMaxW($bp-768) {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 19px;
+      line-height: 1.2;
+      font-weight: 700;
+      color: #4c5159;
+      @include adaptive-value('font-size', 19, 17, 1);
+    }
+
+    &__text {
+      font-size: 16px;
+      color: #4c5159;
+      @include breakpointsMaxW($bp-768) {
+        font-size: 15px;
+      }
+    }
+    &--economy {
+      .education-adv-item__top {
+        &::after {
+          @include backgroundImage(
+            url('../images/content/education-adv/1.png'),
+            contain
+          );
+        }
+      }
+    }
+    &--certificate {
+      .education-adv-item__top {
+        &::after {
+          @include backgroundImage(
+            url('../images/content/education-adv/2.png'),
+            contain
+          );
+        }
+      }
+    }
+    &--teacher {
+      .education-adv-item__top {
+        &::after {
+          @include backgroundImage(
+            url('../images/content/education-adv/3.png'),
+            contain
+          );
+        }
+      }
+    }
+    &--experience {
+      .education-adv-item__top {
+        &::after {
+          @include backgroundImage(
+            url('../images/content/education-adv/4.png'),
+            contain
+          );
+        }
+      }
+    }
+  }
+}
