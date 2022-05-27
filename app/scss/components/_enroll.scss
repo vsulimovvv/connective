@@ -1,0 +1,28 @@
+.enroll {
+  @include background(cover);
+  @include adaptive-value('padding-top', 90, 50, 1);
+  @include adaptive-value('padding-bottom', 90, 50, 1);
+  color: var(--color-white);
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__offer {
+    max-width: 560px;
+    width: 100%;
+
+    @include breakpointsMaxW($bp-991) {
+    }
+  }
+
+  &__title {
+    @include adaptive-value('font-size', 40, 25, 1);
+    @include adaptive-value('margin-bottom', 35, 25, 1);
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: center;
+  }
+}

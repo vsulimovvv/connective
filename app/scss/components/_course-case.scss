@@ -1,0 +1,189 @@
+.course-case {
+  @include adaptive-value('padding-bottom', 90, 50, 1);
+  &__title {
+  }
+
+  &__top {
+    background-color: #f2f2f2;
+    @include adaptive-value('padding-top', 45, 30, 1);
+    @include adaptive-value('padding-bottom', 45, 30, 1);
+    @include adaptive-value('margin-bottom', 70, 40, 1);
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+
+      @include breakpointsMaxW($bp-991) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+    }
+
+    &-item {
+      padding-left: 35px;
+      position: relative;
+
+      font-size: 18px;
+      line-height: 1.3;
+      font-weight: 400;
+      color: #4a4e5c;
+
+      @include breakpointsMaxW($bp-container) {
+        font-size: 16px;
+      }
+
+      @include breakpointsMaxW($bp-768) {
+        font-size: 15px;
+      }
+
+      &::after {
+        @include elDef();
+        width: 20px;
+        height: 20px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background-color: var(--color-accent);
+      }
+
+      &--duration {
+        &::after {
+          @include maskImage(url('../images/icons/clock.svg'), contain);
+        }
+      }
+
+      &--language {
+        &::after {
+          @include maskImage(url('../images/icons/planet.svg'), contain);
+        }
+      }
+
+      &--requirements {
+        &::after {
+          @include maskImage(url('../images/icons/list.svg'), contain);
+        }
+      }
+    }
+  }
+
+  &__list {
+  }
+
+  &__item {
+    border-bottom: 1px solid #e5e5e5;
+
+    &:not(:last-child) {
+      @include adaptive-value('margin-bottom', 35, 20, 1);
+    }
+  }
+
+  .course-case-item {
+    padding-left: 82px;
+    position: relative;
+    padding-bottom: 35px;
+
+    @include adaptive-value('padding-bottom', 35, 25, 1);
+    @include breakpointsMaxW($bp-768) {
+      padding-left: 60px;
+    }
+
+    &__lists {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+
+      @include breakpointsMaxW($bp-container) {
+        gap: 20px;
+      }
+
+      @include breakpointsMaxW($bp-991) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
+      }
+
+      @include breakpointsMaxW($bp-576) {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 10px;
+      }
+    }
+
+    &__list {
+      display: grid;
+      gap: 8px;
+    }
+
+    &__item {
+      font-size: 17px;
+      line-height: 1.2;
+      font-weight: 300;
+      color: #4a4e5c;
+
+      @include breakpointsMaxW($bp-768) {
+        font-size: 15px;
+      }
+    }
+
+    &::after {
+      @include elDef();
+      width: 55px;
+      height: 55px;
+      top: 0;
+      left: 0;
+
+      @include breakpointsMaxW($bp-768) {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &__title {
+      line-height: 1.2;
+      font-weight: 400;
+      color: #4a4e5c;
+      margin-bottom: 20px;
+      @include adaptive-value('font-size', 25, 20, 1);
+
+      @include breakpointsMaxW($bp-768) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__text {
+      font-size: 18px;
+      font-weight: 300;
+      color: #4a4e5c;
+
+      @include breakpointsMaxW($bp-768) {
+        font-size: 15px;
+      }
+    }
+
+    &--overview {
+      &::after {
+        @include backgroundImage(
+          url('../images/content/course-case-item/1.png'),
+          contain
+        );
+      }
+    }
+    &--purpose {
+      &::after {
+        @include backgroundImage(
+          url('../images/content/course-case-item/2.png'),
+          contain
+        );
+      }
+    }
+    &--content {
+      &::after {
+        @include backgroundImage(
+          url('../images/content/course-case-item/3.png'),
+          contain
+        );
+      }
+    }
+  }
+}
