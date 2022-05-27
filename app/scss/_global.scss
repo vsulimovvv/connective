@@ -84,6 +84,11 @@ body {
     color: var(--color-bg-dark);
     text-transform: none;
     padding: 9px 15px;
+
+    &:hover {
+      background-color: var(--color-accent);
+      color: var(--color-white);
+    }
   }
 
   &:active {

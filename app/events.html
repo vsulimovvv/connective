@@ -203,274 +203,317 @@
         <section class="hero">
   <div class="container"></div>
 </section>
- <section class="news">
+ 
+        <section class="events-page">
   <div class="container">
     <h2 class="visually-hidden">Список новостей</h2>
-    <div class="news__top">
-      <span class="news__name">Выберите направления</span>
-      <select class="news__select select">
-        <option value="">Все новости</option>
-        <option value="1">Не все новости</option>
-        <option value="2">Почти все новости</option>
-      </select>
+    <div class="events-page__top">
+      <div class="events-page__text">
+        <p>
+          Приглашаем Вас принять участие в событиях Connective PLM, которые
+          помогут Вам разобраться в новейших технологиях для промышленных
+          предприятий, а также повысить эффективность Вашей компании. Раз в
+          месяц мы рассылаем электронный журнал нашим подписчикам, где в удобном
+          структурированном виде публикуем свежие видео-стримы, статьи и анонсы
+          событий.
+        </p>
+      </div>
+
+      <div class="events-page__actions">
+        <ul class="events-page__top-list">
+          <li class="events-page__top-item">
+            <button
+              class="events-page__top-btn"
+              type="button"
+              data-filter="all"
+            >
+              Все
+            </button>
+          </li>
+          <li class="events-page__top-item">
+            <button
+              class="events-page__top-btn"
+              type="button"
+              data-filter=".coming"
+            >
+              Предстоящие
+            </button>
+          </li>
+          <li class="events-page__top-item">
+            <button
+              class="events-page__top-btn"
+              type="button"
+              data-filter=".completed"
+            >
+              Завершенные
+            </button>
+          </li>
+        </ul>
+        <select class="events-page__select select">
+          <option value="">Выберите дату мероприятия</option>
+          <option value="1">Не все новости</option>
+          <option value="2">Почти все новости</option>
+        </select>
+      </div>
     </div>
 
-    <ul class="news__list">
-      <li class="news__item">
-        <article class="news-card">
-          <a class="news-card__top" href="#">
+    <ul class="events-page__list">
+      <li class="events-page__item mix coming">
+        <article class="events-card">
+          <span class="events-card__badge badge badge--webinar"> Вебинар </span>
+          <a class="events-card__top" href="#">
             <img
-              src="images/content/news/1.jpg"
-              alt="На Марсе зафиксированы сильнейшие
-                с момента наблюдения зондом NASA InSight
-                марсотрясения"
+              src="images/content/events/1.jpg"
+              alt="Как грамотно использовать модели
+            от поставщиков?"
             />
           </a>
-          <div class="news-card__body">
-            <p class="news-card__date">26.04.2022 | 16:00</p>
-            <h3 class="news-card__title">
-              <a href="#">
-                На Марсе зафиксированы сильнейшие с момента наблюдения зондом
-                NASA InSight марсотрясения
-              </a>
+          <div class="events-card__body">
+            <h3 class="events-card__title">
+              <a href="#"> Как грамотно использовать модели от поставщиков?</a>
             </h3>
+
+            <p class="events-card__date">
+              24 февраля 2022 | Четверг 11:00 (МСК)
+            </p>
           </div>
         </article>
       </li>
-      <li class="news__item">
-        <article class="news-card">
-          <a class="news-card__top" href="#">
+      <li class="events-page__item mix coming">
+        <article class="events-card">
+          <span class="events-card__badge badge badge--webinar"> Вебинар </span>
+          <a class="events-card__top" href="#">
             <img
-              src="images/content/news/2.jpg"
-              alt="Характеристики смартфона Vivo iQOO Z6
-                Pro 5G раскрыты за несколько дней
-                до анонса"
+              src="images/content/events/2.jpg"
+              alt="Как грамотно использовать модели
+            от поставщиков?"
             />
           </a>
-          <div class="news-card__body">
-            <p class="news-card__date">26.04.2022 | 16:00</p>
-            <h3 class="news-card__title">
-              <a href="#">
-                Характеристики смартфона Vivo iQOO Z6 Pro 5G раскрыты за
-                несколько дней до анонса
-              </a>
+          <div class="events-card__body">
+            <h3 class="events-card__title">
+              <a href="#"> Как грамотно использовать модели от поставщиков?</a>
             </h3>
+
+            <p class="events-card__date">
+              24 февраля 2022 | Четверг 11:00 (МСК)
+            </p>
           </div>
         </article>
       </li>
-      <li class="news__item">
-        <article class="news-card">
-          <a class="news-card__top" href="#">
+      <li class="events-page__item mix completed">
+        <article class="events-card">
+          <span class="events-card__badge badge badge--webinar"> Вебинар </span>
+          <a class="events-card__top" href="#">
             <img
-              src="images/content/news/3.jpg"
-              alt="Samsung близка к тому, чтобы стать
-                поставщиком подложек для процессоров
-                Apple M2"
+              src="images/content/events/3.jpg"
+              alt="Как грамотно использовать модели
+            от поставщиков?"
             />
           </a>
-          <div class="news-card__body">
-            <p class="news-card__date">26.04.2022 | 16:00</p>
-            <h3 class="news-card__title">
-              <a href="#">
-                Samsung близка к тому, чтобы стать поставщиком подложек для
-                процессоров Apple M2
-              </a>
+          <div class="events-card__body">
+            <h3 class="events-card__title">
+              <a href="#"> Как грамотно использовать модели от поставщиков?</a>
             </h3>
+
+            <p class="events-card__date">
+              24 февраля 2022 | Четверг 11:00 (МСК)
+            </p>
           </div>
         </article>
       </li>
-      <li class="news__item">
-        <article class="news-card">
-          <a class="news-card__top" href="#">
+      <li class="events-page__item mix coming">
+        <article class="events-card">
+          <span class="events-card__badge badge badge--webinar"> Вебинар </span>
+          <a class="events-card__top" href="#">
             <img
-              src="images/content/news/4.jpg"
-              alt="На Марсе зафиксированы сильнейшие
-                с момента наблюдения зондом NASA InSight
-                марсотрясения"
+              src="images/content/events/4.jpg"
+              alt="Как грамотно использовать модели
+            от поставщиков?"
             />
           </a>
-          <div class="news-card__body">
-            <p class="news-card__date">26.04.2022 | 16:00</p>
-            <h3 class="news-card__title">
-              <a href="#">
-                На Марсе зафиксированы сильнейшие с момента наблюдения зондом
-                NASA InSight марсотрясения
-              </a>
+          <div class="events-card__body">
+            <h3 class="events-card__title">
+              <a href="#"> Как грамотно использовать модели от поставщиков?</a>
             </h3>
+
+            <p class="events-card__date">
+              24 февраля 2022 | Четверг 11:00 (МСК)
+            </p>
           </div>
         </article>
       </li>
-      <li class="news__item">
-        <article class="news-card">
-          <a class="news-card__top" href="#">
+      <li class="events-page__item mix coming">
+        <article class="events-card">
+          <span class="events-card__badge badge badge--webinar"> Вебинар </span>
+          <a class="events-card__top" href="#">
             <img
-              src="images/content/news/5.jpg"
-              alt="Характеристики смартфона Vivo iQOO Z6
-                Pro 5G раскрыты за несколько дней
-                до анонса"
+              src="images/content/events/5.jpg"
+              alt="Как грамотно использовать модели
+            от поставщиков?"
             />
           </a>
-          <div class="news-card__body">
-            <p class="news-card__date">26.04.2022 | 16:00</p>
-            <h3 class="news-card__title">
-              <a href="#">
-                Характеристики смартфона Vivo iQOO Z6 Pro 5G раскрыты за
-                несколько дней до анонса
-              </a>
+          <div class="events-card__body">
+            <h3 class="events-card__title">
+              <a href="#"> Как грамотно использовать модели от поставщиков?</a>
             </h3>
+
+            <p class="events-card__date">
+              24 февраля 2022 | Четверг 11:00 (МСК)
+            </p>
           </div>
         </article>
       </li>
-      <li class="news__item">
-        <article class="news-card">
-          <a class="news-card__top" href="#">
+      <li class="events-page__item mix completed">
+        <article class="events-card">
+          <span class="events-card__badge badge badge--webinar"> Вебинар </span>
+          <a class="events-card__top" href="#">
             <img
-              src="images/content/news/6.jpg"
-              alt="Samsung близка к тому, чтобы стать
-                поставщиком подложек для процессоров
-                Apple M2"
+              src="images/content/events/6.jpg"
+              alt="Как грамотно использовать модели
+            от поставщиков?"
             />
           </a>
-          <div class="news-card__body">
-            <p class="news-card__date">26.04.2022 | 16:00</p>
-            <h3 class="news-card__title">
-              <a href="#">
-                Samsung близка к тому, чтобы стать поставщиком подложек для
-                процессоров Apple M2
-              </a>
+          <div class="events-card__body">
+            <h3 class="events-card__title">
+              <a href="#"> Как грамотно использовать модели от поставщиков?</a>
             </h3>
+
+            <p class="events-card__date">
+              24 февраля 2022 | Четверг 11:00 (МСК)
+            </p>
           </div>
         </article>
       </li>
-      <li class="news__item">
-        <article class="news-card">
-          <a class="news-card__top" href="#">
+      <li class="events-page__item mix completed">
+        <article class="events-card">
+          <span class="events-card__badge badge badge--webinar"> Вебинар </span>
+          <a class="events-card__top" href="#">
             <img
-              src="images/content/news/1.jpg"
-              alt="На Марсе зафиксированы сильнейшие
-                с момента наблюдения зондом NASA InSight
-                марсотрясения"
+              src="images/content/events/1.jpg"
+              alt="Как грамотно использовать модели
+            от поставщиков?"
             />
           </a>
-          <div class="news-card__body">
-            <p class="news-card__date">26.04.2022 | 16:00</p>
-            <h3 class="news-card__title">
-              <a href="#">
-                На Марсе зафиксированы сильнейшие с момента наблюдения зондом
-                NASA InSight марсотрясения
-              </a>
+          <div class="events-card__body">
+            <h3 class="events-card__title">
+              <a href="#"> Как грамотно использовать модели от поставщиков?</a>
             </h3>
+
+            <p class="events-card__date">
+              24 февраля 2022 | Четверг 11:00 (МСК)
+            </p>
           </div>
         </article>
       </li>
-      <li class="news__item">
-        <article class="news-card">
-          <a class="news-card__top" href="#">
+      <li class="events-page__item mix coming">
+        <article class="events-card">
+          <span class="events-card__badge badge badge--webinar"> Вебинар </span>
+          <a class="events-card__top" href="#">
             <img
-              src="images/content/news/2.jpg"
-              alt="Характеристики смартфона Vivo iQOO Z6
-                Pro 5G раскрыты за несколько дней
-                до анонса"
+              src="images/content/events/2.jpg"
+              alt="Как грамотно использовать модели
+            от поставщиков?"
             />
           </a>
-          <div class="news-card__body">
-            <p class="news-card__date">26.04.2022 | 16:00</p>
-            <h3 class="news-card__title">
-              <a href="#">
-                Характеристики смартфона Vivo iQOO Z6 Pro 5G раскрыты за
-                несколько дней до анонса
-              </a>
+          <div class="events-card__body">
+            <h3 class="events-card__title">
+              <a href="#"> Как грамотно использовать модели от поставщиков?</a>
             </h3>
+
+            <p class="events-card__date">
+              24 февраля 2022 | Четверг 11:00 (МСК)
+            </p>
           </div>
         </article>
       </li>
-      <li class="news__item">
-        <article class="news-card">
-          <a class="news-card__top" href="#">
+      <li class="events-page__item mix coming">
+        <article class="events-card">
+          <span class="events-card__badge badge badge--webinar"> Вебинар </span>
+          <a class="events-card__top" href="#">
             <img
-              src="images/content/news/3.jpg"
-              alt="Samsung близка к тому, чтобы стать
-                поставщиком подложек для процессоров
-                Apple M2"
+              src="images/content/events/3.jpg"
+              alt="Как грамотно использовать модели
+            от поставщиков?"
             />
           </a>
-          <div class="news-card__body">
-            <p class="news-card__date">26.04.2022 | 16:00</p>
-            <h3 class="news-card__title">
-              <a href="#">
-                Samsung близка к тому, чтобы стать поставщиком подложек для
-                процессоров Apple M2
-              </a>
+          <div class="events-card__body">
+            <h3 class="events-card__title">
+              <a href="#"> Как грамотно использовать модели от поставщиков?</a>
             </h3>
+
+            <p class="events-card__date">
+              24 февраля 2022 | Четверг 11:00 (МСК)
+            </p>
           </div>
         </article>
       </li>
-      <li class="news__item">
-        <article class="news-card">
-          <a class="news-card__top" href="#">
+      <li class="events-page__item mix coming">
+        <article class="events-card">
+          <span class="events-card__badge badge badge--webinar"> Вебинар </span>
+          <a class="events-card__top" href="#">
             <img
-              src="images/content/news/4.jpg"
-              alt="На Марсе зафиксированы сильнейшие
-                с момента наблюдения зондом NASA InSight
-                марсотрясения"
+              src="images/content/events/4.jpg"
+              alt="Как грамотно использовать модели
+            от поставщиков?"
             />
           </a>
-          <div class="news-card__body">
-            <p class="news-card__date">26.04.2022 | 16:00</p>
-            <h3 class="news-card__title">
-              <a href="#">
-                На Марсе зафиксированы сильнейшие с момента наблюдения зондом
-                NASA InSight марсотрясения
-              </a>
+          <div class="events-card__body">
+            <h3 class="events-card__title">
+              <a href="#"> Как грамотно использовать модели от поставщиков?</a>
             </h3>
+
+            <p class="events-card__date">
+              24 февраля 2022 | Четверг 11:00 (МСК)
+            </p>
           </div>
         </article>
       </li>
-      <li class="news__item">
-        <article class="news-card">
-          <a class="news-card__top" href="#">
+      <li class="events-page__item mix completed">
+        <article class="events-card">
+          <span class="events-card__badge badge badge--webinar"> Вебинар </span>
+          <a class="events-card__top" href="#">
             <img
-              src="images/content/news/5.jpg"
-              alt="Характеристики смартфона Vivo iQOO Z6
-                Pro 5G раскрыты за несколько дней
-                до анонса"
+              src="images/content/events/5.jpg"
+              alt="Как грамотно использовать модели
+            от поставщиков?"
             />
           </a>
-          <div class="news-card__body">
-            <p class="news-card__date">26.04.2022 | 16:00</p>
-            <h3 class="news-card__title">
-              <a href="#">
-                Характеристики смартфона Vivo iQOO Z6 Pro 5G раскрыты за
-                несколько дней до анонса
-              </a>
+          <div class="events-card__body">
+            <h3 class="events-card__title">
+              <a href="#"> Как грамотно использовать модели от поставщиков?</a>
             </h3>
+
+            <p class="events-card__date">
+              24 февраля 2022 | Четверг 11:00 (МСК)
+            </p>
           </div>
         </article>
       </li>
-      <li class="news__item">
-        <article class="news-card">
-          <a class="news-card__top" href="#">
+      <li class="events-page__item mix completed">
+        <article class="events-card">
+          <span class="events-card__badge badge badge--webinar"> Вебинар </span>
+          <a class="events-card__top" href="#">
             <img
-              src="images/content/news/6.jpg"
-              alt="Samsung близка к тому, чтобы стать
-                поставщиком подложек для процессоров
-                Apple M2"
+              src="images/content/events/6.jpg"
+              alt="Как грамотно использовать модели
+            от поставщиков?"
             />
           </a>
-          <div class="news-card__body">
-            <p class="news-card__date">26.04.2022 | 16:00</p>
-            <h3 class="news-card__title">
-              <a href="#">
-                Samsung близка к тому, чтобы стать поставщиком подложек для
-                процессоров Apple M2
-              </a>
+          <div class="events-card__body">
+            <h3 class="events-card__title">
+              <a href="#"> Как грамотно использовать модели от поставщиков?</a>
             </h3>
+
+            <p class="events-card__date">
+              24 февраля 2022 | Четверг 11:00 (МСК)
+            </p>
           </div>
         </article>
       </li>
     </ul>
-    <div class="news__bottom">
-      <div class="news__pagination pagination">
+
+    <div class="events-page__bottom">
+      <div class="events-page__pagination pagination">
         <ul class="pagination__list">
           <li class="pagination__item">
             <a class="pagination__link pagination__link--active" href="#">1</a>
@@ -495,7 +538,7 @@
         </ul>
       </div>
 
-      <a class="news__btn btn btn--transparent" href="#"
+      <a class="events-page__btn btn btn--transparent" href="#"
         >Загрузить еще</a
       >
     </div>

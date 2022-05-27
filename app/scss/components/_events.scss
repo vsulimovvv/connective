@@ -93,11 +93,8 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
+  position: relative;
+  
   &:hover {
     .events-card__top {
       img {

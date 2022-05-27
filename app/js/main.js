@@ -116,13 +116,15 @@ window.addEventListener('DOMContentLoaded', () => {
   //   });
   // };
   // toggleAccordion('.accordion__control', '.accordion__content', '.accordion');
-  // // * ===== Mixer
-  // (function mixer() {
-  //   const mixContent = document.querySelector('.mixer__content');
-  //   if (mixContent) {
-  //     const mixer = mixitup(mixContent);
-  //   }
-  // })();
+
+  // * ===== Mixer
+  (function mixer() {
+    const mixContent = document.querySelector('.events-page');
+    if (mixContent) {
+      const mixer = mixitup(mixContent);
+    }
+  })();
+
   // // * ===== Modal
   // (function modals() {
   //   function bindModal(openBtn, modal, close) {
