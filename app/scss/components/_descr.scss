@@ -1,0 +1,47 @@
+.descr {
+  @include adaptive-value('padding-top', 70, 40, 1);
+  @include adaptive-value('padding-bottom', 70, 40, 1);
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 50px;
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__title {
+    @include fz40();
+    color: #35454f;
+    @include adaptive-value('margin-bottom', 30, 20, 1);
+
+    span {
+      color: var(--color-accent);
+      text-decoration: underline;
+    }
+  }
+
+  &__left {
+    @include adaptive-value('padding-top', 70, 40, 1);
+    @include adaptive-value('padding-bottom', 70, 40, 1);
+
+    @include breakpointsMaxW($bp-991) {
+      padding: 0;
+    }
+  }
+
+  &__text {
+    font-size: 19px;
+    font-weight: 300;
+  }
+
+  &__preview {
+    @include background(contain);
+
+    @include breakpointsMaxW($bp-991) {
+      height: calc(280px + (450 - 280) * ((100vw - 360px) / (991 - 360)));
+    }
+  }
+}

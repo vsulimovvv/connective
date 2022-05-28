@@ -52,4 +52,13 @@
       }
     }
   }
+
+  &--descr {
+    color: var(--color-bg-dark);
+    .enroll {
+      &__wrapper {
+        justify-content: flex-start;
+      }
+    }
+  }
 }

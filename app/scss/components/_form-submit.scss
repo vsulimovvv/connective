@@ -84,4 +84,30 @@
     max-width: 270px;
     width: 100%;
   }
+
+  &--dark {
+    color: var(--color-bg-dark);
+
+    .form-submit {
+      &__input {
+        color: var(--color-bg-dark);
+
+        &::placeholder {
+          color: #8b8f96;
+        }
+      }
+
+      &__line {
+        background-color: #adb5b9;
+
+        &::after {
+          background-color: var(--color-bg-dark);
+        }
+      }
+
+      &__agree {
+        color: #8b8f96;
+      }
+    }
+  }
 }
