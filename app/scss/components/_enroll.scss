@@ -13,9 +13,6 @@
   &__offer {
     max-width: 560px;
     width: 100%;
-
-    @include breakpointsMaxW($bp-991) {
-    }
   }
 
   &__title {
@@ -24,5 +21,35 @@
     font-weight: 400;
     line-height: 1.1;
     text-align: center;
+  }
+
+  &--equipment {
+    .form-submit__bottom {
+      justify-content: space-between;
+    }
+
+    .form-submit__btn {
+      padding: 15px;
+    }
+    .enroll {
+      &__top {
+        @include adaptive-value('margin-bottom', 50, 30, 1);
+        text-align: center;
+      }
+      &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      &__offer {
+        max-width: 650px;
+      }
+
+      &__title {
+        @include fz35();
+        color: var(--color-white);
+      }
+    }
   }
 }
