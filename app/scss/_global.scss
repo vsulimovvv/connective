@@ -179,3 +179,11 @@ body {
     }
   }
 }
+
+.descr-service-text {
+  @include adaptive-value('padding-top', 70, 40, 1);
+  max-width: 1240px;
+  font-weight: 300;
+  color: #08202e;
+  @include adaptive-value('font-size', 20, 16, 1);
+}
