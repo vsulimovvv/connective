@@ -78,7 +78,9 @@
     position: relative;
     line-height: 1;
     font-weight: 700;
-    padding-right: 25px;text-transform: uppercase;
+    padding-right: 25px;
+    text-transform: uppercase;
+    @include adaptive-value('font-size', 25, 20, 1);
 
     &::before {
       @include elDef();
@@ -111,6 +113,30 @@
       bottom: -9px;
       left: 0;
       background-color: var(--color-accent);
+    }
+  }
+
+  &--no-link {
+    @include adaptive-value('padding-left', 30, 10, 1);
+    @include adaptive-value('padding-right', 30, 20, 1);
+    @include adaptive-value('padding-top', 40, 20, 1);
+
+    .catalog-card {
+      &__title {
+        padding-right: 0;
+
+        &::before {
+          display: none;
+        }
+
+        &::after {
+          width: 6px;
+          height: 6px;
+          bottom: initial;
+          top: -22px;
+          left: 1px;
+        }
+      }
     }
   }
 }

@@ -1,0 +1,62 @@
+.produce-machines {
+  color: #08202e;
+  @include adaptive-value('padding-top', 80, 50, 1);
+  @include adaptive-value('padding-bottom', 80, 50, 1);
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 30px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__right {
+    @include adaptive-value('font-size', 20, 16, 1);
+  }
+
+  &__title {
+    @include fz40();
+    font-weight: 700;
+    color: var(--color-bg-dark);
+    @include adaptive-value('margin-bottom', 20, 10, 1);
+  }
+
+  &__top {
+    @include adaptive-value('margin-bottom', 30, 20, 1);
+  }
+
+  &__preview {
+    @include background(cover);
+
+    @include breakpointsMaxW($bp-991) {
+      height: calc(280px + (450 - 280) * ((100vw - 360px) / (991 - 360)));
+      order: 1;
+    }
+  }
+
+  &__bottom {
+    span {
+      color: var(--color-bg-dark);
+      font-weight: 700;
+    }
+
+    padding-left: 26px;
+    position: relative;
+
+    &::after {
+      @include elDef();
+      height: 100%;
+      width: 4px;
+      background-color: var(--color-accent);
+      left: 0;
+      top: 0;
+    }
+  }
+}
