@@ -1,0 +1,53 @@
+.certificates {
+  @include adaptive-value('padding-top', 60, 30, 1);
+  @include adaptive-value('padding-bottom', 90, 50, 1);
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include adaptive-value('margin-bottom', 40, 30, 1);
+
+    @include breakpointsMaxW($bp-768) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__name {
+    @include adaptive-value('font-size', 25, 20, 1);
+    line-height: 1;
+    font-weight: 400;
+    color: #44454b;
+  }
+
+  .choices {
+    width: 255px;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 20px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      gap: 20px 10px;
+    }
+  }
+
+  &__item {
+    max-width: 590px;
+    height: 420px;
+    border: 1px solid #e9e9e9;
+    cursor: pointer;
+    @include adaptive-value('height', 420, 120, 1);
+
+    img {
+      @include img(cover);
+    }
+  }
+}
