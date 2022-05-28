@@ -1,0 +1,144 @@
+.history {
+  @include adaptive-value('padding-top', 70, 40, 1);
+  @include adaptive-value('padding-bottom', 70, 40, 1);
+
+  &__text {
+    font-size: 17px;
+    line-height: 31px;
+    font-weight: 400;
+    color: #35454f;
+    @include adaptive-value('margin-bottom', 70, 40, 1);
+
+    @include breakpointsMaxW($bp-768) {
+      font-size: 16px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    counter-reset: number;
+    display: grid;
+    @include breakpointsMaxW($bp-768) {
+      gap: 20px;
+    }
+  }
+
+  &__item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 255px 1fr;
+    align-items: center;
+    gap: 25px;
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr 175px 1fr;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: 135px 1fr;
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      grid-template-columns: auto 1fr;
+      gap: 5px 10px;
+    }
+
+    &:nth-child(even) {
+      .history__circle {
+        @include backgroundImage(
+          url('../images/content/circle-2.png'),
+          contain
+        );
+      }
+      .history__left {
+        order: 1;
+        justify-content: flex-start;
+      }
+      .history__right {
+        order: -1;
+      }
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      &:nth-child(even) {
+        .history__left {
+          order: initial;
+          justify-content: initial;
+        }
+        .history__right {
+          order: initial;
+        }
+      }
+
+      .history__circle {
+        order: -1;
+      }
+    }
+  }
+
+  &__left {
+    @include adaptive-value('font-size', 55, 25, 1);
+    line-height: 1;
+    font-weight: 700;
+    color: #1e2a46;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include breakpointsMaxW($bp-768) {
+      justify-content: flex-start;
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+  }
+
+  &__right {
+    @include adaptive-value('font-size', 16, 14, 1);
+    color: #565656;
+
+    @include breakpointsMaxW($bp-768) {
+      justify-content: flex-start;
+      grid-column: 2/3;
+      grid-row: 2/3;
+    }
+  }
+
+  &__circle {
+    position: relative;
+    width: 255px;
+    height: 220px;
+    @include breakpointsMaxW($bp-991) {
+      width: 175px;
+      height: 150px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      width: 135px;
+      height: 110px;
+    }
+
+    @include breakpointsMaxW($bp-576) {
+      width: 65px;
+      height: 50px;
+    }
+
+    @include backgroundImage(url('../images/content/circle-1.png'), contain);
+
+    &::before {
+      position: absolute;
+      counter-increment: number;
+      content: '0' counter(number);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      @include adaptive-value('font-size', 34, 14, 1);
+      line-height: 1;
+      font-weight: 800;
+      color: #e1e1e1;
+    }
+  }
+}
