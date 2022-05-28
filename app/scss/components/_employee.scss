@@ -1,0 +1,179 @@
+.employee {
+  @include adaptive-value('padding-top', 80, 50, 1);
+  @include adaptive-value('padding-bottom', 80, 50, 1);
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    gap: 55px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 30px;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    max-height: 630px;
+
+    @include breakpointsMaxW($bp-991) {
+      // order: 1;
+      height: calc(280px + (630 - 280) * ((100vw - 360px) / (991 - 360)));
+    }
+
+    img {
+      @include img(cover);
+    }
+  }
+
+  &__title {
+    @include adaptive-value('font-size', 30, 23, 1);
+    line-height: 1;
+    font-weight: 700;
+    color: #282c40;
+    margin-bottom: 15px;
+  }
+
+  &__prof {
+    font-size: 16px;
+    line-height: 1.2;
+    color: #686b79;
+  }
+
+  &__top {
+    @include adaptive-value('margin-bottom', 45, 30, 1);
+  }
+
+  &__list {
+    display: grid;
+    @include adaptive-value('gap', 40, 30, 1);
+    @include adaptive-value('margin-bottom', 40, 30, 1);
+  }
+
+  &__bottom {
+    padding: 30px 35px;
+    background-color: var(--color-bg);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 40px;
+
+    @include breakpointsMaxW($bp-container) {
+      padding: 20px;
+      gap: 30px;
+    }
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 21px;
+    position: relative;
+    line-height: 1;
+    gap: 10px;
+
+    &::after {
+      @include elDef();
+      width: 14px;
+      height: 14px;
+      top: 0;
+      left: 0;
+      background-color: var(--color-accent);
+    }
+
+    &--phone {
+      &::after {
+        @include maskImage(url('../images/icons/phone.svg'), contain);
+      }
+    }
+
+    &--mail {
+      &::after {
+        @include maskImage(url('../images/icons/mail.svg'), contain);
+      }
+    }
+
+    &-name {
+      font-size: 14px;
+      font-weight: 700;
+      color: #282c40;
+    }
+    &-text {
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+
+  &__btn {
+    grid-column: span 2;
+    max-width: 255px;
+    padding: 15px 20px;
+    @include breakpointsMaxW($bp-768) {
+      grid-column: initial;
+    }
+  }
+
+  .employee-item {
+    &__top {
+      @include adaptive-value('margin-bottom', 25, 15, 1);
+      padding-left: 30px;
+      position: relative;
+
+      &::after {
+        @include elDef();
+        width: 19px;
+        height: 19px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+      }
+    }
+
+    &--education {
+      .employee-item__top {
+        &::after {
+          @include backgroundImage(
+            url('../images/content/open-book.png'),
+            contain
+          );
+        }
+      }
+    }
+
+    &--experience {
+      .employee-item__top {
+        &::after {
+          @include backgroundImage(url('../images/content/clock.png'), contain);
+        }
+      }
+    }
+    &__title {
+      font-size: 17px;
+      line-height: 1;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #282c40;
+      @include breakpointsMaxW($bp-768) {
+        font-size: 16px;
+      }
+    }
+
+    &__text {
+      font-size: 16px;
+      color: #727272;
+
+      @include breakpointsMaxW($bp-768) {
+        font-size: 15px;
+      }
+    }
+  }
+}
