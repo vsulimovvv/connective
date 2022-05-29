@@ -1,0 +1,261 @@
+.menu {
+  @include breakpointsMaxW($bp-991) {
+    display: none;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 10px;
+    }
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__link {
+    display: block;
+    transition: 200ms ease;
+    position: relative;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 400;
+    color: var(--color-bg-dark);
+
+    @include breakpointsMaxW($bp-container) {
+      font-size: 13px;
+    }
+
+    &:hover {
+      color: var(--color-accent);
+    }
+
+    &:hover {
+      color: var(--color-accent);
+    }
+
+    &--dropdown {
+      padding-right: 15px;
+      position: relative;
+      border-radius: 5px;
+      @include breakpointsMaxW($bp-container) {
+        padding-right: 10px;
+      }
+
+      &::after {
+        @include elDef();
+        width: 7px;
+        height: 7px;
+        right: 0;
+        top: 35%;
+        transform: translateY(-50%);
+        @include maskImage(url('../images/icons/chevron.svg'), 100%);
+        background-color: var(--color-dark);
+      }
+
+      &:hover {
+        &::before {
+          transform: scale(0);
+        }
+        &::after {
+          background-color: var(--color-accent);
+        }
+
+        & + .dropmenu {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    &--catalog {
+      padding: 13px 35px 13px 65px;
+      border-radius: 5px;
+      background-color: var(--color-accent);
+      color: var(--color-white);
+      position: relative;
+      line-height: 1;
+      border: 1px solid transparent;
+      border-radius: 10px;
+
+      &::after {
+        @include elDef();
+        width: 20px;
+        height: 15px;
+        @include maskImage(url('../images/icons/menu-icon.svg'), contain);
+        background-color: var(--color-white);
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+      }
+
+      &::before {
+        display: none;
+      }
+
+      &:hover {
+        color: var(--color-accent);
+        background-color: var(--color-accent-light);
+        border: 1px solid var(--color-accent);
+      }
+    }
+
+    &--dots {
+      padding-right: 0;
+
+      &::after {
+        display: none;
+      }
+
+      svg {
+        width: 20px;
+        height: 5px;
+      }
+    }
+  }
+
+  .dropmenu {
+    transform: translateY(-10px);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    width: 200px;
+    position: absolute;
+    left: 0;
+    top: 45px;
+    background-color: var(--color-white);
+    box-shadow: 0px 19px 51px 0px rgba(53, 56, 62, 0.23);
+
+    border-radius: 5px;
+    padding: 0 21px;
+    transition: 450ms ease;
+    transition-delay: 150ms;
+
+    &--price-list {
+      width: 240px;
+
+      .dropmenu {
+        &__link {
+          text-align: left;
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &--left {
+      width: 300px;
+    }
+    &--right {
+      right: 0;
+      left: initial;
+      width: 250px;
+    }
+
+    &--brands {
+      width: 1240px;
+      height: 410px;
+      left: -430px;
+      padding: 0;
+      padding: 30px;
+      overflow-y: auto;
+
+      @include breakpointsMaxW($bp-container) {
+        width: 900px;
+        height: 470px;
+        left: -300px;
+      }
+
+      .dropmenu {
+        &__list {
+          display: grid;
+          grid-template-columns: repeat(7, 1fr);
+          gap: 15px;
+
+          @include breakpointsMaxW($bp-container) {
+            grid-template-columns: repeat(5, 1fr);
+          }
+        }
+        &__item {
+          width: 155px;
+          height: 125px;
+          background-color: var(--color-white);
+          border: 1px solid #eaeaea;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          text-align: center;
+          padding: 15px 25px;
+
+          img {
+            height: 55px;
+            width: 105px;
+            object-fit: contain;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    &__item {
+      border-bottom: 1px solid #ebebeb;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    &__link {
+      display: block;
+      width: 100%;
+      color: var(--color-dark);
+      padding: 12px 0;
+      transition: 150ms ease;
+      position: relative;
+      padding-right: 20px;
+
+      &:hover {
+        & + .submenu {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+      }
+
+      &::after {
+        @include elDef();
+        width: 10px;
+        height: 10px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%) rotate(-90deg);
+        @include maskImage(url('../images/sprite.svg#chevron'), 100%);
+        background-color: #d0d0d0;
+        transition: 150ms ease;
+      }
+
+      &:hover {
+        color: var(--color-accent);
+
+        &::after {
+          background-color: var(--color-accent);
+          transform: translateY(-50%) translateX(3px) rotate(-90deg);
+        }
+      }
+    }
+  }
+}
