@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
+
+    <title>Connective</title>
+  </head>
+
+  <body>
+    <div class="popup popup--service">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Заявка на услугу “Испытательный комплекс”</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="service-name">Имя</label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--name">
+            <input
+              class="form-submit__input"
+              name="name"
+              id="service-name"
+              type="text"
+              placeholder="Введите ваше имя"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="service-tel">
+            Контактный телефон
+          </label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
+            <input
+              class="form-submit__input"
+              name="tel"
+              id="service-tel"
+              type="tel"
+              placeholder="+7 (___) ___-__-__"
+              required
+            />
+          </div>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--product">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Заказ насоса ДГН СЕРИЯ</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="product-name">Имя</label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--name">
+            <input
+              class="form-submit__input"
+              name="name"
+              id="product-name"
+              type="text"
+              placeholder="Введите ваше имя"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="product-tel">
+            Контактный телефон
+          </label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
+            <input
+              class="form-submit__input"
+              name="tel"
+              id="product-tel"
+              type="tel"
+              placeholder="+7 (___) ___-__-__"
+              required
+            />
+          </div>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--consultation">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Заказать консультацию</h2>
+      <div class="popup__text">
+        <p>Оставьте ваши данные и мы вам перезвоним.</p>
+      </div>
+
+      <form class="request__form form-submit">
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="consultation-name">Имя</label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--name">
+            <input
+              class="form-submit__input"
+              name="name"
+              id="consultation-name"
+              type="text"
+              placeholder="Введите ваше имя"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-submit__group">
+          <label class="form-submit__label" for="consultation-tel">
+            Контактный телефон
+          </label>
+          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
+            <input
+              class="form-submit__input"
+              name="tel"
+              id="consultation-tel"
+              type="tel"
+              placeholder="+7 (___) ___-__-__"
+              required
+            />
+          </div>
+        </div>
+
+        <button class="form-submit__btn btn" type="button">
+          Заказать звонок
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <h1 class="visually-hidden">Главная</h1>
+
+    <div class="site-wrapper">
+      <header class="header">
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <div class="header__menu top-menu">
+          <ul class="top-menu__list">
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">Новости</a>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">Мероприятия</a>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">Обучение</a>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link" href="#">Проекты</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__items">
+          <address class="header__item header__item--location">
+            Санкт-Петербург, Кондратьевский пр-кт, д.15, к.2, лит.З, офис 301
+          </address>
+          <a
+            class="header__item header__item--mail"
+            href="mailto:contact@connective-plm.com"
+          >
+            contact@connective-plm.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <a class="header__logo" href="#">
+          <img src="images/logo.png" alt="Логотип" />
+        </a>
+
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--dropdown" href="#"
+                >Программные решения</a
+              >
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Диваны</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Кресла</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Столы и стулья</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Мебель для сада</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Кровати</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Модульные гостиные</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Стенки</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Шкафы</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Кухни</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Тумбы и комоды</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Мебель для ванной</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Прихожие</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Производственное оборудование</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--dropdown" href="#">
+                О компании
+              </a>
+
+              <div class="dropmenu">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"> Мягкая мебель</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"> Мягкая мебель</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__tools">
+          <a class="header__phone" href="tel:+78125619668">8 (812) 561-96-68</a>
+          <button class="header__btn btn" type="button">Заказать звонок</button>
+          <button class="header__btn-support btn btn--transparent"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <main class="main">
+        <section class="hero">
+  <div class="hero__wrapper">
+    <!-- <div class="wrapper"> -->
+    <div class="hero__nav">
+      <button class="header__toggle" type="button" aria-label="Открыть меню">
+        <span class="header__toggle-line"></span>
+      </button>
+      <div class="hero-nav__wrapper">
+        <div class="contacts__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--whatsapp" href="#"
+                ><span>WhatsApp</span></a
+              >
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--telegram" href="#"
+                ><span>Telegram</span></a
+              >
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="#"><span>Vkontakte</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a class="hero__nav-mail" href="#" aria-label="Написать нам"></a>
+    </div>
+    <div class="hero__slider swiper">
+      <ul class="hero__slides swiper-wrapper">
+        <li
+          class="hero__slide swiper-slide"
+          style="background-image: url('images/content/hero/main.jpg')"
+        >
+          <div class="container">
+            <div class="hero__offer">
+              <h2 class="hero__title">
+                <span>
+                  Цифровая <br />
+                  экосистема <br />
+                </span>
+                вашего <br />
+                бизнеса
+              </h2>
+              <p class="hero__text">
+                Создаем и реализуем концепции цифровизации бизнеса
+                производственных компаний
+              </p>
+              <a class="hero__btn btn" href="#">Подробнее</a>
+            </div>
+          </div>
+        </li>
+        <li
+          class="hero__slide swiper-slide"
+          style="background-image: url('images/content/hero/main.jpg')"
+        >
+          <div class="container">
+            <div class="hero__offer">
+              <h2 class="hero__title">
+                <span>
+                  Цифровая <br />
+                  экосистема <br />
+                </span>
+                вашего <br />
+                бизнеса
+              </h2>
+              <p class="hero__text">
+                Создаем и реализуем концепции цифровизации бизнеса
+                производственных компаний
+              </p>
+              <a class="hero__btn btn" href="#">Подробнее</a>
+            </div>
+          </div>
+        </li>
+        <li
+          class="hero__slide swiper-slide"
+          style="background-image: url('images/content/hero/main.jpg')"
+        >
+          <div class="container">
+            <div class="hero__offer">
+              <h2 class="hero__title">
+                <span>
+                  Цифровая <br />
+                  экосистема <br />
+                </span>
+                вашего <br />
+                бизнеса
+              </h2>
+              <p class="hero__text">
+                Создаем и реализуем концепции цифровизации бизнеса
+                производственных компаний
+              </p>
+              <a class="hero__btn btn" href="#">Подробнее</a>
+            </div>
+          </div>
+        </li>
+        <li
+          class="hero__slide swiper-slide"
+          style="background-image: url('images/content/hero/main.jpg')"
+        >
+          <div class="container">
+            <div class="hero__offer">
+              <h2 class="hero__title">
+                <span>
+                  Цифровая <br />
+                  экосистема <br />
+                </span>
+                вашего <br />
+                бизнеса
+              </h2>
+              <p class="hero__text">
+                Создаем и реализуем концепции цифровизации бизнеса
+                производственных компаний
+              </p>
+              <a class="hero__btn btn" href="#">Подробнее</a>
+            </div>
+          </div>
+        </li>
+        <li
+          class="hero__slide swiper-slide"
+          style="background-image: url('images/content/hero/main.jpg')"
+        >
+          <div class="container">
+            <div class="hero__offer">
+              <h2 class="hero__title">
+                <span>
+                  Цифровая <br />
+                  экосистема <br />
+                </span>
+                вашего <br />
+                бизнеса
+              </h2>
+              <p class="hero__text">
+                Создаем и реализуем концепции цифровизации бизнеса
+                производственных компаний
+              </p>
+              <a class="hero__btn btn" href="#">Подробнее</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="swiper-pagination"></div>
+      <div class="hero__arrows">
+        <button
+          class="swiper-button-prev"
+          type="button"
+          aria-label="Предыдущий"
+        ></button>
+        <button
+          class="swiper-button-next"
+          type="button"
+          aria-label="Следующий"
+        ></button>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+</section>
+
+        <section class="our-customers">
+  <div class="container">
+    <div class="our-customers__wrapper">
+      <h2 class="our-customers__title">Наши заказчики</h2>
+
+      <div class="our-customers__slider swiper">
+        <ul class="our-customers__slides swiper-wrapper">
+          <li class="our-customers__slide swiper-slide">
+            <img src="images/content/customers/1.png" alt="1" />
+          </li>
+          <li class="our-customers__slide swiper-slide">
+            <img src="images/content/customers/2.png" alt="1" />
+          </li>
+          <li class="our-customers__slide swiper-slide">
+            <img src="images/content/customers/3.png" alt="1" />
+          </li>
+          <li class="our-customers__slide swiper-slide">
+            <img src="images/content/customers/4.png" alt="1" />
+          </li>
+          <li class="our-customers__slide swiper-slide">
+            <img src="images/content/customers/5.png" alt="1" />
+          </li>
+          <li class="our-customers__slide swiper-slide">
+            <img src="images/content/customers/1.png" alt="1" />
+          </li>
+          <li class="our-customers__slide swiper-slide">
+            <img src="images/content/customers/2.png" alt="1" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="software-solutions">
+  <div class="container">
+    <div class="software-solutions__wrapper">
+      <div class="software-solutions__cell software-solutions__cell--offer">
+        <h2 class="software-solutions__title">
+          Наши специализированные <span>программные решения</span>
+        </h2>
+        <div class="software-solutions__text">
+          <p>
+            Для реализации нашей концепции цифровизации мы предлагаем заказчикам
+            самые современные программные продукты от компании Siemens Digital
+            Industries Software:
+          </p>
+        </div>
+      </div>
+      <div
+        class="software-solutions__cell software-solutions__cell--color-white"
+      >
+        <p class="software-solutions__descr">
+          Система управления интеллектуальной собственностью предприятия (PLM)
+        </p>
+      </div>
+      <div class="software-solutions__cell">
+        <p class="software-solutions__descr">
+          Система планирования производства (MRP, APS, MES)
+        </p>
+      </div>
+      <div
+        class="software-solutions__cell software-solutions__cell--color-white"
+      >
+        <p class="software-solutions__descr">
+          Разработка управляющих программ для станков с ЧПУ
+        </p>
+      </div>
+      <div class="software-solutions__cell">
+        <p class="software-solutions__descr">
+          Програмирование <br />
+          роботов
+        </p>
+      </div>
+      <div class="software-solutions__cell">
+        <p class="software-solutions__descr">Конструкторское проектирование</p>
+      </div>
+      <div class="software-solutions__cell">
+        <p class="software-solutions__descr">
+          Лабораторные измерительные системы (LIMS)
+        </p>
+      </div>
+      <div
+        class="software-solutions__cell software-solutions__cell--color-white"
+      >
+        <p class="software-solutions__descr">Вычислительное моделирование</p>
+      </div>
+      <div class="software-solutions__cell">
+        <p class="software-solutions__descr">Проектирование турбомашин</p>
+      </div>
+      <div
+        class="software-solutions__cell software-solutions__cell--color-white"
+      >
+        <p class="software-solutions__descr">Цифровой двойник предприятия</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="target">
+  <div class="container">
+    <div class="target__wrapper">
+      <div
+        class="target__preview"
+        style="background-image: url('images/content/target.jpg')"
+      ></div>
+      <div class="target__offer">
+        <div class="target__top">
+          <h2 class="target__title">connective <span>plm</span></h2>
+          <div class="target__text">
+            <p>
+              специализируется на внедрении передовых решений, предназначенных
+              для цифрового сопровождения изделия на всех этапах его жизненного
+              цикла.
+            </p>
+          </div>
+        </div>
+
+        <div class="target__quote">
+          <p>
+            <span>Цель нашей компании</span> – трансфер самых современных и
+            эффективных технологий на российские промышленные предприятия.
+            Специалисты нашей компании активно исследуют новейшие методики и
+            концепции в области цифрового производства, такие как: Цифровой
+            двойник, Системная инженерия, Бесчертежное проектирование др. и опыт
+            их применения на предприятиях мира.
+          </p>
+
+          <span
+            >Реализация этих идей является важным шагом на пути преобразования
+            вашего бизнеса.</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="services-package">
+  <div class="container">
+    <div class="services-package__top">
+      <h2 class="services-package__title">
+        Предоставляем полный
+        <span>комплекс услуг</span>
+      </h2>
+      <div class="services-package__text">
+        <p>
+          Предлагаем внедрение современных практик управления производственным
+          процессом на всех этапах жизненного цикла выпускаемой продукции.
+        </p>
+      </div>
+    </div>
+
+    <div class="services-package__content">
+      <div class="services-package__slider swiper">
+        <ul class="services-package__slides swiper-wrapper">
+          <li class="services-package__slide swiper-slide">
+            <article class="services-card">
+              <h3 class="services-card__title">
+                Комплексная автоматизация КТПП
+              </h3>
+
+              <p class="services-card__count"><span></span>1</p>
+
+              <a class="service-card__btn btn btn--transparent" href="#">
+                Подробнее
+              </a>
+            </article>
+          </li>
+          <li class="services-package__slide swiper-slide">
+            <article class="services-card">
+              <h3 class="services-card__title">
+                Постановка проессов планирования производства
+              </h3>
+              <p class="services-card__count"><span>0</span>2</p>
+              <a class="service-card__btn btn btn--transparent" href="#">
+                Подробнее
+              </a>
+            </article>
+          </li>
+          <li class="services-package__slide swiper-slide">
+            <article class="services-card">
+              <h3 class="services-card__title">
+                Постановка методик проектирования
+              </h3>
+              <p class="services-card__count"><span>0</span>3</p>
+              <a class="service-card__btn btn btn--transparent" href="#">
+                Подробнее
+              </a>
+            </article>
+          </li>
+          <li class="services-package__slide swiper-slide">
+            <article class="services-card">
+              <h3 class="services-card__title">
+                Комплексная автоматизация КТПП
+              </h3>
+              <p class="services-card__count"><span>0</span>1</p>
+              <a class="service-card__btn btn btn--transparent" href="#">
+                Подробнее
+              </a>
+            </article>
+          </li>
+          <li class="services-package__slide swiper-slide">
+            <article class="services-card">
+              <h3 class="services-card__title">
+                Комплексная автоматизация КТПП
+              </h3>
+              <p class="services-card__count"><span></span>2</p>
+              <a class="service-card__btn btn btn--transparent" href="#">
+                Подробнее
+              </a>
+            </article>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="services-package__arrows">
+        <button
+          class="swiper-button-prev"
+          type="button"
+          aria-label="Предыдущий"
+        ></button>
+        <button
+          class="swiper-button-next"
+          type="button"
+          aria-label="Следующий"
+        ></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="equipments">
+  <div class="container">
+    <div class="equipments__top">
+      <div class="equipments__top-left">
+        <h2 class="equipments__title">Производственное оборудование</h2>
+        <div class="equipments__text">
+          <p>
+            Наши знания и опыт в различных отраслях промышленности помогают
+            выявлять области бизнеса, в которых цифровые технологии помогут
+            сократить издержки, нарастить объем производства и повысить качество
+            выпускаемой продукции.
+          </p>
+        </div>
+      </div>
+
+      <a class="equipments__btn btn" href="#">Подробнее</a>
+    </div>
+
+    <ul class="equipments__list">
+      <li class="equipments__item">
+        <article
+          class="equipments-card"
+          style="background-image: url(images/content/equipments/1.jpg)"
+        >
+          <h3 class="equipments-card__title">Станки с ЧПУ</h3>
+
+          <div class="equipments-card__overlay">
+            <h3 class="equipments-card__title equipments-card__title--dark">
+              Станки с ЧПУ
+            </h3>
+            <div class="equipments-card__text">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+            </div>
+
+            <a class="equipments-card__btn btn" href="#">Подробнее</a>
+          </div>
+        </article>
+      </li>
+      <li class="equipments__item">
+        <article
+          class="equipments-card"
+          style="background-image: url(images/content/equipments/2.jpg)"
+        >
+          <h3 class="equipments-card__title">
+            Станки лазерного раcкроя металла
+          </h3>
+
+          <div class="equipments-card__overlay">
+            <h3 class="equipments-card__title equipments-card__title--dark">
+              Станки лазерного раcкроя металла
+            </h3>
+            <div class="equipments-card__text">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+            </div>
+
+            <a class="equipments-card__btn btn" href="#">Подробнее</a>
+          </div>
+        </article>
+      </li>
+      <li class="equipments__item">
+        <article
+          class="equipments-card"
+          style="background-image: url(images/content/equipments/3.jpg)"
+        >
+          <h3 class="equipments-card__title">Режущий инструмент</h3>
+
+          <div class="equipments-card__overlay">
+            <h3 class="equipments-card__title equipments-card__title--dark">
+              Режущий инструмент
+            </h3>
+            <div class="equipments-card__text">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged.
+              </p>
+            </div>
+
+            <a class="equipments-card__btn btn" href="#">Подробнее</a>
+          </div>
+        </article>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="specialized tabs">
+  <div class="container">
+    <h2 class="specialized__title">Специализированные решения</h2>
+
+    <div class="specialized__top">
+      <ul class="specialized__top-list">
+        <li class="specialized__top-item">
+          <button
+            class="specialized__top-btn tabs-btn tabs-btn--active"
+            type="button"
+          >
+            Комплексное решение для проектирования турбомашин
+          </button>
+        </li>
+        <li class="specialized__top-item">
+          <button class="specialized__top-btn tabs-btn" type="button">
+            Комплексное решение для проектирования электродвигателей
+          </button>
+        </li>
+        <li class="specialized__top-item">
+          <button class="specialized__top-btn tabs-btn" type="button">
+            Решение для производств с ЧПУ оборудованием
+          </button>
+        </li>
+        <li class="specialized__top-item">
+          <button class="specialized__top-btn tabs-btn" type="button">
+            Управление разработкой и производством вариативной продукции
+          </button>
+        </li>
+        <li class="specialized__top-item">
+          <button class="specialized__top-btn tabs-btn" type="button">
+            Планирование и контроль производственных процессов
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="specialized__content specialized-content tabs-content active">
+    <div class="container">
+      <div class="specialized-content__wrapper">
+        <div class="specialized-content__left">
+          <h3 class="specialized-content__heading">
+            Комплексное решение для проектирования турбомашин
+          </h3>
+
+          <div class="specialized-content__time">
+            <p>Сократит время цикла проектирования турбомашин на 60-70%</p>
+          </div>
+          <div class="specialized-content__text">
+            <p>
+              Современный уровень конкуренции среди производителей турбомашин:
+              насосов, компрессоров, турбин, вентиляторов, ставит повышенный
+              уровень требований к скорости выхода изделий на рынок и
+              техническим характеристикам продукции. Заказчик желает получить
+              продукт высочайшего качества в короткий срок при сохранении
+              адекватной стоимости.
+            </p>
+          </div>
+        </div>
+        <div class="specialized-content__img">
+          <img src="images/content/specialized.jpg" alt="турбомашина" />
+        </div>
+        <div class="specialized-content__solution">
+          <h3 class="specialized-content__heading">РЕШЕНИЕ:</h3>
+          <div class="specialized-content__text">
+            <p>
+              Компания Connective PLM создала комплекс методологических и
+              программных решений, позволяющих производителям турбомашинного
+              оборудования создавать конкурентоспособную продукцию качественно и
+              в срок, позволяющий сократить время цикла проектирования образца
+              продукции на 60-70 процентов по сравнению с традиционным подходом
+              и гарантировать конкурентоспособные технические характеристики
+              изделий.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="specialized-content__btn btn" type="button">
+        У МЕНЯ ПОХОЖИЙ ПРОЕКТ
+      </button>
+    </div>
+  </div>
+  <div class="specialized__content specialized-content tabs-content">
+    <div class="container">
+      <div class="specialized-content__wrapper">
+        <div class="specialized-content__left">
+          <h3 class="specialized-content__heading">
+            Комплексное решение для проектирования турбомашин
+          </h3>
+
+          <div class="specialized-content__time">
+            <p>Сократит время цикла проектирования турбомашин на 60-70%</p>
+          </div>
+          <div class="specialized-content__text">
+            <p>
+              Современный уровень конкуренции среди производителей турбомашин:
+              насосов, компрессоров, турбин, вентиляторов, ставит повышенный
+              уровень требований к скорости выхода изделий на рынок и
+              техническим характеристикам продукции. Заказчик желает получить
+              продукт высочайшего качества в короткий срок при сохранении
+              адекватной стоимости.
+            </p>
+          </div>
+        </div>
+        <div class="specialized-content__img">
+          <img src="images/content/specialized.jpg" alt="турбомашина" />
+        </div>
+        <div class="specialized-content__solution">
+          <h3 class="specialized-content__heading">РЕШЕНИЕ:</h3>
+          <div class="specialized-content__text">
+            <p>
+              Компания Connective PLM создала комплекс методологических и
+              программных решений, позволяющих производителям турбомашинного
+              оборудования создавать конкурентоспособную продукцию качественно и
+              в срок, позволяющий сократить время цикла проектирования образца
+              продукции на 60-70 процентов по сравнению с традиционным подходом
+              и гарантировать конкурентоспособные технические характеристики
+              изделий.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="specialized-content__btn btn" type="button">
+        У МЕНЯ ПОХОЖИЙ ПРОЕКТ
+      </button>
+    </div>
+  </div>
+  <div class="specialized__content specialized-content tabs-content">
+    <div class="container">
+      <div class="specialized-content__wrapper">
+        <div class="specialized-content__left">
+          <h3 class="specialized-content__heading">
+            Комплексное решение для проектирования турбомашин
+          </h3>
+
+          <div class="specialized-content__time">
+            <p>Сократит время цикла проектирования турбомашин на 60-70%</p>
+          </div>
+          <div class="specialized-content__text">
+            <p>
+              Современный уровень конкуренции среди производителей турбомашин:
+              насосов, компрессоров, турбин, вентиляторов, ставит повышенный
+              уровень требований к скорости выхода изделий на рынок и
+              техническим характеристикам продукции. Заказчик желает получить
+              продукт высочайшего качества в короткий срок при сохранении
+              адекватной стоимости.
+            </p>
+          </div>
+        </div>
+        <div class="specialized-content__img">
+          <img src="images/content/specialized.jpg" alt="турбомашина" />
+        </div>
+        <div class="specialized-content__solution">
+          <h3 class="specialized-content__heading">РЕШЕНИЕ:</h3>
+          <div class="specialized-content__text">
+            <p>
+              Компания Connective PLM создала комплекс методологических и
+              программных решений, позволяющих производителям турбомашинного
+              оборудования создавать конкурентоспособную продукцию качественно и
+              в срок, позволяющий сократить время цикла проектирования образца
+              продукции на 60-70 процентов по сравнению с традиционным подходом
+              и гарантировать конкурентоспособные технические характеристики
+              изделий.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="specialized-content__btn btn" type="button">
+        У МЕНЯ ПОХОЖИЙ ПРОЕКТ
+      </button>
+    </div>
+  </div>
+  <div class="specialized__content specialized-content tabs-content">
+    <div class="container">
+      <div class="specialized-content__wrapper">
+        <div class="specialized-content__left">
+          <h3 class="specialized-content__heading">
+            Комплексное решение для проектирования турбомашин
+          </h3>
+
+          <div class="specialized-content__time">
+            <p>Сократит время цикла проектирования турбомашин на 60-70%</p>
+          </div>
+          <div class="specialized-content__text">
+            <p>
+              Современный уровень конкуренции среди производителей турбомашин:
+              насосов, компрессоров, турбин, вентиляторов, ставит повышенный
+              уровень требований к скорости выхода изделий на рынок и
+              техническим характеристикам продукции. Заказчик желает получить
+              продукт высочайшего качества в короткий срок при сохранении
+              адекватной стоимости.
+            </p>
+          </div>
+        </div>
+        <div class="specialized-content__img">
+          <img src="images/content/specialized.jpg" alt="турбомашина" />
+        </div>
+        <div class="specialized-content__solution">
+          <h3 class="specialized-content__heading">РЕШЕНИЕ:</h3>
+          <div class="specialized-content__text">
+            <p>
+              Компания Connective PLM создала комплекс методологических и
+              программных решений, позволяющих производителям турбомашинного
+              оборудования создавать конкурентоспособную продукцию качественно и
+              в срок, позволяющий сократить время цикла проектирования образца
+              продукции на 60-70 процентов по сравнению с традиционным подходом
+              и гарантировать конкурентоспособные технические характеристики
+              изделий.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="specialized-content__btn btn" type="button">
+        У МЕНЯ ПОХОЖИЙ ПРОЕКТ
+      </button>
+    </div>
+  </div>
+  <div class="specialized__content specialized-content tabs-content">
+    <div class="container">
+      <div class="specialized-content__wrapper">
+        <div class="specialized-content__left">
+          <h3 class="specialized-content__heading">
+            Комплексное решение для проектирования турбомашин
+          </h3>
+
+          <div class="specialized-content__time">
+            <p>Сократит время цикла проектирования турбомашин на 60-70%</p>
+          </div>
+          <div class="specialized-content__text">
+            <p>
+              Современный уровень конкуренции среди производителей турбомашин:
+              насосов, компрессоров, турбин, вентиляторов, ставит повышенный
+              уровень требований к скорости выхода изделий на рынок и
+              техническим характеристикам продукции. Заказчик желает получить
+              продукт высочайшего качества в короткий срок при сохранении
+              адекватной стоимости.
+            </p>
+          </div>
+        </div>
+        <div class="specialized-content__img">
+          <img src="images/content/specialized.jpg" alt="турбомашина" />
+        </div>
+        <div class="specialized-content__solution">
+          <h3 class="specialized-content__heading">РЕШЕНИЕ:</h3>
+          <div class="specialized-content__text">
+            <p>
+              Компания Connective PLM создала комплекс методологических и
+              программных решений, позволяющих производителям турбомашинного
+              оборудования создавать конкурентоспособную продукцию качественно и
+              в срок, позволяющий сократить время цикла проектирования образца
+              продукции на 60-70 процентов по сравнению с традиционным подходом
+              и гарантировать конкурентоспособные технические характеристики
+              изделий.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="specialized-content__btn btn" type="button">
+        У МЕНЯ ПОХОЖИЙ ПРОЕКТ
+      </button>
+    </div>
+  </div>
+</section>
+
+        <section class="numbers">
+  <div class="container">
+    <h2 class="visually-hidden">Цифры</h2>
+
+    <ul class="numbers__list">
+      <li class="numbers-item">
+        <div class="numbers-item__top">
+          <div class="numbers-item__icon">
+            <img src="images/content/numbers/1.png" alt="Опыт" />
+          </div>
+          <p class="numbers-item__number">12 лет</p>
+        </div>
+        <div class="numbers-item__bottom">
+          <p>Connective PLM успешно реализует проекты на Российском рынке</p>
+        </div>
+      </li>
+      <li class="numbers-item">
+        <div class="numbers-item__top">
+          <div class="numbers-item__icon">
+            <img src="images/content/numbers/2.png" alt="Рост компании" />
+          </div>
+          <p class="numbers-item__number">70%</p>
+        </div>
+        <div class="numbers-item__bottom">
+          <p>Ежегодный рост компании за все годы существования</p>
+        </div>
+      </li>
+      <li class="numbers-item">
+        <div class="numbers-item__top">
+          <div class="numbers-item__icon">
+            <img
+              src="images/content/numbers/3.png"
+              alt="реализованных проектов"
+            />
+          </div>
+          <p class="numbers-item__number">20+</p>
+        </div>
+        <div class="numbers-item__bottom">
+          <p>
+            Более 20 реализованных проектов внедрения PLM решений для компаний
+            крупного и среднего бизнеса
+          </p>
+        </div>
+      </li>
+      <li class="numbers-item">
+        <div class="numbers-item__top">
+          <div class="numbers-item__icon">
+            <img src="images/content/numbers/4.png" alt="Место на рынке" />
+          </div>
+          <p class="numbers-item__number">№1</p>
+        </div>
+        <div class="numbers-item__bottom">
+          <p>
+            Первая облачная PLM платформа в России, созданная в партнерстве с
+            Яндекс и SDIS
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+        <section class="events">
+  <div class="container">
+    <div class="events__top">
+      <div class="events__top-left">
+        <h2 class="events__title">Мероприятия</h2>
+        <div class="events__text">
+          <p>Расписание событий, вебинаров, выставок и встреч PLM Club.</p>
+        </div>
+      </div>
+
+      <a class="events__btn btn" href="#">Подробнее</a>
+    </div>
+
+    <div class="events__content">
+      <div class="events__slider swiper">
+        <ul class="events__slides swiper-wrapper">
+          <li class="events__slide swiper-slide">
+            <article class="events-card">
+              <a class="events-card__top" href="#">
+                <img
+                  src="images/content/events/1.jpg"
+                  alt="Как грамотно использовать модели
+                от поставщиков?"
+                />
+              </a>
+              <div class="events-card__body">
+                <h3 class="events-card__title">
+                  <a href="#">
+                    Как грамотно использовать модели от поставщиков?</a
+                  >
+                </h3>
+                <span class="events-card__badge badge badge--webinar">
+                  Вебинар
+                </span>
+                <p class="events-card__date">
+                  24 февраля 2022 | Четверг 11:00 (МСК)
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="events__slide swiper-slide">
+            <article class="events-card">
+              <a class="events-card__top" href="#">
+                <img
+                  src="images/content/events/2.jpg"
+                  alt="Как грамотно использовать модели
+                  от поставщиков?"
+                />
+              </a>
+              <div class="events-card__body">
+                <h3 class="events-card__title">
+                  <a href="#">
+                    Как грамотно использовать модели
+                    от поставщиков?</a
+                  >
+                </h3>
+                <span class="events-card__badge badge badge--webinar">
+                  Вебинар
+                </span>
+                <p class="events-card__date">
+                  24 февраля 2022 | Четверг 11:00 (МСК)
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="events__slide swiper-slide">
+            <article class="events-card">
+              <a class="events-card__top" href="#">
+                <img
+                  src="images/content/events/3.jpg"
+                  alt="Как грамотно использовать модели
+                от поставщиков?"
+                />
+              </a>
+              <div class="events-card__body">
+                <h3 class="events-card__title">
+                  <a href="#">
+                    Как грамотно использовать модели от поставщиков?</a
+                  >
+                </h3>
+                <span class="events-card__badge badge badge--webinar">
+                  Вебинар
+                </span>
+                <p class="events-card__date">
+                  24 февраля 2022 | Четверг 11:00 (МСК)
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="events__slide swiper-slide">
+            <article class="events-card">
+              <a class="events-card__top" href="#">
+                <img
+                  src="images/content/events/1.jpg"
+                  alt="Как грамотно использовать модели
+                от поставщиков?"
+                />
+              </a>
+              <div class="events-card__body">
+                <h3 class="events-card__title">
+                  <a href="#">
+                    Как грамотно использовать модели от поставщиков?</a
+                  >
+                </h3>
+                <span class="events-card__badge badge badge--webinar">
+                  Вебинар
+                </span>
+                <p class="events-card__date">
+                  24 февраля 2022 | Четверг 11:00 (МСК)
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="events__slide swiper-slide">
+            <article class="events-card">
+              <a class="events-card__top" href="#">
+                <img
+                  src="images/content/events/2.jpg"
+                  alt="Как грамотно использовать модели
+                  от поставщиков?"
+                />
+              </a>
+              <div class="events-card__body">
+                <h3 class="events-card__title">
+                  <a href="#">
+                    Как грамотно использовать модели
+                    от поставщиков?</a
+                  >
+                </h3>
+                <span class="events-card__badge badge badge--webinar">
+                  Вебинар
+                </span>
+                <p class="events-card__date">
+                  24 февраля 2022 | Четверг 11:00 (МСК)
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="events__slide swiper-slide">
+            <article class="events-card">
+              <a class="events-card__top" href="#">
+                <img
+                  src="images/content/events/3.jpg"
+                  alt="Как грамотно использовать модели
+                от поставщиков?"
+                />
+              </a>
+              <div class="events-card__body">
+                <h3 class="events-card__title">
+                  <a href="#">
+                    Как грамотно использовать модели от поставщиков?</a
+                  >
+                </h3>
+                <span class="events-card__badge badge badge--webinar">
+                  Вебинар
+                </span>
+                <p class="events-card__date">
+                  24 февраля 2022 | Четверг 11:00 (МСК)
+                </p>
+              </div>
+            </article>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="events__arrows">
+        <button
+          class="swiper-button-prev"
+          type="button"
+          aria-label="Предыдущий"
+        ></button>
+        <button
+          class="swiper-button-next"
+          type="button"
+          aria-label="Следующий"
+        ></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="contacts">
+  <div class="container">
+    <div class="contacts__wrapper">
+      <div class="contacts__left">
+        <div class="contacts__top">
+          <h2 class="contacts__title">Связаться с нами</h2>
+
+          <div class="contacts__text">
+            <p>Мы открыты для сотрудничества со всеми видами бизнеса.</p>
+          </div>
+        </div>
+
+        <a class="contacts__phone" href="">8 (812) 704-84-64</a>
+
+        <button class="contacts__btn btn" type="button">
+          Заказать консультацию специалиста
+        </button>
+
+        <ul class="contacts__list">
+          <li class="contacts__item contacts__item--address">
+            <address class="contacts__link">
+              195009, г. Санкт-Петербург, Кондратьевский пр-кт, д.15, к.2,
+              лит.З, офис 301
+            </address>
+          </li>
+          <li class="contacts__item contacts__item--mail">
+            <a href="mailto:contact@connective-plm.com">
+              contact@connective-plm.com
+            </a>
+          </li>
+        </ul>
+
+        <div class="contacts__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a class="socials__link socials__link--whatsapp" href="#"
+                >WhatsApp</a
+              >
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--telegram" href="#"
+                >Telegram</a
+              >
+            </li>
+            <li class="socials__item">
+              <a class="socials__link socials__link--vk" href="#">Vkontakte</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="contacts__map map">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3Afdc7b2ade3de0c1419dc71dd1f7c8d7bac422a0a7ee94da8f8869d3f40d6f543&amp;source=constructor"
+          width="760"
+          height="435"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__col">
+        <span class="footer__name">Програмные решения</span>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Система управления интеллектуальной собственностью предприятия
+              (PLM)</a
+            >
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Конструкторское проектирование</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              >Разработка управляющих программ для станков с ЧПУ</a
+            >
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Програмирование роботов</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              >Лабораторные измерительные системы (LIMS)</a
+            >
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Вычислительное моделирование</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Проектирование турбомашин</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Цифровой двойник предприятия</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">Програмные решения</span>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Комплксная автоматизация КТПП </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              >Постановка процессов планирования производства
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              >Постановка методик проектирования
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              >Постановка методик вычеслительного моделирования
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Разработка технологических процессов для становков с ЧПУ и
+              роботов</a
+            >
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              >Разработка постпроцессоров для станков с ЧПУ и роботов
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">Производственное оборудование</span>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Станки с ЧПУ</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Станки лазерного раскроя метала</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Режущий инструмент</a>
+          </li>
+        </ul>
+
+        <a class="footer__phone" href="tel:+78127048464">8 (812) 704-84-64</a>
+
+        <button class="footer__btn btn" type="button">Заказать звонок</button>
+
+        <address class="footer__address">
+          Санкт-Петербург, Кондратьевский пр-кт, д.15, к.2, <br />
+          лит.З, офис 301
+        </address>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <a class="logo" href="#">
+        <img src="images/logo-white.png" alt="логотип" />
+      </a>
+      <div class="footer__text">
+        <div class="footer__text-wrap">
+          <p>ООО «КОННЕКТИВ ПЛМ»</p>
+          <p>ИНН:7804659283, КПП:780401001 ОГРН:119784720308</p>
+        </div>
+        <div class="footer__links">
+          <a class="footer__link" href="#">Политика конфиденциальности</a>
+          <a class="footer__link" href="#">Оферта</a>
+        </div>
+      </div>
+
+      <a
+        class="footer__link footer__link--mail"
+        href="mailto:contact@connective-plm.com"
+      >
+        contact@connective-plm.com
+      </a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

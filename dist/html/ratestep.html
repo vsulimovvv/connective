@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+
+    <title>Connective</title>
+  </head>
+
+  <body>
+    @include('./components/popups/_popups.html')
+
+    <h1 class="visually-hidden">Новости отрасли</h1>
+
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <main class="main">
+        @include('./components/_hero-ratestep.html')
+        @include('./components/_ratestep-about.html')
+        @include('./components/_ratestep-adv.html')
+        @include('./components/_numbers-with-title.html')
+        @include('./components/_cases-ratestep.html')
+        @include('./components/_enroll-ratestep.html')
+        @include('./components/_contacts.html')
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>

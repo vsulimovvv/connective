@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+
+    <title>Connective</title>
+  </head>
+
+  <body>
+    @include('./components/popups/_popups.html')
+
+    <h1 class="visually-hidden">Главная</h1>
+
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <main class="main">
+        @include('./components/_hero.html')
+        @include('./components/_our-customers.html')
+        @include('./components/_software-solutions.html')
+        @include('./components/_target.html')
+        @include('./components/_services-package.html')
+        @include('./components/_equipment.html')
+        @include('./components/_specialized.html')
+        @include('./components/_numbers.html')
+        @include('./components/_events.html')
+        @include('./components/_contacts.html')
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>
