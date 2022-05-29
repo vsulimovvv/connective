@@ -1,6 +1,27 @@
 .blog {
   @include adaptive-value('padding-top', 60, 30, 1);
   @include adaptive-value('padding-bottom', 90, 50, 1);
+
+  &__top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include adaptive-value('margin-bottom', 40, 30, 1);
+
+    @include breakpointsMaxW($bp-768) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+
+  &__name {
+    @include adaptive-value('font-size', 25, 20, 1);
+    line-height: 1;
+    font-weight: 400;
+    color: #44454b;
+  }
+
   &__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -49,5 +70,12 @@
     min-width: 170px;
     text-align: center;
     justify-self: center;
+  }
+
+  &__dropdown {
+    position: relative;
+
+    .dropdown-menu {
+    }
   }
 }

@@ -258,9 +258,6 @@
         align-items: center;
         gap: 60px;
       }
-
-      &__link {
-      }
     }
   }
 
@@ -281,6 +278,21 @@
 
     span {
       color: var(--color-accent);
+    }
+  }
+
+  .form-submit {
+    &__group {
+      position: relative;
+    }
+    &__arrow {
+      position: absolute;
+      width: 19px;
+      height: 19px;
+      @include backgroundImage(url('../images/content/arrow.png'), contain);
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 

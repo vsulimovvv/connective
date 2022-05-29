@@ -1,0 +1,198 @@
+.specialized {
+  &__title {
+    @include fz35();
+    @include adaptive-value('margin-bottom', 40, 30, 1);
+  }
+
+  &__top {
+    @include adaptive-value('margin-bottom', 60, 40, 1);
+    &-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px 5px;
+    }
+
+    &-item {
+      @include breakpointsMaxW($bp-768) {
+        width: 100%;
+      }
+    }
+
+    &-btn {
+      font-size: 15px;
+      line-height: 1;
+      font-weight: 600;
+      color: #374a55;
+      border: 1px solid var(--color-accent);
+      border-radius: 5px;
+      padding: 12px;
+      transition: 200ms ease;
+
+      @include breakpointsMaxW($bp-768) {
+        width: 100%;
+        display: block;
+      }
+
+      &.tabs-btn--active,
+      &:hover {
+        background-color: var(--color-accent);
+        color: var(--color-white);
+      }
+    }
+  }
+}
+
+.specialized-content {
+  @include adaptive-value('padding-top', 90, 50, 1);
+  @include adaptive-value('padding-bottom', 90, 50, 1);
+  position: relative;
+  z-index: 1;
+
+  @include breakpointsMaxW($bp-991) {
+    background-color: #19303d;
+    @include adaptive-value('padding-bottom', 150, 60, 1);
+  }
+
+  &::after {
+    @include elDef();
+    background-color: #19303d;
+    width: 55%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    @include breakpointsMaxW($bp-991) {
+      display: none;
+    }
+  }
+
+  &::before {
+    @include elDef();
+    content: '▲';
+    top: -2px;
+    left: 45%;
+    z-index: 1;
+    color: var(--color-white);
+    transform: rotate(180deg);
+    width: 28px;
+    height: 28px;
+    font-size: 28px;
+
+    @include breakpointsMaxW($bp-768) {
+      left: 50%;
+      transform: translateX(-50%) rotate(180deg);
+    }
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: minmax(auto, 365px) minmax(auto, 565px) minmax(
+        auto,
+        265px
+      );
+    gap: 35px;
+
+    @include breakpointsMaxW($bp-container) {
+      gap: 20px;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include breakpointsMaxW($bp-768) {
+      grid-template-columns: 1fr;
+      gap: 30px;
+    }
+  }
+
+  &__img {
+    max-width: 565px;
+    width: 100%;
+    @include adaptive-value('height', 460, 260, 1);
+
+    img {
+      @include img(cover);
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      grid-row: 2/3;
+      grid-column: 1/-1;
+      max-width: 100%;
+      @include adaptive-value('height', 560, 260, 1);
+    }
+    @include breakpointsMaxW($bp-768) {
+      grid-row: 3/4;
+      grid-column: initial;
+    }
+  }
+  &__heading {
+    @include adaptive-value('font-size', 26, 20, 1);
+    @include adaptive-value('margin-bottom', 35, 20, 1);
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  &__text {
+    font-size: 17px;
+    color: #8e999f;
+    @include adaptive-value('font-size', 17, 15, 1);
+  }
+
+  &__time {
+    padding: 20px 0;
+    border-top: 1px solid #475964;
+    border-bottom: 1px solid #475964;
+    position: relative;
+    padding-left: 54px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    @include adaptive-value('font-size', 17, 15, 1);
+    @include adaptive-value('margin-bottom', 30, 20, 1);
+
+    span {
+      color: var(--color-accent);
+    }
+
+    &::after {
+      @include elDef();
+      width: 38px;
+      height: 38px;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      @include maskImage(url('../images/icons/clock-3.svg'), contain);
+      background-color: var(--color-accent);
+    }
+  }
+
+  &__solution {
+    .specialized-content__text {
+      color: #5a656b;
+      @include breakpointsMaxW($bp-991) {
+        color: #8e999f;
+      }
+    }
+    .specialized-content__heading {
+      @include adaptive-value('font-size', 32, 22, 1);
+      line-height: 1;
+      font-weight: 700;
+      color: #19303d;
+      @include breakpointsMaxW($bp-991) {
+        color: var(--color-white);
+      }
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 50px;
+    right: max(15px, calc((100% - 1270px) / 2));
+
+    @include breakpointsMaxW($bp-991) {
+      bottom: 20px;
+    }
+  }
+}

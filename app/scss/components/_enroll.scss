@@ -61,4 +61,13 @@
       }
     }
   }
+
+  &--production-equipment {
+    .enroll {
+      &__title {
+        @include fz35();
+        color: var(--color-white);
+      }
+    }
+  }
 }

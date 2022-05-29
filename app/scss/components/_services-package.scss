@@ -82,6 +82,10 @@
     @include adaptive-value('max-width', 410, 280, 1);
   }
 
+  &__slides {
+    counter-reset: number;
+  }
+
   &__text {
     font-size: 17px;
     font-weight: 400;
@@ -110,6 +114,22 @@
   padding: 35px;
   @include adaptive-value('padding', 35, 20, 1);
   @include adaptive-value('height', 265, 200, 1);
+
+  position: relative;
+
+  &::after {
+    @include elDef();
+    counter-increment: number;
+    content: counter(number);
+    font-size: 138px;
+    font-weight: 700;
+    color: #eaeaea;
+    line-height: 1;
+
+    bottom: 15px;
+    @include adaptive-value('right', 35, 20, 1);
+    @include adaptive-value('font-size', 138, 60, 1);
+  }
 
   &__title {
     font-size: 22px;

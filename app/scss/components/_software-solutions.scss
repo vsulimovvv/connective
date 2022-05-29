@@ -121,6 +121,12 @@
     }
 
     &:nth-child(3) {
+      @include background(cover);
+      background-image: url('../images/content/rectangle-with-decor.png');
+
+      @include breakpointsMaxW($bp-container) {
+        background-image: none;
+      }
       &::after {
         @include maskImage(
           url('../images/content/software-solutions/1.svg'),
@@ -152,6 +158,12 @@
     }
 
     &:nth-child(5) {
+      @include background(cover);
+      background-image: url('../images/content/decor-1.png');
+
+      @include breakpointsMaxW($bp-container) {
+        background-image: none;
+      }
       &::after {
         @include maskImage(
           url('../images/content/software-solutions/3.svg'),
@@ -161,6 +173,12 @@
     }
 
     &:nth-child(6) {
+      @include background(cover);
+      background-image: url('../images/content/rectangle-with-decor-reverse.png');
+
+      @include breakpointsMaxW($bp-container) {
+        background-image: none;
+      }
       &::after {
         @include maskImage(
           url('../images/content/software-solutions/4.svg'),
@@ -170,6 +188,13 @@
     }
 
     &:nth-child(7) {
+      @include background(cover);
+      background-image: url('../images/content/rectangle-with-decor.png');
+
+      @include breakpointsMaxW($bp-container) {
+        background-image: none;
+      }
+
       &::after {
         @include maskImage(
           url('../images/content/software-solutions/5.svg'),
@@ -179,6 +204,12 @@
     }
 
     &:nth-child(8) {
+      @include background(cover);
+      background-image: url('../images/content/decor-3.png');
+
+      @include breakpointsMaxW($bp-container) {
+        background-image: none;
+      }
       &::after {
         @include maskImage(
           url('../images/content/software-solutions/6.svg'),
@@ -188,11 +219,24 @@
     }
 
     &:nth-child(9) {
+      @include background(cover);
+      background-image: url('../images/content/decor-2.png');
+
+      @include breakpointsMaxW($bp-container) {
+        background-image: none;
+      }
       &::after {
+        left: 50%;
+        transform: translateX(-50%);
         @include maskImage(
           url('../images/content/software-solutions/7.svg'),
           contain
         );
+
+        @include breakpointsMaxW($bp-container) {
+          left: 15px;
+          transform: translateX(0);
+        }
       }
     }
 

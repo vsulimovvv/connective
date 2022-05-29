@@ -1,0 +1,11 @@
+.cases {
+  &__title {
+    @include fz35();
+    @include adaptive-value('margin-bottom', 40, 30, 1);
+  }
+
+  @include breakpointsMaxW($bp-991) {
+    background-color: #19303d;
+    @include adaptive-value('padding-bottom', 150, 60, 1);
+  }
+}

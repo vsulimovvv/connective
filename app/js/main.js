@@ -17,6 +17,24 @@ window.addEventListener('DOMContentLoaded', () => {
     header.classList.add('scroll-header');
   }
 
+  // * ==== Dropdown
+  document.addEventListener('click', (e) => {
+    const isDropdownButton = e.target.matches('[data-dropdown-button]');
+    if (!isDropdownButton && e.target.closest('[data-dropdown]') != null)
+      return;
+
+    let currentDropdown;
+    if (isDropdownButton) {
+      currentDropdown = e.target.closest('[data-dropdown]');
+      currentDropdown.classList.toggle('active');
+    }
+
+    document.querySelectorAll('[data-dropdown].active').forEach((dropdown) => {
+      if (dropdown === currentDropdown) return;
+      dropdown.classList.remove('active');
+    });
+  });
+
   // * ===== Slider
   (function slider() {
     const sliderEl = document.querySelector('.our-customers__slider');
@@ -87,9 +105,6 @@ window.addEventListener('DOMContentLoaded', () => {
         991: {
           slidesPerView: 4,
         },
-        // 768: {
-        //   slidesPerView: 3,
-        // },
 
         576: {
           slidesPerView: 3,
@@ -303,47 +318,42 @@ window.addEventListener('DOMContentLoaded', () => {
   //   bindModal('.get-presentation', '.popup--get-info', '.popup__close');
   //   bindModal('.presentation__download', '.popup--get-info', '.popup__close');
   // })();
-  // // * ===== Toggle Tabs
-  // function someTabs(headerSelector, tabSelector, contentSelector, activeClass) {
-  //   const header = document.querySelectorAll(headerSelector);
-  //   const tab = document.querySelectorAll(tabSelector);
-  //   const content = document.querySelectorAll(contentSelector);
-  //   if (header) {
-  //     hideTabContent();
-  //     showTabContent();
-  //     function hideTabContent() {
-  //       content.forEach((item) => {
-  //         item.classList.remove('active');
-  //       });
-  //       tab.forEach((item) => {
-  //         item.classList.remove(activeClass);
-  //       });
-  //     }
-  //     function showTabContent(i = 0) {
-  //       content[i].classList.add('active');
-  //       tab[i].classList.add(activeClass);
-  //     }
-  //     header.forEach((item) => {
-  //       if (item) {
-  //         item.addEventListener('click', (e) => {
-  //           const target = e.target;
-  //           if (target.classList.contains(tabSelector.replace(/\./, ''))) {
-  //             tab.forEach((item, i) => {
-  //               if (target == item || target.parentNode == item) {
-  //                 hideTabContent();
-  //                 showTabContent(i);
-  //               }
-  //             });
-  //           }
-  //         });
-  //       }
-  //     });
-  //   }
-  // }
-  // someTabs(
-  //   '.planning__content',
-  //   '.planning__nav-btn',
-  //   '.planning__panel',
-  //   'planning__nav-btn--active'
-  // );
+  // * ===== Toggle Tabs
+  function someTabs(headerSelector, tabSelector, contentSelector, activeClass) {
+    const header = document.querySelectorAll(headerSelector);
+    const tab = document.querySelectorAll(tabSelector);
+    const content = document.querySelectorAll(contentSelector);
+    if (header) {
+      hideTabContent();
+      showTabContent();
+      function hideTabContent() {
+        content.forEach((item) => {
+          item.classList.remove('active');
+        });
+        tab.forEach((item) => {
+          item.classList.remove(activeClass);
+        });
+      }
+      function showTabContent(i = 0) {
+        content[i].classList.add('active');
+        tab[i].classList.add(activeClass);
+      }
+      header.forEach((item) => {
+        if (item) {
+          item.addEventListener('click', (e) => {
+            const target = e.target;
+            if (target.classList.contains(tabSelector.replace(/\./, ''))) {
+              tab.forEach((item, i) => {
+                if (target == item || target.parentNode == item) {
+                  hideTabContent();
+                  showTabContent(i);
+                }
+              });
+            }
+          });
+        }
+      });
+    }
+  }
+  someTabs('.tabs', '.tabs-btn', '.tabs-content', 'tabs-btn--active');
 });

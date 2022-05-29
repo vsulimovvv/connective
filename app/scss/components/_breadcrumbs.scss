@@ -2,6 +2,21 @@
   @include adaptive-value('padding-top', 24, 15, 1);
 
   display: flex;
+  position: absolute;
+  top: 150px;
+  z-index: 6;
+  left: max(15px, calc((100% - 1270px) / 2));
+  margin-left: 135px;
+
+  @include breakpointsMaxW($bp-991) {
+    left: 100px;
+    top: 90px;
+    margin-left: 0;
+  }
+
+  @include breakpointsMaxW($bp-576) {
+    left: 70px;
+  }
 
   &__list {
     display: flex;
@@ -18,26 +33,27 @@
 
       &::after {
         @include elDef();
-        width: 8px;
-        height: 7px;
+        content: '/';
+        font-size: 11px;
         top: 50%;
-        transform: translateY(-50%) rotate(-90deg);
+        transform: translateY(-50%);
         right: 0;
-        @include maskImage(url('../images/icons/chevron-down.svg'), contain);
-        background-color: #c2c2c2;
+        color: #c2c2c2;
       }
     }
   }
 
   &__link {
     display: block;
-    font-size: 14px;
     position: relative;
     transition: 150ms;
-    color: #c2c2c2;
+    color: #757f92;
+    font-size: 11px;
+    line-height: 1;
 
+    &--active,
     &:hover {
-      color: var(--color-text);
+      color: #c2c2c2;
     }
   }
 }

@@ -156,16 +156,19 @@
 
   &__phone {
     font-size: 20px;
-
-    @include breakpointsMaxW($bp-container) {
-      font-size: 15px;
-    }
     line-height: 1;
     font-weight: 700;
     color: var(--color-bg-dark);
     margin-right: 10px;
+    transition: 200ms ease;
+
+    &:hover {
+    color:var(--color-accent)
+    }
+
     @include breakpointsMaxW($bp-container) {
       margin-right: 0;
+      font-size: 15px;
     }
     @include breakpointsMaxW($bp-768) {
       display: none;

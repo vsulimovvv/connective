@@ -41,8 +41,27 @@
   }
 
   &__preview {
-    @include background(cover);
-    width: 100%;
+    position: relative;
+    overflow: hidden;
+
+    &-img {
+      @include background(cover);
+      width: calc(100% - 11px);
+      height: calc(100% - 11px);
+    }
+    &::after {
+      @include elDef();
+      width: calc(100% + 11px);
+      height: calc(100% + 11px);
+      background-color: var(--color-accent);
+      bottom: -11px;
+      right: -11px;
+      z-index: -1;
+
+      @include breakpointsMaxW($bp-768) {
+        display: none;
+      }
+    }
 
     @include adaptive-value('height', 410, 260, 1);
   }
@@ -62,7 +81,6 @@
     @include breakpointsMaxW($bp-991) {
       margin-bottom: 30px;
     }
-
   }
 
   &__item {

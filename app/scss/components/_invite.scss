@@ -72,11 +72,14 @@
     }
 
     &__preview {
-      @include background(cover);
       position: relative;
       overflow: hidden;
-      padding-right: 11px;
-      padding-bottom: 11px;
+
+      &-img {
+        @include background(cover);
+        width: calc(100% - 11px);
+        height: calc(100% - 11px);
+      }
 
       @include breakpointsMaxW($bp-991) {
         order: 1;
@@ -84,8 +87,8 @@
 
       &::after {
         @include elDef();
-        width: 100%;
-        height: 100%;
+        width: calc(100% + 11px);
+        height: calc(100% + 11px);
         background-color: var(--color-accent);
         bottom: -11px;
         right: -11px;
