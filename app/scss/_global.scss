@@ -33,8 +33,12 @@ body {
   margin: -1px;
 }
 
-.main{
-  margin-top: 150px;
+.main {
+  margin-top: 130px;
+
+  @include breakpointsMaxW($bp-991) {
+    margin-top: 75px;
+  }
 }
 
 .overlay {
