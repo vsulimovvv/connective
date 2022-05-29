@@ -138,5 +138,21 @@
         line-height: 1.2;
       }
     }
+
+    &--blog {
+      .events-card__date {
+        margin-bottom: 20px;
+      }
+
+      .events-card__title {
+        @include adaptive-value('font-size', 17, 14, 1);
+      }
+      
+      .events-card__text {
+        font-size: 14px;
+        font-weight: 400;
+        color: #8a909d;
+      }
+    }
   }
 }
