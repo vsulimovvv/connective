@@ -1,4 +1,7 @@
 window.addEventListener('DOMContentLoaded', () => {
+  // * ===== Mask input
+  $('input[type="tel"]').mask('+7 (999) 999-99-99');
+
   //* Change Background Header
   function scrollHeader() {
     const nav = document.querySelector('header');
@@ -67,6 +70,9 @@ window.addEventListener('DOMContentLoaded', () => {
     new Swiper(sliderEl, {
       pagination: {
         el: '.swiper-pagination',
+      },
+      autoplay: {
+        delay: 5000,
       },
       slidesPerView: 1,
       navigation: {
@@ -233,46 +239,47 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
-  // // * ===== Show Menu
-  // (function showMenu() {
-  //   const menuBtn = document.querySelector('.header__toggle');
-  //   const menu = document.querySelector('.mobile-menu');
-  //   const menuCloseBtn = document.querySelector('.mobile-menu__close');
-  //   const body = document.querySelector('body');
-  //   const overlay = document.querySelector('.overlay');
-  //   menuBtn.addEventListener('click', (e) => {
-  //     menu.classList.toggle('active');
-  //     overlay.classList.toggle('active');
-  //     body.classList.toggle('no-scroll');
-  //   });
-  //   overlay.addEventListener('click', (e) => {
-  //     menu.classList.remove('active');
-  //     overlay.classList.remove('active');
-  //     body.classList.remove('no-scroll');
-  //   });
-  //   menuCloseBtn.addEventListener('click', (e) => {
-  //     menu.classList.remove('active');
-  //     overlay.classList.remove('active');
-  //     body.classList.remove('no-scroll');
-  //   });
-  // })();
-  // // * ===== Accordion
-  // const toggleAccordion = (accordionControl, accordionContent, accordion) => {
-  //   const filters = document.querySelectorAll(accordionControl);
-  //   filters.forEach((el) => {
-  //     el.addEventListener('click', (e) => {
-  //       const target = e.target.closest(accordion);
-  //       const content = target.querySelector(accordionContent);
-  //       target.classList.toggle('active');
-  //       if (target.classList.contains('active')) {
-  //         content.style.maxHeight = content.scrollHeight + 'px';
-  //       } else {
-  //         content.style.maxHeight = null;
-  //       }
-  //     });
-  //   });
-  // };
-  // toggleAccordion('.accordion__control', '.accordion__content', '.accordion');
+  // * ===== Show Menu
+  (function showMenu() {
+    const menuBtn = document.querySelector('.header__toggle');
+    const menu = document.querySelector('.mobile-menu');
+    const menuCloseBtn = document.querySelector('.mobile-menu__close');
+    const body = document.querySelector('body');
+    const overlay = document.querySelector('.overlay');
+    menuBtn.addEventListener('click', (e) => {
+      menu.classList.toggle('active');
+      overlay.classList.toggle('active');
+      body.classList.toggle('no-scroll');
+    });
+    overlay.addEventListener('click', (e) => {
+      menu.classList.remove('active');
+      overlay.classList.remove('active');
+      body.classList.remove('no-scroll');
+    });
+    menuCloseBtn.addEventListener('click', (e) => {
+      menu.classList.remove('active');
+      overlay.classList.remove('active');
+      body.classList.remove('no-scroll');
+    });
+  })();
+
+  // * ===== Accordion
+  const toggleAccordion = (accordionControl, accordionContent, accordion) => {
+    const filters = document.querySelectorAll(accordionControl);
+    filters.forEach((el) => {
+      el.addEventListener('click', (e) => {
+        const target = e.target.closest(accordion);
+        const content = target.querySelector(accordionContent);
+        target.classList.toggle('active');
+        if (target.classList.contains('active')) {
+          content.style.maxHeight = content.scrollHeight + 'px';
+        } else {
+          content.style.maxHeight = null;
+        }
+      });
+    });
+  };
+  toggleAccordion('.accordion__control', '.accordion__content', '.accordion');
 
   // * ===== Mixer
   (function mixer() {
@@ -282,42 +289,41 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   })();
 
-  // // * ===== Modal
-  // (function modals() {
-  //   function bindModal(openBtn, modal, close) {
-  //     const openBtnEl = document.querySelectorAll(openBtn);
-  //     const modalEl = document.querySelector(modal);
-  //     const closeEl = document.querySelectorAll(close);
-  //     const body = document.querySelector('body');
-  //     if (modalEl) {
-  //       openBtnEl.forEach((el) => {
-  //         el.addEventListener('click', (e) => {
-  //           if (e.target) {
-  //             e.preventDefault();
-  //           }
-  //           modalEl.classList.add('active');
-  //           body.classList.add('no-scroll');
-  //         });
-  //       });
-  //       closeEl.forEach((btn) => {
-  //         btn.addEventListener('click', (e) => {
-  //           modalEl.classList.remove('active');
-  //           body.classList.remove('no-scroll');
-  //         });
-  //       });
-  //       modalEl.addEventListener('click', (e) => {
-  //         if (e.target === modalEl) {
-  //           modalEl.classList.remove('active');
-  //           body.classList.remove('no-scroll');
-  //         }
-  //       });
-  //     }
-  //   }
-  //   bindModal('.download__btn', '.popup--download', '.popup__close');
-  //   bindModal('.header__favorite', '.popup--card-object', '.popup__close');
-  //   bindModal('.get-presentation', '.popup--get-info', '.popup__close');
-  //   bindModal('.presentation__download', '.popup--get-info', '.popup__close');
-  // })();
+  // * ===== Modal
+  (function modals() {
+    function bindModal(openBtn, modal, close) {
+      const openBtnEl = document.querySelectorAll(openBtn);
+      const modalEl = document.querySelector(modal);
+      const closeEl = document.querySelectorAll(close);
+      const body = document.querySelector('body');
+      if (modalEl) {
+        openBtnEl.forEach((el) => {
+          el.addEventListener('click', (e) => {
+            if (e.target) {
+              e.preventDefault();
+            }
+            modalEl.classList.add('active');
+            body.classList.add('no-scroll');
+          });
+        });
+        closeEl.forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            modalEl.classList.remove('active');
+            body.classList.remove('no-scroll');
+          });
+        });
+        modalEl.addEventListener('click', (e) => {
+          if (e.target === modalEl) {
+            modalEl.classList.remove('active');
+            body.classList.remove('no-scroll');
+          }
+        });
+      }
+    }
+    bindModal('.btn-consultation', '.popup--consultation', '.popup__close');
+    bindModal('.btn-call', '.popup--call', '.popup__close');
+  })();
+
   // * ===== Toggle Tabs
   function someTabs(headerSelector, tabSelector, contentSelector, activeClass) {
     const header = document.querySelectorAll(headerSelector);

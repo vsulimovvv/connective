@@ -36,7 +36,7 @@
   </head>
 
   <body>
-    <div class="popup popup--service">
+    <div class="popup popup--call">
   <div class="popup__container">
     <button class="popup__close" type="button" aria-label="Закрыть">
       <svg width="15" height="15">
@@ -44,95 +44,33 @@
       </svg>
     </button>
     <div class="popup__wrapper">
-      <h2 class="popup__title">Заявка на услугу “Испытательный комплекс”</h2>
-      <div class="popup__text">
-        <p>Оставьте ваши данные и мы вам перезвоним.</p>
-      </div>
+      <h2 class="popup__title">Заказать звонок</h2>
 
-      <form class="request__form form-submit">
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="service-name">Имя</label>
-          <div class="form-submit__input-wrap form-submit__input-wrap--name">
-            <input
-              class="form-submit__input"
-              name="name"
-              id="service-name"
-              type="text"
-              placeholder="Введите ваше имя"
-              required
-            />
+      <form class="enroll__form form-submit">
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="text" placeholder="Имя" />
+        </label>
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="email" placeholder="E-mail" />
+        </label>
+        <label class="form-submit__group">
+          <input
+            class="form-submit__input"
+            type="tel"
+            placeholder="+7 (999) - 999 - 99 - 99"
+          />
+        </label>
+        <div class="form-submit__bottom">
+          <div class="form-submit__agree">
+            Нажимая кнопку «Записаться» вы принимаете <br />
+            правила <a href="#">политики конфиденциальности</a> и <br />
+            соглашаетесь с
+            <a href="#">условиями оферты</a>
           </div>
+          <button class="form-submit__btn btn" type="submit">
+            ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
+          </button>
         </div>
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="service-tel">
-            Контактный телефон
-          </label>
-          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
-            <input
-              class="form-submit__input"
-              name="tel"
-              id="service-tel"
-              type="tel"
-              placeholder="+7 (___) ___-__-__"
-              required
-            />
-          </div>
-        </div>
-
-        <button class="form-submit__btn btn" type="button">
-          Заказать звонок
-        </button>
-      </form>
-    </div>
-  </div>
-</div>
-
-<div class="popup popup--product">
-  <div class="popup__container">
-    <button class="popup__close" type="button" aria-label="Закрыть">
-      <svg width="15" height="15">
-        <use xlink:href="images/sprite.svg#close"></use>
-      </svg>
-    </button>
-    <div class="popup__wrapper">
-      <h2 class="popup__title">Заказ насоса ДГН СЕРИЯ</h2>
-      <div class="popup__text">
-        <p>Оставьте ваши данные и мы вам перезвоним.</p>
-      </div>
-
-      <form class="request__form form-submit">
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="product-name">Имя</label>
-          <div class="form-submit__input-wrap form-submit__input-wrap--name">
-            <input
-              class="form-submit__input"
-              name="name"
-              id="product-name"
-              type="text"
-              placeholder="Введите ваше имя"
-              required
-            />
-          </div>
-        </div>
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="product-tel">
-            Контактный телефон
-          </label>
-          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
-            <input
-              class="form-submit__input"
-              name="tel"
-              id="product-tel"
-              type="tel"
-              placeholder="+7 (___) ___-__-__"
-              required
-            />
-          </div>
-        </div>
-
-        <button class="form-submit__btn btn" type="button">
-          Заказать звонок
-        </button>
       </form>
     </div>
   </div>
@@ -146,44 +84,36 @@
       </svg>
     </button>
     <div class="popup__wrapper">
-      <h2 class="popup__title">Заказать консультацию</h2>
-      <div class="popup__text">
-        <p>Оставьте ваши данные и мы вам перезвоним.</p>
-      </div>
+      <h2 class="popup__title">
+        Заявка на консультацию <br />
+        со специалистом
+      </h2>
 
-      <form class="request__form form-submit">
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="consultation-name">Имя</label>
-          <div class="form-submit__input-wrap form-submit__input-wrap--name">
-            <input
-              class="form-submit__input"
-              name="name"
-              id="consultation-name"
-              type="text"
-              placeholder="Введите ваше имя"
-              required
-            />
+      <form class="enroll__form form-submit">
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="text" placeholder="Имя" />
+        </label>
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="email" placeholder="E-mail" />
+        </label>
+        <label class="form-submit__group">
+          <input
+            class="form-submit__input"
+            type="tel"
+            placeholder="+7 (999) - 999 - 99 - 99"
+          />
+        </label>
+        <div class="form-submit__bottom">
+          <div class="form-submit__agree">
+            Нажимая кнопку «Записаться» вы принимаете <br />
+            правила <a href="#">политики конфиденциальности</a> и <br />
+            соглашаетесь с
+            <a href="#">условиями оферты</a>
           </div>
+          <button class="form-submit__btn btn" type="submit">
+            ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
+          </button>
         </div>
-        <div class="form-submit__group">
-          <label class="form-submit__label" for="consultation-tel">
-            Контактный телефон
-          </label>
-          <div class="form-submit__input-wrap form-submit__input-wrap--phone">
-            <input
-              class="form-submit__input"
-              name="tel"
-              id="consultation-tel"
-              type="tel"
-              placeholder="+7 (___) ___-__-__"
-              required
-            />
-          </div>
-        </div>
-
-        <button class="form-submit__btn btn" type="button">
-          Заказать звонок
-        </button>
       </form>
     </div>
   </div>
@@ -194,22 +124,321 @@
 
     <div class="site-wrapper">
       <header class="header">
+  <!-- Mobile Menu -->
+
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <a class="mobile-menu__logo logo" href="#">
+      <img src="images/logo.png" alt="Логотип" />
+    </a>
+
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Новости
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Новости</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Новости</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Мероприятия
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Мероприятия</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Мероприятия</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Обучение
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Обучение</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Обучение</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Проекты
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Проекты</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Проекты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Программные решения
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Программные решения</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Программные решения</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Программные решения</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Услуги
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Услуги</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Услуги</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Производственное оборудование
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Производственное оборудование</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Производственное оборудование</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            О компании
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">О компании</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">История</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Сотрудничество</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Сертификаты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu -->
+
   <div class="header__top">
     <div class="container">
       <div class="header__top-inner">
         <div class="header__menu top-menu">
           <ul class="top-menu__list">
             <li class="top-menu__item">
-              <a class="top-menu__link" href="#">Новости</a>
+              <a class="top-menu__link top-menu__link--dropdown" href="#"
+                >Новости</a
+              >
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Новости</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Новости</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Новости</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Новости</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Новости</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="top-menu__item">
-              <a class="top-menu__link" href="#">Мероприятия</a>
+              <a class="top-menu__link top-menu__link--dropdown" href="#"
+                >Мероприятия</a
+              >
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Мероприятия</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Мероприятия</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Мероприятия</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Мероприятия</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Мероприятия</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="top-menu__item">
-              <a class="top-menu__link" href="#">Обучение</a>
+              <a class="top-menu__link top-menu__link--dropdown" href="#"
+                >Обучение</a
+              >
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Обучение</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Обучение</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Обучение</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Обучение</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Обучение</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Обучение</a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="top-menu__item">
-              <a class="top-menu__link" href="#">Проекты</a>
+              <a class="top-menu__link top-menu__link--dropdown" href="#"
+                >Проекты</a
+              >
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Проекты</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Проекты</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Проекты</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Проекты</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Проекты</a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -245,49 +474,58 @@
               <div class="dropmenu dropmenu--left">
                 <ul class="dropmenu__list">
                   <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Диваны</a>
+                    <a class="dropmenu__link" href="#">Программные решения </a>
                   </li>
                   <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Кресла</a>
+                    <a class="dropmenu__link" href="#">Программные решения </a>
                   </li>
                   <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Столы и стулья</a>
-                  </li>
-                  <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Мебель для сада</a>
-                  </li>
-                  <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Кровати</a>
-                  </li>
-                  <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Модульные гостиные</a>
-                  </li>
-                  <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Стенки</a>
-                  </li>
-                  <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Шкафы</a>
-                  </li>
-                  <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Кухни</a>
-                  </li>
-                  <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Тумбы и комоды</a>
-                  </li>
-                  <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Мебель для ванной</a>
-                  </li>
-                  <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#">Прихожие</a>
+                    <a class="dropmenu__link" href="#">Программные решения </a>
                   </li>
                 </ul>
               </div>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Услуги</a>
+              <a class="menu__link menu__link--dropdown" href="#">Услуги</a>
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Услуги </a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Услуги </a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Услуги </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Производственное оборудование</a>
+              <a class="menu__link menu__link--dropdown" href="#"
+                >Производственное оборудование</a
+              >
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Производственное оборудование
+                    </a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Производственное оборудование
+                    </a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Производственное оборудование
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="menu__item">
               <a class="menu__link menu__link--dropdown" href="#">
@@ -297,10 +535,16 @@
               <div class="dropmenu">
                 <ul class="dropmenu__list">
                   <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#"> Мягкая мебель</a>
+                    <a class="dropmenu__link" href="#">О компании</a>
                   </li>
                   <li class="dropmenu__item">
-                    <a class="dropmenu__link" href="#"> Мягкая мебель</a>
+                    <a class="dropmenu__link" href="#">История</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Сотрудники</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Сертификаты</a>
                   </li>
                 </ul>
               </div>
@@ -310,7 +554,9 @@
 
         <div class="header__tools">
           <a class="header__phone" href="tel:+78125619668">8 (812) 561-96-68</a>
-          <button class="header__btn btn" type="button">Заказать звонок</button>
+          <button class="header__btn btn btn-call" type="button">
+            Заказать звонок
+          </button>
           <button class="header__btn-support btn btn--transparent"></button>
         </div>
       </div>
@@ -738,7 +984,7 @@
 
         <a class="contacts__phone" href="">8 (812) 704-84-64</a>
 
-        <button class="contacts__btn btn" type="button">
+        <button class="contacts__btn btn btn-consultation" type="button">
           Заказать консультацию специалиста
         </button>
 

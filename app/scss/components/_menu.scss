@@ -50,7 +50,7 @@
         width: 7px;
         height: 7px;
         right: 0;
-        top: 35%;
+        top: 50%;
         transform: translateY(-50%);
         @include maskImage(url('../images/icons/chevron.svg'), 100%);
         background-color: var(--color-dark);
@@ -72,50 +72,6 @@
       }
     }
 
-    &--catalog {
-      padding: 13px 35px 13px 65px;
-      border-radius: 5px;
-      background-color: var(--color-accent);
-      color: var(--color-white);
-      position: relative;
-      line-height: 1;
-      border: 1px solid transparent;
-      border-radius: 10px;
-
-      &::after {
-        @include elDef();
-        width: 20px;
-        height: 15px;
-        @include maskImage(url('../images/icons/menu-icon.svg'), contain);
-        background-color: var(--color-white);
-        top: 50%;
-        transform: translateY(-50%);
-        left: 20px;
-      }
-
-      &::before {
-        display: none;
-      }
-
-      &:hover {
-        color: var(--color-accent);
-        background-color: var(--color-accent-light);
-        border: 1px solid var(--color-accent);
-      }
-    }
-
-    &--dots {
-      padding-right: 0;
-
-      &::after {
-        display: none;
-      }
-
-      svg {
-        width: 20px;
-        height: 5px;
-      }
-    }
   }
 
   .dropmenu {
