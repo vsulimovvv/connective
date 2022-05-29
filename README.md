@@ -9,7 +9,7 @@
 PLM CLUB: https://vsulimovvv.github.io/connective/app/about.html  
 
 Обучение: https://vsulimovvv.github.io/connective/app/education.html  
-Категории курсов: https://vsulimovvv.github.io/connective/app/course-categories.html  
+Категории курсов: https://vsulimovvv.github.io/connective/app/categories.html  
 Карточка курса: https://vsulimovvv.github.io/connective/app/course-card.html  
 
 Проекты: https://vsulimovvv.github.io/connective/app/projects.html  
@@ -29,6 +29,6 @@ PLM CLUB: https://vsulimovvv.github.io/connective/app/about.html
 История: https://vsulimovvv.github.io/connective/app/history.html  
 Сотрудники: https://vsulimovvv.github.io/connective/app/employees.html  
 Сертификаты: https://vsulimovvv.github.io/connective/app/certificates.html  
-Карточка сотрудника: https://vsulimovvv.github.io/connective/app/employee-card.html  
+Карточка сотрудника: https://vsulimovvv.github.io/connective/app/employees-card.html  
 
 404: https://vsulimovvv.github.io/connective/app/404.html  
