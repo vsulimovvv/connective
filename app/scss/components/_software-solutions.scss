@@ -47,7 +47,8 @@
     align-items: flex-start;
     justify-content: flex-end;
     padding: 35px;
-    border: 1px solid #e1e2e5;
+    // border: 1px solid #e1e2e5 !important;
+    border: none;
     overflow: hidden;
     position: relative;
 
@@ -126,7 +127,23 @@
 
       @include breakpointsMaxW($bp-container) {
         background-image: none;
+
+        border: 1px solid #e1e2e5;
+        border-left: none;
       }
+
+      @include breakpointsMaxW($bp-991) {
+        border: none;
+        border-top: 1px solid #e1e2e5;
+        border-left: 1px solid #e1e2e5;
+      }
+
+      @include breakpointsMaxW($bp-768) {
+        border: none;
+        border-right: 1px solid #e1e2e5;
+        border-top: 1px solid #e1e2e5;
+      }
+
       &::after {
         @include maskImage(
           url('../images/content/software-solutions/1.svg'),
@@ -163,7 +180,24 @@
 
       @include breakpointsMaxW($bp-container) {
         background-image: none;
+
+        border-top: 1px solid #e1e2e5;
       }
+
+      @include breakpointsMaxW($bp-991) {
+        border: none;
+        border-top: 1px solid #e1e2e5;
+        border-left: 1px solid #e1e2e5;
+        border-right: 1px solid #e1e2e5;
+      }
+
+      @include breakpointsMaxW($bp-768) {
+        border: none;
+        border-right: 1px solid #e1e2e5;
+        border-bottom: 1px solid #e1e2e5;
+        border-left: 1px solid #e1e2e5;
+      }
+
       &::after {
         @include maskImage(
           url('../images/content/software-solutions/3.svg'),
@@ -178,7 +212,20 @@
 
       @include breakpointsMaxW($bp-container) {
         background-image: none;
+
+        border-right: 1px solid #e1e2e5;
       }
+
+      @include breakpointsMaxW($bp-991) {
+        border: none;
+        border-bottom: 1px solid #e1e2e5;
+      }
+
+      @include breakpointsMaxW($bp-768) {
+        border: none;
+        border-right: 1px solid #e1e2e5;
+      }
+
       &::after {
         @include maskImage(
           url('../images/content/software-solutions/4.svg'),
@@ -193,6 +240,21 @@
 
       @include breakpointsMaxW($bp-container) {
         background-image: none;
+
+        border-left: 1px solid #e1e2e5;
+        border-bottom: 1px solid #e1e2e5;
+      }
+
+      @include breakpointsMaxW($bp-991) {
+        border: none;
+        border-right: 1px solid #e1e2e5;
+        border-left: 1px solid #e1e2e5;
+      }
+
+      @include breakpointsMaxW($bp-768) {
+        border: none;
+        border-bottom: 1px solid #e1e2e5;
+        border-left: 1px solid #e1e2e5;
       }
 
       &::after {
@@ -224,7 +286,16 @@
 
       @include breakpointsMaxW($bp-container) {
         background-image: none;
+
+        border-bottom: 1px solid #e1e2e5;
       }
+
+      @include breakpointsMaxW($bp-768) {
+        border: none;
+        border-bottom: 1px solid #e1e2e5;
+        border-left: 1px solid #e1e2e5;
+      }
+
       &::after {
         left: 50%;
         transform: translateX(-50%);
@@ -270,9 +341,6 @@
       align-items: flex-start;
       gap: 20px;
     }
-  }
-  .choices {
-    width: 255px;
   }
   &__name {
     font-size: 25px;

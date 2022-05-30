@@ -51,7 +51,7 @@
 
   @include breakpointsMaxW($bp-991) {
     background-color: #19303d;
-    @include adaptive-value('padding-bottom', 150, 60, 1);
+    @include adaptive-value('padding-bottom', 150, 90, 1);
   }
 
   &::after {

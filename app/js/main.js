@@ -2,6 +2,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // * ===== Mask input
   $('input[type="tel"]').mask('+7 (999) 999-99-99');
 
+  // * ===== Custom select
+  $('select').niceSelect();
+
   //* Change Background Header
   function scrollHeader() {
     const nav = document.querySelector('header');
@@ -228,16 +231,16 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
-  // * ===== Custom select
-  (function customSelect() {
-    const selects = document.querySelectorAll('.select');
-    selects.forEach((el) => {
-      const select = new Choices(el, {
-        itemSelectText: '',
-        searchEnabled: false,
-      });
-    });
-  })();
+  // // * ===== Custom select
+  // (function customSelect() {
+  //   const selects = document.querySelectorAll('.select');
+  //   selects.forEach((el) => {
+  //     const select = new Choices(el, {
+  //       itemSelectText: '',
+  //       searchEnabled: false,
+  //     });
+  //   });
+  // })();
 
   // * ===== Show Menu
   (function showMenu() {
@@ -322,6 +325,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     bindModal('.btn-consultation', '.popup--consultation', '.popup__close');
     bindModal('.btn-call', '.popup--call', '.popup__close');
+    bindModal('.btn-support', '.popup--support', '.popup__close');
   })();
 
   // * ===== Toggle Tabs

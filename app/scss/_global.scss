@@ -70,7 +70,6 @@ body {
 // * Кнопки
 .btn {
   display: inline-block;
-  line-height: 1;
   background-color: var(--color-accent);
   color: var(--color-white);
   transition: 150ms ease;
@@ -79,7 +78,8 @@ body {
   text-transform: uppercase;
   border: 1px solid var(--color-accent);
   border-radius: 5px;
-  padding: 15px 35px;
+  padding: 17px 35px 15px;
+  line-height: 1;
 
   &:hover {
     background-color: var(--color-white);
@@ -316,7 +316,6 @@ body {
       background-color: var(--color-dark);
       transition: 200ms ease;
     }
-
   }
 
   &.active {
@@ -332,5 +331,13 @@ body {
         transform: translateY(-50%) rotate(180deg);
       }
     }
+  }
+}
+
+.nice-select {
+  width: 255px;
+
+  .list {
+    width: 100%;
   }
 }

@@ -52,7 +52,6 @@
     color: #08202e;
     text-align: center;
     @include adaptive-value('margin-bottom', 40, 20, 1);
-    @include adaptive-value('padding-bottom', 25, 20, 1);
   }
 
   &__text {
