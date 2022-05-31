@@ -74,9 +74,9 @@ window.addEventListener('DOMContentLoaded', () => {
       pagination: {
         el: '.swiper-pagination',
       },
-      // autoplay: {
-      //   delay: 5000,
-      // },
+      autoplay: {
+        delay: 5000,
+      },
       slidesPerView: 1,
       navigation: {
         nextEl: document.querySelector('.hero__slider .swiper-button-next'),
