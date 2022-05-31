@@ -376,10 +376,11 @@
         @include adaptive-value('padding-bottom', 90, 40, 1);
         @include adaptive-value('padding-top', 170, 80, 1);
         max-width: 750px;
-        min-height: 645px;
+        height: 645px;
 
         @include breakpointsMaxW($bp-991) {
           min-height: 500px;
+          height: auto;
         }
 
         @include breakpointsMaxW($bp-768) {
