@@ -4,6 +4,15 @@
 
   background-color: #1c2b48;
 
+  &__btn {
+    @include breakpointsMaxW($bp-768) {
+      padding: 15px;
+    }
+    &--mt-a {
+      margin-top: auto;
+    }
+  }
+
   &__slider {
     .container {
       position: relative;
@@ -14,7 +23,7 @@
       flex-direction: column;
       gap: 40px;
       left: initial;
-      top: 50%;
+      top: 55%;
       transform: translateY(-50%);
       width: 40px;
       padding-left: 30px;
@@ -95,7 +104,7 @@
     z-index: 3;
 
     left: max(15px, calc((100% - 1270px) / 2));
-    margin-left: 150px;
+    margin-left: 120px;
 
     @include breakpointsMaxW($bp-991) {
       left: 115px;
@@ -133,24 +142,49 @@
 
   &__offer {
     max-width: 585px;
-    height: calc(100vh - 150px);
+    height: 810px;
+    padding-left: 120px;
+    padding-bottom: 40px;
+    padding-top: 185px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    @include adaptive-value('gap', 30, 20, 1);
-    padding-left: 150px;
 
     @include breakpointsMaxW($bp-991) {
       padding-left: 100px;
+      height: 600px;
+      padding-top: 100px;
     }
 
     @include breakpointsMaxW($bp-768) {
       height: 500px;
+      padding-top: 70px;
     }
 
     @include breakpointsMaxW($bp-576) {
       padding-left: 70px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #c0c9dc;
+    @include adaptive-value('font-size', 20, 16, 1);
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+    @include adaptive-value('font-size', 50, 22, 1);
+
+    span {
+      color: var(--color-accent);
     }
   }
 
@@ -188,10 +222,14 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    padding: 60px 0;
-    width: 60px;
-    padding-right: 20px;
+    padding: 60px 0 35px;
+    width: 40px;
     border-right: 1px solid #33415b;
+    padding-right: 12px;
+
+    &--border-light {
+      border-right: 1px solid #7f868a;
+    }
 
     @include breakpointsMaxW($bp-991) {
       background-color: #1c2b48;
@@ -214,13 +252,29 @@
     .socials__list {
       writing-mode: vertical-rl;
       gap: 40px;
+
+      margin-bottom: 85px;
+
+      &--mb55 {
+        margin-bottom: 55px;
+        gap: 45px;
+      }
+
+      &--news {
+        margin-bottom: 50px;
+      }
+
+      &--blog {
+        margin-bottom: 68px;
+      }
+
       @include breakpointsMaxW($bp-768) {
         gap: 20px;
       }
     }
 
     .socials {
-      @include breakpointsMaxW($bp-768) {
+      @include breakpointsMaxW($bp-991) {
         span {
           display: none;
         }
@@ -228,10 +282,11 @@
     }
 
     .socials__link {
-      padding-left: 0;
+      padding-left: 5px;
       padding-top: 30px;
       transform: rotate(180deg);
       color: #c0c9dc;
+      font-size: 15px;
 
       &:hover {
         color: var(--color-white);
@@ -239,7 +294,7 @@
 
       &::after {
         background-color: var(--color-white);
-        left: 50%;
+        left: 65%;
         transform: translate(-50%, 0) rotate(180deg);
         top: 0;
       }
@@ -261,26 +316,6 @@
     }
   }
 
-  &__text {
-    font-size: 20px;
-    line-height: 1.4;
-    color: #c0c9dc;
-    @include adaptive-value('font-size', 20, 16, 1);
-  }
-
-  &__title {
-    font-size: 50px;
-    line-height: 1.2;
-    font-weight: 700;
-    text-transform: uppercase;
-
-    @include adaptive-value('font-size', 50, 22, 1);
-
-    span {
-      color: var(--color-accent);
-    }
-  }
-
   .form-submit {
     &__group {
       position: relative;
@@ -298,38 +333,50 @@
 
   &--news {
     @include background(cover);
-
     box-sizing: border-box;
 
     .form-submit__text {
       font-size: 15px;
     }
 
+    .form-submit__group {
+      height: 35px;
+    }
+
+    .form-submit__input {
+      font-size: 15px;
+      padding-bottom: 10px;
+    }
+
     .hero {
       &__form {
         margin-top: auto;
+        gap: 30px;
       }
+
       &__text {
         margin-bottom: 30px;
+
         p {
           &:not(:last-child) {
             margin-bottom: 30px;
           }
         }
+
         .color-white {
           color: var(--color-white);
         }
       }
+
       &__title {
         max-width: 100%;
       }
+
       &__offer {
         @include adaptive-value('padding-bottom', 90, 40, 1);
         @include adaptive-value('padding-top', 170, 80, 1);
         max-width: 750px;
-
-        min-height: calc(100vh - 150px);
-        height: auto;
+        min-height: 645px;
 
         @include breakpointsMaxW($bp-991) {
           min-height: 500px;
@@ -341,6 +388,7 @@
       }
     }
   }
+
   &--planning {
     .hero__offer {
       max-width: 100%;

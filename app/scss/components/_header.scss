@@ -55,11 +55,11 @@
       }
 
       &::after {
-        top: -9px;
+        top: -10px;
       }
 
       &::before {
-        bottom: -9px;
+        bottom: -10px;
       }
     }
   }
@@ -180,9 +180,7 @@
     font-weight: 700;
     text-transform: uppercase;
     flex-shrink: 0;
-    @include breakpointsMaxW($bp-container) {
-      padding: 15px 20px;
-    }
+    padding: 15px 16px;
   }
 
   &__btn-support {
