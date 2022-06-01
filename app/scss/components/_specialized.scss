@@ -188,11 +188,44 @@
 
   &__btn {
     position: absolute;
-    bottom: 50px;
+    bottom: 0;
     right: max(15px, calc((100% - 1270px) / 2));
 
     @include breakpointsMaxW($bp-991) {
+      bottom: 40px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
       bottom: 20px;
+    }
+  }
+
+  &--btn {
+    .specialized-content {
+      @include breakpointsMaxW($bp-991) {
+        padding-bottom: 0;
+      }
+
+      &__solution {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      &__btn {
+        position: static;
+        margin-top: auto;
+        padding: 15px;
+
+        @include breakpointsMaxW($bp-991) {
+          position: absolute;
+          bottom: 40px;
+        }
+
+        @include breakpointsMaxW($bp-768) {
+          bottom: 20px;
+        }
+      }
     }
   }
 }

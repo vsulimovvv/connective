@@ -5,6 +5,10 @@ window.addEventListener('DOMContentLoaded', () => {
   // * ===== Custom select
   $('select').niceSelect();
 
+  $(function () {
+    $('#datepicker').datepicker();
+  });
+
   //* Change Background Header
   function scrollHeader() {
     const nav = document.querySelector('header');

@@ -8,4 +8,14 @@
     background-color: #19303d;
     @include adaptive-value('padding-bottom', 150, 60, 1);
   }
+
+  &--pb-0 {
+    @include breakpointsMaxW($bp-991) {
+      padding-bottom: 0;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      padding-bottom: 30px;
+    }
+  }
 }

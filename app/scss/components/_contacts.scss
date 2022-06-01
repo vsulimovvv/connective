@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 30px;
+  padding-top: 50px;
   @include adaptive-value('padding-bottom', 70, 40, 1);
 
   &__wrapper {
