@@ -235,17 +235,6 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
-  // // * ===== Custom select
-  // (function customSelect() {
-  //   const selects = document.querySelectorAll('.select');
-  //   selects.forEach((el) => {
-  //     const select = new Choices(el, {
-  //       itemSelectText: '',
-  //       searchEnabled: false,
-  //     });
-  //   });
-  // })();
-
   // * ===== Show Menu
   (function showMenu() {
     const menuBtn = document.querySelector('.header__toggle');

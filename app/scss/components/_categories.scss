@@ -1,6 +1,7 @@
 .categories {
   @include adaptive-value('padding-top', 70, 40, 1);
   @include adaptive-value('padding-bottom', 120, 60, 1);
+
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -84,6 +85,7 @@
       @include maskImage(url('../images/icons/clock.svg'), contain);
     }
   }
+  
   &__language {
     &::after {
       @include maskImage(url('../images/icons/planet.svg'), contain);

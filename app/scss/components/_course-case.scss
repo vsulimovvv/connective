@@ -1,7 +1,5 @@
 .course-case {
   @include adaptive-value('padding-bottom', 90, 50, 1);
-  &__title {
-  }
 
   &__top {
     background-color: #f2f2f2;
@@ -66,9 +64,6 @@
         }
       }
     }
-  }
-
-  &__list {
   }
 
   &__item {
@@ -169,6 +164,7 @@
         );
       }
     }
+    
     &--purpose {
       &::after {
         @include backgroundImage(
@@ -177,6 +173,7 @@
         );
       }
     }
+
     &--content {
       &::after {
         @include backgroundImage(
