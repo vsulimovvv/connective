@@ -2,7 +2,7 @@
   @include background(cover);
   @include adaptive-value('padding-top', 90, 50, 1);
   @include adaptive-value('padding-bottom', 90, 50, 1);
-  
+
   @include adaptive-value('margin-bottom', 70, 40, 1);
   color: var(--color-white);
 
@@ -33,11 +33,13 @@
     .form-submit__btn {
       padding: 15px;
     }
+
     .enroll {
       &__top {
         @include adaptive-value('margin-bottom', 50, 30, 1);
         text-align: center;
       }
+
       &__wrapper {
         display: flex;
         align-items: center;
@@ -57,6 +59,7 @@
 
   &--descr {
     color: var(--color-bg-dark);
+
     .enroll {
       &__wrapper {
         justify-content: flex-start;

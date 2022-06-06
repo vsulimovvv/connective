@@ -19,6 +19,7 @@
       align-items: flex-start;
     }
   }
+  
   &__slider {
     @include adaptive-value('padding-bottom', 80, 60, 1);
 
@@ -59,7 +60,6 @@
   &__slide {
     max-width: 410px;
     box-sizing: border-box;
-
     @include adaptive-value('max-width', 410, 280, 1);
   }
 }

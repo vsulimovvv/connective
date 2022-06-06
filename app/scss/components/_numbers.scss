@@ -1,6 +1,7 @@
 .numbers {
   @include adaptive-value('padding-bottom', 80, 40, 1);
   @include adaptive-value('padding-top', 80, 40, 1);
+
   &__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -15,6 +16,7 @@
       justify-content: center;
       gap: 50px 30px;
     }
+
     @include breakpointsMaxW($bp-360) {
       gap: 50px 20px;
     }
@@ -70,7 +72,6 @@
     &__number {
       font-size: 50px;
       font-family: $Oswald;
-
       line-height: 1;
       font-weight: 700;
       color: var(--color-bg-dark);
@@ -78,6 +79,7 @@
       @include breakpointsMaxW($bp-container) {
         font-size: 40px;
       }
+
       @include breakpointsMaxW($bp-768) {
         font-size: 30px;
       }
@@ -91,6 +93,7 @@
       font-size: 17px;
       font-weight: 400;
       color: #5a656b;
+      
       @include breakpointsMaxW($bp-360) {
         font-size: 15px;
       }

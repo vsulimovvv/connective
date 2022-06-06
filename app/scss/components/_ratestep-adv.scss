@@ -47,6 +47,7 @@
     @include breakpointsMaxW($bp-768) {
       padding-top: 50px;
     }
+
     @include breakpointsMaxW($bp-991) {
       text-align: center;
     }
@@ -80,6 +81,7 @@
         font-size: 13px;
       }
     }
+
     &:nth-child(1) {
       &::after {
         @include backgroundImage(
@@ -88,6 +90,7 @@
         );
       }
     }
+
     &:nth-child(2) {
       &::after {
         @include backgroundImage(
@@ -96,6 +99,7 @@
         );
       }
     }
+
     &:nth-child(3) {
       &::after {
         @include backgroundImage(
@@ -104,6 +108,7 @@
         );
       }
     }
+    
     &:nth-child(4) {
       &::after {
         @include backgroundImage(

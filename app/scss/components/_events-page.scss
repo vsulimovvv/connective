@@ -125,9 +125,11 @@
         padding: 20px 10px 10px 10px;
       }
     }
+    
     &__top {
       @include adaptive-value('height', 240, 150, 1);
     }
+
     &__title {
       @include adaptive-value('font-size', 19, 14, 1);
     }

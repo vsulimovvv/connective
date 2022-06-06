@@ -23,7 +23,6 @@
     max-height: 630px;
 
     @include breakpointsMaxW($bp-991) {
-      // order: 1;
       height: calc(280px + (630 - 280) * ((100vw - 360px) / (991 - 360)));
     }
 
@@ -107,6 +106,7 @@
       font-weight: 700;
       color: #282c40;
     }
+    
     &-text {
       font-size: 20px;
       font-weight: 400;
@@ -156,12 +156,14 @@
         }
       }
     }
+
     &__title {
       font-size: 17px;
       line-height: 1;
       font-weight: 700;
       text-transform: uppercase;
       color: #282c40;
+
       @include breakpointsMaxW($bp-768) {
         font-size: 16px;
       }

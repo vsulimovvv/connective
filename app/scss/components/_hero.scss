@@ -1,13 +1,13 @@
 .hero {
   position: relative;
   color: var(--color-white);
-
   background-color: #1c2b48;
 
   &__btn {
     @include breakpointsMaxW($bp-768) {
       padding: 15px;
     }
+
     &--mt-a {
       margin-top: auto;
     }
@@ -132,7 +132,6 @@
 
   &__slide {
     box-sizing: border-box;
-
     @include background(cover);
 
     @include breakpointsMaxW($bp-768) {
@@ -324,6 +323,7 @@
     &__group {
       position: relative;
     }
+    
     &__arrow {
       position: absolute;
       width: 19px;

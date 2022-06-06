@@ -1,6 +1,7 @@
 .events {
   @include adaptive-value('padding-top', 50, 30, 1);
   @include adaptive-value('padding-bottom', 50, 30, 1);
+
   &__top {
     display: flex;
     align-items: flex-start;
@@ -34,6 +35,7 @@
       width: calc(100% - 110px);
     }
   }
+
   &__content {
     position: relative;
   }
@@ -119,6 +121,7 @@
     @include adaptive-value('font-size', 19, 16, 1);
     color: var(--color-bg-dark);
     margin-bottom: 10px;
+    
     a {
       transition: 200ms ease;
     }

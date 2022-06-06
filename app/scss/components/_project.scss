@@ -20,9 +20,11 @@
     &__list {
       max-width: 790px;
       width: 100%;
+      
       &:not(:last-child) {
         border-bottom: 1px solid #ebebeb;
       }
+      
       @include breakpointsMaxW($bp-991) {
         max-width: 100%;
       }
@@ -71,6 +73,7 @@
     &:not(:last-child) {
       @include adaptive-value('margin-bottom', 40, 30, 1);
     }
+   
     &--result {
       .project__text {
         @include adaptive-value('margin-bottom', 50, 30, 1);
@@ -81,6 +84,7 @@
       .project__text {
         @include adaptive-value('margin-bottom', 50, 30, 1);
       }
+     
       .project__img {
         @include adaptive-value('height', 315, 50, 1);
       }

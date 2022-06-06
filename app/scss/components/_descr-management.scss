@@ -23,6 +23,7 @@
       height: calc(270px + (400 - 270) * ((100vw - 360px) / (991 - 360)));
     }
   }
+  
   &__wrapper {
     @include adaptive-value('padding-top', 100, 60, 1);
     @include adaptive-value('padding-bottom', 100, 60, 1);

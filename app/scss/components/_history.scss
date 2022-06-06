@@ -50,10 +50,12 @@
           contain
         );
       }
+      
       .history__left {
         order: 1;
         justify-content: flex-start;
       }
+
       .history__right {
         order: -1;
       }
@@ -65,6 +67,7 @@
           order: initial;
           justify-content: initial;
         }
+
         .history__right {
           order: initial;
         }
@@ -107,6 +110,7 @@
     position: relative;
     width: 255px;
     height: 220px;
+    
     @include breakpointsMaxW($bp-991) {
       width: 175px;
       height: 150px;

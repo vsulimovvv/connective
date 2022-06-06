@@ -63,7 +63,6 @@
   padding: 40px 30px;
   border-radius: 10px;
   background-color: var(--color-white);
-
   @include adaptive-value('padding-top', 40, 30, 1);
   @include adaptive-value('padding-bottom', 40, 30, 1);
   @include adaptive-value('padding-left', 30, 20, 1);
@@ -91,7 +90,6 @@
     font-weight: 700;
     color: #3a3c40;
     margin-bottom: 15px;
-
     @include adaptive-value('font-size', 20, 16, 1);
   }
 

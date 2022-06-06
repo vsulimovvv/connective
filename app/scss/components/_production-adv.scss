@@ -38,7 +38,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
       @include adaptive-value('height', 93, 73, 1);
       @include adaptive-value('width', 93, 73, 1);
 
@@ -56,7 +55,6 @@
       font-weight: 700;
       text-transform: uppercase;
       color: #2d2f2e;
-
       @include adaptive-value('font-size', 18, 16, 1);
     }
 

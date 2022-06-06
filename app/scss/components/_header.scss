@@ -223,6 +223,7 @@
     display: flex;
     align-items: center;
     gap: 25px;
+
     @include breakpointsMaxW($bp-container) {
       gap: 15px;
     }
@@ -231,6 +232,7 @@
   &__item {
     position: relative;
   }
+
   &__link {
     display: block;
     font-size: 14px;
@@ -278,6 +280,7 @@
       }
     }
   }
+  
   .dropmenu {
     transform: translateY(-10px);
     opacity: 0;

@@ -46,9 +46,11 @@
         }
       }
     }
+
     .swiper-button-prev {
       right: initial;
     }
+    
     .swiper-button-next {
       left: initial;
     }
@@ -70,7 +72,6 @@
   &__top {
     width: 100%;
     height: 340px;
-
     transition: 200ms ease;
 
     &:hover {
@@ -81,6 +82,7 @@
       @include img(cover);
     }
   }
+
   &__body {
     text-align: center;
     width: calc(100% - 40px);
@@ -116,6 +118,7 @@
         @include adaptive-value('padding-top', 20, 10, 1);
         @include adaptive-value('padding-bottom', 20, 10, 1);
       }
+      
       &__top {
         height: 420px;
         @include adaptive-value('height', 420, 200, 1);

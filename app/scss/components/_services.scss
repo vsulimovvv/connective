@@ -17,9 +17,9 @@
   &__text {
     font-weight: 300;
     color: #4c5159;
-
     @include adaptive-value('font-size', 20, 16, 1);
   }
+
   &__slider {
     @include adaptive-value('padding-bottom', 80, 60, 1);
 
@@ -28,6 +28,7 @@
       width: calc(100% - 110px);
     }
   }
+
   &__content {
     position: relative;
   }
@@ -59,7 +60,6 @@
   &__slide {
     max-width: 410px;
     box-sizing: border-box;
-
     @include adaptive-value('max-width', 410, 280, 1);
   }
 

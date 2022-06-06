@@ -42,11 +42,6 @@
   }
 
   &__bottom {
-    span {
-      color: var(--color-bg-dark);
-      font-weight: 700;
-    }
-
     padding-left: 26px;
     position: relative;
 
@@ -57,6 +52,11 @@
       background-color: var(--color-accent);
       left: 0;
       top: 0;
+    }
+
+    span {
+      color: var(--color-bg-dark);
+      font-weight: 700;
     }
   }
 }

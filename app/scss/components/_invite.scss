@@ -122,9 +122,11 @@
       a {
         color: var(--color-accent);
       }
+      
       span {
         font-weight: 700;
       }
+
       p {
         &:not(:last-child) {
           margin-bottom: 20px;

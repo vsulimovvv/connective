@@ -1,7 +1,6 @@
 .swiper-pagination {
   top: initial;
   bottom: 0;
-  // max-width: 1240px;
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
@@ -28,6 +27,7 @@
     @include maskImage(url('../images/icons/chevron.svg'), contain);
   }
 }
+
 .swiper-button-next {
   &::after {
     transform: translate(-50%, -50%) rotate(-90deg);

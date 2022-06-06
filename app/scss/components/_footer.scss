@@ -54,9 +54,11 @@
     &--mail {
       padding-left: 20px;
       position: relative;
+      
       @include breakpointsMaxW($bp-container) {
         margin-left: auto;
       }
+
       @include breakpointsMaxW($bp-991) {
         margin-left: 0;
       }
@@ -128,6 +130,7 @@
     @include breakpointsMaxW($bp-container) {
       gap: 10px;
     }
+    
     @include breakpointsMaxW($bp-768) {
       flex-direction: column;
       align-items: flex-start;

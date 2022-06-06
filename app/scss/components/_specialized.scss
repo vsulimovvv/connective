@@ -101,6 +101,7 @@
     @include breakpointsMaxW($bp-991) {
       grid-template-columns: 1fr 1fr;
     }
+
     @include breakpointsMaxW($bp-768) {
       grid-template-columns: 1fr;
       gap: 30px;
@@ -122,11 +123,13 @@
       max-width: 100%;
       @include adaptive-value('height', 560, 260, 1);
     }
+
     @include breakpointsMaxW($bp-768) {
       grid-row: 3/4;
       grid-column: initial;
     }
   }
+
   &__heading {
     @include adaptive-value('font-size', 26, 20, 1);
     @include adaptive-value('margin-bottom', 35, 20, 1);
@@ -152,10 +155,6 @@
     @include adaptive-value('font-size', 17, 15, 1);
     @include adaptive-value('margin-bottom', 30, 20, 1);
 
-    span {
-      color: var(--color-accent);
-    }
-
     &::after {
       @include elDef();
       width: 38px;
@@ -166,15 +165,21 @@
       @include maskImage(url('../images/icons/clock-3.svg'), contain);
       background-color: var(--color-accent);
     }
+
+    span {
+      color: var(--color-accent);
+    }
   }
 
   &__solution {
     .specialized-content__text {
       color: #5a656b;
+      
       @include breakpointsMaxW($bp-991) {
         color: #8e999f;
       }
     }
+
     .specialized-content__heading {
       @include adaptive-value('font-size', 32, 22, 1);
       line-height: 1;
