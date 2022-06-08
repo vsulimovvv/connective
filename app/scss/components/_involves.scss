@@ -43,13 +43,14 @@
   &__preview {
     position: relative;
     overflow: hidden;
+    @include adaptive-value('height', 410, 260, 1);
 
     &-img {
       @include background(cover);
       width: calc(100% - 11px);
       height: calc(100% - 11px);
     }
-    
+
     &::after {
       @include elDef();
       width: calc(100% + 11px);
@@ -63,8 +64,6 @@
         display: none;
       }
     }
-
-    @include adaptive-value('height', 410, 260, 1);
   }
 
   &__list {

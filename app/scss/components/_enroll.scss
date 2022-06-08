@@ -1,10 +1,9 @@
 .enroll {
   @include background(cover);
+  color: var(--color-white);
   @include adaptive-value('padding-top', 90, 50, 1);
   @include adaptive-value('padding-bottom', 90, 50, 1);
-
   @include adaptive-value('margin-bottom', 70, 40, 1);
-  color: var(--color-white);
 
   &__wrapper {
     display: flex;

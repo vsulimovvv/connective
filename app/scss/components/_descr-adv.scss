@@ -1,6 +1,6 @@
 .descr-adv {
-  @include adaptive-value('padding-bottom', 70, 40, 1);
   background-color: var(--color-bg);
+  @include adaptive-value('padding-bottom', 70, 40, 1);
 
   &__slide {
     width: 100%;

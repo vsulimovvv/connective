@@ -6,6 +6,7 @@
 
   &__top {
     @include adaptive-value('margin-bottom', 60, 40, 1);
+    
     &-list {
       display: flex;
       align-items: center;

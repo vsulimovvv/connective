@@ -42,13 +42,13 @@
     font-size: 13px;
     line-height: 1;
 
+    a {
+      color: var(--color-accent);
+    }
+
     @include breakpointsMaxW($bp-576) {
       flex-direction: column;
       align-items: flex-start;
-    }
-
-    a {
-      color: var(--color-accent);
     }
   }
 }

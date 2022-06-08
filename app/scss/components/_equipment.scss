@@ -62,11 +62,10 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  position: relative;
   overflow: hidden;
+  position: relative;
   @include adaptive-value('height', 445, 350, 1);
   @include adaptive-value('padding', 40, 30, 1);
-  position: relative;
 
   &:hover {
     .equipments-card__overlay {
@@ -87,7 +86,6 @@
     padding: 50px 35px;
     transition: 400ms ease;
     transform: translateY(100%);
-
     @include adaptive-value('padding-top', 50, 20, 1);
     @include adaptive-value('padding-bottom', 50, 25, 1);
     @include adaptive-value('padding-left', 35, 15, 1);
@@ -103,7 +101,9 @@
     line-height: 22px;
     font-weight: 400;
     color: #596d78;
+    // @include line-clamp(9);
     @include adaptive-value('margin-bottom', 30, 20, 1);
+    overflow-y: auto;
   }
 
   &__title {
@@ -111,7 +111,6 @@
     position: relative;
     line-height: 1;
     font-weight: 700;
-
     @include adaptive-value('font-size', 25, 18, 1);
 
     &--dark {

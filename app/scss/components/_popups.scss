@@ -58,13 +58,13 @@
     font-weight: 300;
     color: #282828;
     text-align: center;
-    
-    @include breakpointsMaxW($bp-768) {
-      font-size: 15px;
-    }
 
     p {
       margin-bottom: 20px;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      font-size: 15px;
     }
   }
 
@@ -89,7 +89,7 @@
       fill: var(--color-dark);
     }
   }
-  
+
   .form-submit {
     gap: 15px;
 

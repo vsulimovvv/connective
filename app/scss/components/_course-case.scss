@@ -78,8 +78,8 @@
     padding-left: 82px;
     position: relative;
     padding-bottom: 35px;
-
     @include adaptive-value('padding-bottom', 35, 25, 1);
+    
     @include breakpointsMaxW($bp-768) {
       padding-left: 60px;
     }

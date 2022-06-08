@@ -18,6 +18,7 @@
     width: 100%;
     counter-reset: number;
     display: grid;
+    
     @include breakpointsMaxW($bp-768) {
       gap: 20px;
     }

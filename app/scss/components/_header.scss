@@ -76,12 +76,15 @@
       width: 130px;
     }
   }
+
   &__top {
     padding: 17px 0;
     border-bottom: 1px solid #e8ebf1;
+   
     @include breakpointsMaxW($bp-991) {
       display: none;
     }
+
     &-inner {
       display: flex;
       align-items: center;
@@ -194,6 +197,7 @@
     width: 45px;
     height: 44px;
     position: relative;
+
     @include breakpointsMaxW($bp-768) {
       display: none;
     }
@@ -249,6 +253,7 @@
       padding-right: 15px;
       position: relative;
       border-radius: 5px;
+
       @include breakpointsMaxW($bp-container) {
         padding-right: 10px;
       }
@@ -268,6 +273,7 @@
         &::before {
           transform: scale(0);
         }
+
         &::after {
           background-color: var(--color-accent);
         }
@@ -292,7 +298,6 @@
     top: 45px;
     background-color: var(--color-white);
     box-shadow: 0px 19px 51px 0px rgba(53, 56, 62, 0.23);
-
     border-radius: 5px;
     padding: 0 21px;
     transition: 450ms ease;

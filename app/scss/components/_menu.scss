@@ -2,6 +2,7 @@
   @include breakpointsMaxW($bp-991) {
     display: none;
   }
+  
   &__list {
     display: flex;
     align-items: center;

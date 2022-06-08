@@ -8,16 +8,15 @@
   background-color: var(--color-white);
   z-index: 12;
   width: 400px;
-
-  @include breakpointsMaxW($bp-991) {
-    width: 80%;
-  }
-
   transform: translateX(-100%);
   opacity: 0;
   visibility: hidden;
   transition: 350ms ease-in-out;
   overflow-x: auto;
+
+  @include breakpointsMaxW($bp-991) {
+    width: 80%;
+  }
 
   @include adaptive-value('padding', 40, 20, 1);
 

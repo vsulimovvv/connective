@@ -28,15 +28,15 @@
     color: var(--color-white);
     max-width: 385px;
 
-    @include breakpointsMaxW($bp-991) {
-      max-width: 100%;
-    }
-
     span {
       background-color: var(--color-accent);
       color: var(--color-title);
       display: inline-block;
       line-height: 1;
+    }
+
+    @include breakpointsMaxW($bp-991) {
+      max-width: 100%;
     }
   }
 
@@ -80,7 +80,6 @@
   &__slide {
     max-width: 410px;
     box-sizing: border-box;
-
     @include adaptive-value('max-width', 410, 280, 1);
   }
 

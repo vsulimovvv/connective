@@ -4,10 +4,11 @@
   background-color: #1c2b48;
 
   &__btn {
+    background-color: var(--color-accent-dark);
+
     @include breakpointsMaxW($bp-768) {
       padding: 15px;
     }
-    background-color: var(--color-accent-dark);
 
     &--mt-a {
       margin-top: auto;
@@ -103,7 +104,6 @@
     left: 0;
     bottom: 40px;
     z-index: 3;
-
     left: max(15px, calc((100% - 1270px) / 2));
     margin-left: 120px;
 

@@ -32,6 +32,7 @@
     @include breakpointsMaxW(1500px) {
       padding-left: 380px;
     }
+
     @include breakpointsMaxW($bp-container) {
       padding-left: 230px;
     }
@@ -68,8 +69,8 @@
     }
 
     &__title {
-      @include adaptive-value('font-size', 30, 20, 1);
       color: #35454f;
+      @include adaptive-value('font-size', 30, 20, 1);
 
       span {
         color: var(--color-accent);
@@ -86,8 +87,8 @@
       position: relative;
       line-height: 1;
       color: #35454f;
-      @include adaptive-value('font-size', 19, 16, 1);
       line-height: 1.5;
+      @include adaptive-value('font-size', 19, 16, 1);
 
       &::after {
         @include elDef();

@@ -66,6 +66,7 @@
       padding: 20px;
       gap: 30px;
     }
+
     @include breakpointsMaxW($bp-768) {
       grid-template-columns: 1fr;
     }
@@ -117,6 +118,7 @@
     grid-column: span 2;
     max-width: 255px;
     padding: 15px 20px;
+    
     @include breakpointsMaxW($bp-768) {
       grid-column: initial;
     }

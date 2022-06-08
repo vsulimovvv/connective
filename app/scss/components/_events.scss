@@ -108,8 +108,8 @@
 
   &__top {
     width: 100%;
-    @include adaptive-value('height', 240, 200, 1);
     overflow: hidden;
+    @include adaptive-value('height', 240, 200, 1);
 
     img {
       @include img(cover);
@@ -118,9 +118,9 @@
   }
 
   &__title {
-    @include adaptive-value('font-size', 19, 16, 1);
     color: var(--color-bg-dark);
     margin-bottom: 10px;
+    @include adaptive-value('font-size', 19, 16, 1);
     
     a {
       transition: 200ms ease;
