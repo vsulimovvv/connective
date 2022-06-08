@@ -5,7 +5,7 @@
   &__wrapper {
     display: grid;
     grid-template-columns: minmax(auto, 400px) 1fr;
-    gap: 80px;
+    gap: 70px;
 
     @include breakpointsMaxW($bp-container) {
       gap: 50px;
@@ -64,10 +64,10 @@
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
+    padding: 17px 15px 15px 15px;
 
     @include breakpointsMaxW($bp-576) {
-      font-size: 12px;
-      padding: 17px 15px 15px 15px;
+      font-size: 12px;  
     }
   }
 

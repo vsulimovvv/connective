@@ -101,7 +101,6 @@
     line-height: 22px;
     font-weight: 400;
     color: #596d78;
-    // @include line-clamp(9);
     @include adaptive-value('margin-bottom', 30, 20, 1);
     overflow-y: auto;
   }
