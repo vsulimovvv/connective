@@ -52,6 +52,11 @@
     color: var(--color-title);
     display: block;
     margin-bottom: 20px;
+    transition: 200ms ease;
+
+    &:hover {
+      color: var(--color-accent-dark);
+    }
   }
 
   &__btn {
@@ -92,6 +97,11 @@
     }
 
     &--mail {
+      transition: 200ms ease;
+      &:hover {
+        color: var(--color-accent);
+      }
+
       &::after {
         @include maskImage(url('../images/icons/mail.svg'), contain);
       }

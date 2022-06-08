@@ -4,7 +4,7 @@
 }
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-dark);
   top: initial;
 }
 
@@ -12,9 +12,18 @@
 .swiper-button-prev {
   width: 35px;
   height: 35px;
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-dark);
   position: relative;
   border-radius: 50%;
+  transition: 200ms ease;
+
+  &:hover {
+    background-color: lighten(#06ca89, 10%);
+  }
+
+  &:active {
+    background-color: darken(#06ca89, 10%);
+  }
 
   &::after {
     @include elDef();

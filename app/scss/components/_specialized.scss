@@ -24,7 +24,7 @@
       line-height: 1;
       font-weight: 600;
       color: #374a55;
-      border: 1px solid var(--color-accent);
+      border: 1px solid var(--color-accent-dark);
       border-radius: 5px;
       padding: 12px;
       transition: 200ms ease;
@@ -36,7 +36,7 @@
 
       &.tabs-btn--active,
       &:hover {
-        background-color: var(--color-accent);
+        background-color: var(--color-accent-dark);
         color: var(--color-white);
       }
     }

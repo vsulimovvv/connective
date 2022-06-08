@@ -7,6 +7,7 @@
     @include breakpointsMaxW($bp-768) {
       padding: 15px;
     }
+    background-color: var(--color-accent-dark);
 
     &--mt-a {
       margin-top: auto;
@@ -127,6 +128,13 @@
       bottom: initial;
       left: initial;
       transform: initial;
+      transition: 200ms ease;
+
+      &:hover {
+        &::after {
+          background-color: var(--color-accent-dark);
+        }
+      }
     }
   }
 
@@ -191,7 +199,7 @@
     font-size: 17px;
     line-height: 1;
     font-weight: 700;
-    color: var(--color-accent);
+    color: var(--color-accent-dark);
     padding-left: 30px;
     position: relative;
     display: block;
@@ -323,7 +331,7 @@
     &__group {
       position: relative;
     }
-    
+
     &__arrow {
       position: absolute;
       width: 19px;

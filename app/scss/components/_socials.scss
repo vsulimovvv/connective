@@ -9,6 +9,11 @@
     display: block;
     padding-left: 25px;
     position: relative;
+    transition: 200ms ease;
+
+    &:hover {
+      color: var(--color-accent);
+    }
 
     &::after {
       @include elDef();
@@ -17,7 +22,7 @@
       top: 50%;
       transform: translateY(-50%);
       left: 0;
-      background-color: var(--color-accent);
+      background-color: var(--color-accent-dark);
     }
 
     &--whatsapp {
