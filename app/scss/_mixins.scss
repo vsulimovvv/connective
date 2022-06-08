@@ -98,9 +98,6 @@ $maxWidthContainer: 1300;
   }
 }
 
-// gap: calc(28px + (36 - 28) * ((100vw - 360px) / (1300 - 360)));
-// right: max(15px, calc((100% - 1400px) / 2));
-
 @mixin fz35 {
   @include adaptive-value('font-size', 35, 25, 1);
   line-height: 1.3;

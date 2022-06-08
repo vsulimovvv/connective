@@ -82,7 +82,7 @@
   outline: 5px solid transparent;
 
   &:hover {
-    outline: 5px solid #19cc92;
+    outline: 5px solid var(--color-accent);
   }
 
   &__top {
