@@ -2,6 +2,7 @@
   &__title {
     @include fz35();
     @include adaptive-value('margin-bottom', 40, 30, 1);
+    color: var(--color-title);
   }
 
   @include breakpointsMaxW($bp-991) {

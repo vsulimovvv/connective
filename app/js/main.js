@@ -169,6 +169,27 @@ window.addEventListener('DOMContentLoaded', () => {
       slidesPerView: 'auto',
     });
   })();
+  
+  // * ===== Slider
+  (function slider() {
+    const sliderEl = document.querySelector('.introduction__slider');
+    new Swiper(sliderEl, {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      navigation: {
+        nextEl: document.querySelector(
+          '.introduction__content .swiper-button-next'
+        ),
+        prevEl: document.querySelector(
+          '.introduction__content .swiper-button-prev'
+        ),
+      },
+      spaceBetween: 20,
+      slidesPerView: 'auto',
+    });
+  })();
   // * ===== Slider
   (function slider() {
     const sliderEl = document.querySelector('.services-package__slider');

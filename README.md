@@ -31,4 +31,8 @@ PLM CLUB: https://vsulimovvv.github.io/connective/app/about.html
 Сертификаты: https://vsulimovvv.github.io/connective/app/certificates.html  
 Карточка сотрудника: https://vsulimovvv.github.io/connective/app/employees-card.html  
 
-404: https://vsulimovvv.github.io/connective/app/404.html  
+404: https://vsulimovvv.github.io/connective/app/404.html
+
+Техподдержка: https://vsulimovvv.github.io/connective/app/support.html  
+Внедрение: https://vsulimovvv.github.io/connective/app/introduction.html  
+Для категорий программных решений (2): https://vsulimovvv.github.io/connective/app/planning-system-2.html 

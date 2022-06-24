@@ -102,11 +102,11 @@ $maxWidthContainer: 1300;
   @include adaptive-value('font-size', 35, 25, 1);
   line-height: 1.3;
   font-weight: 400;
-  color: var(--color-accent);
+  color: var(--color-title);
 }
 @mixin fz40 {
   @include adaptive-value('font-size', 40, 28, 1);
   line-height: 1.1;
   font-weight: 400;
-  color: var(--color-accent);
+  color: var(--color-title);
 }

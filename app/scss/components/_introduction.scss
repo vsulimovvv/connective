@@ -1,0 +1,67 @@
+.introduction {
+  @include adaptive-value('padding-top', 70, 40, 1);
+  @include adaptive-value('padding-bottom', 70, 40, 1);
+
+  &__text {
+    @include adaptive-value('font-size', 20, 15, 1);
+    @include adaptive-value('margin-bottom', 55, 35, 1);
+
+    p {
+      &:not(:last-child) {
+        @include adaptive-value('margin-bottom', 30, 15, 1);
+      }
+    }
+  }
+
+  &__slider {
+    @include adaptive-value('padding-bottom', 80, 60, 1);
+
+    .swiper-pagination {
+      top: initial;
+      width: calc(100% - 110px);
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__arrows {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 82px;
+    gap: 10px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transform: translateY(35%);
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: block;
+      margin-top: initial;
+      top: initial;
+      right: initial;
+      bottom: initial;
+      left: initial;
+      transform: initial;
+    }
+  }
+
+  &__slide {
+    max-width: 410px;
+    box-sizing: border-box;
+    @include adaptive-value('max-width', 410, 280, 1);
+
+    .catalog-card {
+      padding: 40px 30px;
+
+      &__title {
+        text-transform: none;
+        @include adaptive-value('font-size', 25, 19, 1);
+      }
+    }
+  }
+}
