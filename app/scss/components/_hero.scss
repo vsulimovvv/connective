@@ -375,6 +375,14 @@
           }
         }
 
+        &--mb-0 {
+          p {
+            &:not(:last-child) {
+              margin-bottom: 0;
+            }
+          }
+        }
+
         .color-white {
           color: var(--color-white);
         }

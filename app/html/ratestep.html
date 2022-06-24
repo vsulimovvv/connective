@@ -15,6 +15,25 @@
     <div class="site-wrapper">
       @include('./components/_header.html')
 
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#"> Программные решения</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">
+              Система планирования производства (mrp, aps, mes)
+            </a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--active">Рейтстеп</a>
+          </li>
+        </ul>
+      </div>
+
       <main class="main">
         @include('./components/_hero-ratestep.html')
         @include('./components/_ratestep-about.html')
