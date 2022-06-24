@@ -96,6 +96,7 @@
     gap: 25px;
     padding: 20px 0;
     line-height: 1;
+    font-size: 15px;
 
     @include breakpointsMaxW($bp-991) {
       flex-direction: column;

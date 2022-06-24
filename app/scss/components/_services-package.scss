@@ -43,7 +43,7 @@
   &__text {
     font-size: 15px;
     font-weight: 400;
-    color: var(--color-white);
+    color: #d9e5eb;
     max-width: 590px;
 
     @include breakpointsMaxW($bp-991) {
