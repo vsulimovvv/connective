@@ -16,6 +16,12 @@
   position: relative;
   border-radius: 50%;
   transition: 200ms ease;
+  
+  &.swiper-button-disabled {
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: all;
+  }
 
   &:hover {
     background-color: lighten(#06ca89, 10%);
@@ -29,7 +35,7 @@
     @include elDef();
     height: 15px;
     width: 15px;
-    top: 50%;
+    top: 52%;
     transform: translate(-50%, -50%);
     left: 50%;
     background-color: var(--color-white);
@@ -40,11 +46,13 @@
 .swiper-button-next {
   &::after {
     transform: translate(-50%, -50%) rotate(-90deg);
+    left: 54%; // Типо криво
   }
 }
 
 .swiper-button-prev {
   &::after {
     transform: translate(-50%, -50%) rotate(90deg);
+    left: 48%;
   }
 }

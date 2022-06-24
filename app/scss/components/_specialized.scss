@@ -6,7 +6,7 @@
 
   &__top {
     @include adaptive-value('margin-bottom', 60, 40, 1);
-    
+
     &-list {
       display: flex;
       align-items: center;
@@ -175,7 +175,7 @@
   &__solution {
     .specialized-content__text {
       color: #5a656b;
-      
+
       @include breakpointsMaxW($bp-991) {
         color: #8e999f;
       }
@@ -185,7 +185,8 @@
       @include adaptive-value('font-size', 32, 22, 1);
       line-height: 1;
       font-weight: 700;
-      color: #19303d;
+      color: var(--color-title);
+
       @include breakpointsMaxW($bp-991) {
         color: var(--color-white);
       }

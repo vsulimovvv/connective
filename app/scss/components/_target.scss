@@ -37,14 +37,13 @@
     @include fz35();
     text-transform: uppercase;
     @include adaptive-value('margin-bottom', 30, 20, 1);
-
-    span {
-      background-color: var(--color-accent);
-    }
+    background-color: var(--color-accent);
+    display: inline-block;
+    line-height: 1;
   }
 
   &__text {
-    margin-bottom: 30px;
+    margin-bottom: 30px;color: var(--color-title);
   }
 
   &__quote {
@@ -52,6 +51,7 @@
     padding-top: 35px;
     padding-right: 65px;
     position: relative;
+    color: var(--color-title);
 
     @include breakpointsMaxW($bp-768) {
       padding-left: 35px;
@@ -65,6 +65,8 @@
 
     span {
       font-weight: 700;
+      color: #5a6267;
+      font-size: 19px;
     }
 
     &::after,
@@ -95,7 +97,7 @@
       );
       width: 48px;
       height: 36px;
-      
+
       @include breakpointsMaxW($bp-768) {
         width: 28px;
         height: 20px;

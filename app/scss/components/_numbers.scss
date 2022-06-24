@@ -74,7 +74,7 @@
       font-family: $Oswald;
       line-height: 1;
       font-weight: 700;
-      color: var(--color-bg-dark);
+      color: var(--color-title);
 
       @include breakpointsMaxW($bp-container) {
         font-size: 40px;

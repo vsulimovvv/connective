@@ -6,7 +6,7 @@
 
   &__top {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     padding-right: 180px;
     gap: 30px;
@@ -37,6 +37,21 @@
 
     @include breakpointsMaxW($bp-991) {
       max-width: 100%;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--color-white);
+    max-width: 590px;
+
+    @include breakpointsMaxW($bp-991) {
+      max-width: 100%;
+    }
+
+    @include breakpointsMaxW($bp-768) {
+      font-size: 15px;
     }
   }
 
@@ -85,21 +100,6 @@
 
   &__slides {
     counter-reset: number;
-  }
-
-  &__text {
-    font-size: 17px;
-    font-weight: 400;
-    color: #abb5ba;
-    max-width: 590px;
-
-    @include breakpointsMaxW($bp-991) {
-      max-width: 100%;
-    }
-
-    @include breakpointsMaxW($bp-768) {
-      font-size: 15px;
-    }
   }
 }
 
