@@ -970,8 +970,8 @@ html{-webkit-box-sizing:border-box;box-sizing:border-box}*,*::after,*::before{-w
       )}}.projects-card__title{font-size:20px;line-height:1;font-weight:700;color:var(--color-title);margin-bottom:15px;font-size:20px}@media(max-width: 1300px){.projects-card__title{font-size:calc(
         16px + 4 *
           ((100vw - 375px) / 925)
-      )}}.projects-card__title a{-webkit-transition:200ms ease;-o-transition:200ms ease;transition:200ms ease}.projects-card__title:hover a{color:var(--color-accent)}.projects-card__text{font-size:16px;color:var(--color-title);font-size:16px}@media(max-width: 1300px){.projects-card__text{font-size:calc(
-        14px + 2 *
+      )}}.projects-card__title a{-webkit-transition:200ms ease;-o-transition:200ms ease;transition:200ms ease}.projects-card__title:hover a{color:var(--color-accent)}.projects-card__text{color:var(--color-title);font-size:16px}@media(max-width: 1300px){.projects-card__text{font-size:calc(
+        12px + 4 *
           ((100vw - 375px) / 925)
       )}}.project{padding-top:70px;padding-bottom:70px}@media(max-width: 1300px){.project{padding-top:calc(
         40px + 30 *
