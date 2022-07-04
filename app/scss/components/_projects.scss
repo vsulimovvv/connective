@@ -112,7 +112,7 @@
     font-size: 20px;
     line-height: 1;
     font-weight: 700;
-    color: #2b2b2b;
+    color: var(--color-title);
     margin-bottom: 15px;
     @include adaptive-value('font-size', 20, 16, 1);
 
@@ -129,7 +129,7 @@
 
   &__text {
     font-size: 16px;
-    color: #797a7a;
+    color: var(--color-title);
     @include adaptive-value('font-size', 16, 14, 1);
   }
 }

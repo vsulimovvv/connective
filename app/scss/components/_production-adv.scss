@@ -59,7 +59,7 @@
     }
 
     &__text {
-      color: #6a6b6b;
+      color: var(--color-title);
       @include adaptive-value('font-size', 18, 15, 1);
     }
   }
