@@ -23,9 +23,9 @@
   }
 
   &__title {
-    @include fz40();
+    @include fz35();
     @include adaptive-value('margin-bottom', 80, 40, 1);
-    color: var(--color-bg-dark);
+    color: var(--color-title);
   }
 
   &--with-title {

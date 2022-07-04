@@ -3,8 +3,7 @@
   @include adaptive-value('padding-bottom', 80, 50, 1);
 
   &__text {
-    font-size: 17px;
-    color: #35454f;
+    color: var(--color-title);
     @include adaptive-value('margin-bottom', 60, 40, 1);
   }
 

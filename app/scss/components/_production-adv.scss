@@ -54,7 +54,7 @@
       line-height: 1;
       font-weight: 700;
       text-transform: uppercase;
-      color: #2d2f2e;
+      color: var(--color-title);
       @include adaptive-value('font-size', 18, 16, 1);
     }
 

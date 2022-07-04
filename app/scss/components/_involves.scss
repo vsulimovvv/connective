@@ -18,7 +18,7 @@
 
   &__text {
     font-weight: 300;
-    color: var(--color-bg-dark);
+    color: var(--color-title);
     @include adaptive-value('font-size', 18, 15, 1);
     @include adaptive-value('margin-bottom', 80, 40, 1);
 
@@ -86,7 +86,7 @@
   &__item {
     line-height: 1.2;
     font-weight: 700;
-    color: #424b51;
+    color: var(--color-title);
     position: relative;
     padding-left: 23px;
     @include adaptive-value('font-size', 18, 15, 1);

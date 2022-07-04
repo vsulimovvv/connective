@@ -8,6 +8,7 @@
     position: absolute;
     left: 0;
     top: 0;
+
     @include breakpointsMaxW(1740px) {
       width: 25%;
     }
@@ -23,7 +24,7 @@
       height: calc(270px + (400 - 270) * ((100vw - 360px) / (991 - 360)));
     }
   }
-  
+
   &__wrapper {
     @include adaptive-value('padding-top', 100, 60, 1);
     @include adaptive-value('padding-bottom', 100, 60, 1);
@@ -69,7 +70,7 @@
     }
 
     &__title {
-      color: #35454f;
+      color: var(--color-title);
       @include adaptive-value('font-size', 30, 20, 1);
 
       span {
@@ -86,7 +87,7 @@
       padding-left: 25px;
       position: relative;
       line-height: 1;
-      color: #35454f;
+      color: var(--color-title);
       line-height: 1.5;
       @include adaptive-value('font-size', 19, 16, 1);
 

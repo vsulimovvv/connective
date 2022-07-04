@@ -4,7 +4,6 @@
 
   &__text {
     font-size: 18px;
-    color: var(--color-bg-dark);
     @include adaptive-value('margin-bottom', 70, 40, 1);
     @include adaptive-value('font-size', 18, 16, 1);
     
@@ -40,7 +39,6 @@
 
   &__title {
     @include fz40();
-    color: var(--color-bg-dark);
     @include adaptive-value('margin-bottom', 50, 30, 1);
   }
 
@@ -53,17 +51,15 @@
     font-size: 20px;
     font-weight: 700;
     display: block;
-    color: var(--color-bg-dark);
     @include adaptive-value('margin-bottom', 17, 10, 1);
     @include adaptive-value('font-size', 20, 17, 1);
   }
 
   &__descr {
     font-size: 16px;
-    color: #455057;
-    @include breakpointsMaxW($bp-768) {
-      font-size: 15px;
-    }
+    color: var(--color-title);
+
+   
   }
 
   &__item {

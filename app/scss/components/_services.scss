@@ -16,7 +16,7 @@
 
   &__text {
     font-weight: 300;
-    color: #4c5159;
+    color: var(--color-title);
     @include adaptive-value('font-size', 20, 16, 1);
   }
 

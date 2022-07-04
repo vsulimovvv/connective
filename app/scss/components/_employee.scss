@@ -35,7 +35,7 @@
     @include adaptive-value('font-size', 30, 23, 1);
     line-height: 1;
     font-weight: 700;
-    color: #282c40;
+    color: var(--color-title);
     margin-bottom: 15px;
   }
 
@@ -105,9 +105,9 @@
     &-name {
       font-size: 14px;
       font-weight: 700;
-      color: #282c40;
+      color: var(--color-title);
     }
-    
+
     &-text {
       font-size: 20px;
       font-weight: 400;
@@ -118,7 +118,7 @@
     grid-column: span 2;
     max-width: 255px;
     padding: 15px 20px;
-    
+
     @include breakpointsMaxW($bp-768) {
       grid-column: initial;
     }
@@ -164,7 +164,7 @@
       line-height: 1;
       font-weight: 700;
       text-transform: uppercase;
-      color: #282c40;
+      color: var(--color-title);
 
       @include breakpointsMaxW($bp-768) {
         font-size: 16px;
@@ -174,10 +174,6 @@
     &__text {
       font-size: 16px;
       color: #727272;
-
-      @include breakpointsMaxW($bp-768) {
-        font-size: 15px;
-      }
     }
   }
 }

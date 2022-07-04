@@ -3,15 +3,10 @@
   @include adaptive-value('padding-bottom', 70, 40, 1);
 
   &__text {
-    font-size: 17px;
     line-height: 31px;
     font-weight: 400;
-    color: #35454f;
+    color: var(--color-title);
     @include adaptive-value('margin-bottom', 70, 40, 1);
-
-    @include breakpointsMaxW($bp-768) {
-      font-size: 16px;
-    }
   }
 
   &__list {
@@ -84,7 +79,7 @@
     @include adaptive-value('font-size', 55, 25, 1);
     line-height: 1;
     font-weight: 700;
-    color: #1e2a46;
+    color: var(--color-title);
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -98,7 +93,7 @@
 
   &__right {
     @include adaptive-value('font-size', 16, 14, 1);
-    color: #565656;
+    color: var(--color-title);
 
     @include breakpointsMaxW($bp-768) {
       justify-content: flex-start;

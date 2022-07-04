@@ -13,8 +13,8 @@
   }
 
   &__title {
-    @include fz40();
-    color: #35454f;
+    @include fz35();
+    color: var(--color-title);
     @include adaptive-value('margin-bottom', 30, 20, 1);
 
     span {

@@ -53,7 +53,7 @@
       left: 50%;
       transform: translateX(-50%);
       background-color: var(--color-accent);
-      
+
       @include breakpointsMaxW($bp-768) {
         width: 32px;
         height: 32px;
@@ -64,16 +64,13 @@
       font-size: 19px;
       line-height: 1.2;
       font-weight: 700;
-      color: #4c5159;
+      color: var(--color-title);
       @include adaptive-value('font-size', 19, 17, 1);
     }
 
     &__text {
       font-size: 16px;
-      color: #4c5159;
-      @include breakpointsMaxW($bp-768) {
-        font-size: 15px;
-      }
+      color: var(--color-title);
     }
 
     &--experience {
@@ -93,7 +90,7 @@
         @include maskImage(url('../images/icons/wallet.svg'), contain);
       }
     }
-    
+
     &--online {
       &::after {
         @include maskImage(

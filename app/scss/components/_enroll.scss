@@ -17,11 +17,12 @@
   }
 
   &__title {
-    @include adaptive-value('font-size', 40, 25, 1);
+    @include fz35();
     @include adaptive-value('margin-bottom', 35, 25, 1);
     font-weight: 400;
     line-height: 1.1;
     text-align: center;
+    color: var(--color-white);
   }
 
   &--equipment {
