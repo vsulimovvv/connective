@@ -97,6 +97,8 @@
     align-items: center;
     justify-content: center;
 
+    @include adaptive-value('padding', 30, 15, 1);
+
     img {
       object-fit: contain;
       max-height: 100%;
@@ -105,7 +107,10 @@
   }
 
   &__body {
-    padding: 30px;
+    @include adaptive-value('padding-left', 30, 10, 1);
+    @include adaptive-value('padding-right', 30, 10, 1);
+    @include adaptive-value('padding-bottom', 30, 20, 1);
+    @include adaptive-value('padding-top', 30, 20, 1);
   }
 
   &__title {
