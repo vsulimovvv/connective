@@ -71,8 +71,7 @@
     }
 
     &__text {
-      font-size: 17px;
-      color: #c0c8cc;
+      color: #d9e5eb;
 
       @include breakpointsMaxW($bp-768) {
         font-size: 15px;

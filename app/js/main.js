@@ -71,6 +71,7 @@ window.addEventListener('DOMContentLoaded', () => {
       },
     });
   })();
+
   // * ===== Slider
   (function slider() {
     const sliderEl = document.querySelector('.hero__slider');
@@ -78,9 +79,9 @@ window.addEventListener('DOMContentLoaded', () => {
       pagination: {
         el: '.swiper-pagination',
       },
-      autoplay: {
-        delay: 5000,
-      },
+      // autoplay: {
+      //   delay: 5000,
+      // },
       slidesPerView: 1,
       navigation: {
         nextEl: document.querySelector('.hero__slider .swiper-button-next'),
@@ -88,6 +89,19 @@ window.addEventListener('DOMContentLoaded', () => {
       },
     });
   })();
+
+  // * ===== Slider
+  (function slider() {
+    const sliderEl = document.querySelector('.cases__slider');
+    new Swiper(sliderEl, {
+      navigation: {
+        nextEl: document.querySelector('.cases__slider .swiper-button-next'),
+        prevEl: document.querySelector('.cases__slider .swiper-button-prev'),
+      },
+      slidesPerView: 1,
+    });
+  })();
+
   // * ===== Slider
   (function slider() {
     const sliderEl = document.querySelector('.events__slider');
@@ -104,6 +118,7 @@ window.addEventListener('DOMContentLoaded', () => {
       slidesPerView: 'auto',
     });
   })();
+
   (function slider() {
     const sliderEl = document.querySelector('.descr-adv__slider');
     new Swiper(sliderEl, {
@@ -169,7 +184,7 @@ window.addEventListener('DOMContentLoaded', () => {
       slidesPerView: 'auto',
     });
   })();
-  
+
   // * ===== Slider
   (function slider() {
     const sliderEl = document.querySelector('.introduction__slider');

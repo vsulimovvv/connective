@@ -42,7 +42,7 @@
   }
 
   &__text {
-    color: #727e86;
+    color: var(--color-title);
   }
 
   &__phone {
@@ -109,7 +109,6 @@
   }
 
   &__link {
-    font-size: 17px;
     font-weight: 400;
     color: #4f595e;
   }

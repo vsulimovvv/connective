@@ -72,8 +72,6 @@
   &::before {
     @include elDef();
     content: '▲';
-    top: -2px;
-    left: 45%;
     z-index: 1;
     color: var(--color-white);
     transform: rotate(180deg);
@@ -84,6 +82,41 @@
     @include breakpointsMaxW($bp-768) {
       left: 50%;
       transform: translateX(-50%) rotate(180deg);
+    }
+  }
+
+  &--first {
+    &::before {
+      top: -2px;
+      left: 23%;
+    }
+  }
+
+  &--second {
+    &::before {
+      top: -2px;
+      right: 50%;
+    }
+  }
+
+  &--third {
+    &::before {
+      top: -2px;
+      right: 47%;
+    }
+  }
+
+  &--fourth {
+    &::before {
+      top: -2px;
+      left: 25%;
+    }
+  }
+
+  &--fifth {
+    &::before {
+      top: -2px;
+      right: 48%;
     }
   }
 
@@ -139,9 +172,7 @@
   }
 
   &__text {
-    font-size: 17px;
-    color: #8e999f;
-    @include adaptive-value('font-size', 17, 15, 1);
+    color: #d9e5eb;
   }
 
   &__time {

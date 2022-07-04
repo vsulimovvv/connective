@@ -4,7 +4,7 @@
   background-color: var(--color-bg);
 
   &__title {
-    @include fz40();
+    @include fz35();
     @include adaptive-value('margin-bottom', 50, 40, 1);
   }
 

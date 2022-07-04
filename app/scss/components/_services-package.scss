@@ -41,13 +41,14 @@
   }
 
   &__text {
-    font-size: 15px;
     font-weight: 400;
     color: #d9e5eb;
     max-width: 590px;
+    padding-top: 5px;
 
     @include breakpointsMaxW($bp-991) {
       max-width: 100%;
+      padding-top: 0;
     }
 
     @include breakpointsMaxW($bp-768) {

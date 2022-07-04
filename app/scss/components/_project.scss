@@ -20,11 +20,11 @@
     &__list {
       max-width: 790px;
       width: 100%;
-      
+
       &:not(:last-child) {
         border-bottom: 1px solid #ebebeb;
       }
-      
+
       @include breakpointsMaxW($bp-991) {
         max-width: 100%;
       }
@@ -65,15 +65,15 @@
   }
 
   &__text {
-    color: #494949;
-    @include adaptive-value('font-size', 17, 15, 1);
+    color: var(--color-title);
+    @include adaptive-value('font-size', 16, 15, 1);
   }
 
   &__box {
     &:not(:last-child) {
       @include adaptive-value('margin-bottom', 40, 30, 1);
     }
-   
+
     &--result {
       .project__text {
         @include adaptive-value('margin-bottom', 50, 30, 1);
@@ -84,7 +84,7 @@
       .project__text {
         @include adaptive-value('margin-bottom', 50, 30, 1);
       }
-     
+
       .project__img {
         @include adaptive-value('height', 315, 50, 1);
       }

@@ -149,7 +149,7 @@
 
   &__offer {
     max-width: 585px;
-    height: 810px;
+    height: 645px;
     padding-left: 120px;
     padding-bottom: 40px;
     padding-top: 185px;
@@ -174,10 +174,9 @@
   }
 
   &__text {
-    font-size: 20px;
     line-height: 1.4;
-    color: #c0c9dc;
-    @include adaptive-value('font-size', 20, 16, 1);
+    color: #d9e5eb;
+    @include adaptive-value('font-size', 16, 15, 1);
     margin-bottom: 32px;
   }
 
@@ -311,13 +310,6 @@
       }
     }
 
-    &-mail {
-      width: 22px;
-      height: 22px;
-      @include maskImage(url('../images/icons/mail.svg'), contain);
-      background-color: var(--color-accent);
-    }
-
     .hero-nav {
       &__list {
         display: flex;
@@ -343,12 +335,26 @@
     }
   }
 
+  &--main {
+    .hero {
+      &__offer {
+        padding-top: 160px;
+        justify-content: space-between;
+        @include adaptive-value('padding-bottom', 120, 40, 1);
+      }
+
+      &__title {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
   &--news {
     @include background(cover);
     box-sizing: border-box;
 
-    .form-submit__text {
-      font-size: 15px;
+    .form-submit {
+      max-width: 390px;
     }
 
     .form-submit__group {
@@ -356,7 +362,6 @@
     }
 
     .form-submit__input {
-      font-size: 15px;
       padding-bottom: 10px;
     }
 
@@ -397,6 +402,7 @@
         @include adaptive-value('padding-top', 170, 80, 1);
         max-width: 750px;
         height: 645px;
+        justify-content: space-between;
 
         @include breakpointsMaxW($bp-991) {
           min-height: 500px;
