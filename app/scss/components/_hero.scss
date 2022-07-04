@@ -340,7 +340,7 @@
       &__offer {
         padding-top: 160px;
         justify-content: space-between;
-        @include adaptive-value('padding-bottom', 120, 40, 1);
+        @include adaptive-value('padding-bottom', 120, 90, 1);
       }
 
       &__title {
