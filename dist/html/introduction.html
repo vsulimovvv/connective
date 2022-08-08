@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    @include('./components/base/_meta.html')
+    @include('./components/base/_links.html')
+
+    <title>Connective</title>
+  </head>
+
+  <body>
+    @include('./components/popups/_popups.html')
+
+    <h1 class="visually-hidden">Внедрение решений</h1>
+
+    <div class="site-wrapper">
+      @include('./components/_header.html')
+
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Услуги</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--active"
+              >Внедрение решений</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <main class="main">
+        @include('./components/_hero-introduction.html')
+        @include('./components/_introduction.html')
+        @include('./components/_numbers.html')
+        @include('./components/_cases-introduction.html')
+        @include('./components/_enroll-introduction.html')
+        @include('./components/_contacts.html')
+      </main>
+      @include('./components/_footer.html')
+    </div>
+
+    @include('./components/base/_scripts.html')
+  </body>
+</html>

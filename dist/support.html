@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<!-- nouislider -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.css"
+/>
+
+<!-- Choices JS  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"
+/>
+
+<!-- Nice Selct -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+/>
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css"
+/>
+
+<!-- Custom Link -->
+<link rel="stylesheet" href="css/style.min.css" />
+
+
+    <title>Connective</title>
+  </head>
+
+  <body>
+    <div class="popup popup--call">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Заказать звонок</h2>
+
+      <form class="enroll__form form-submit">
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="text" placeholder="Имя" />
+        </label>
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="email" placeholder="E-mail" />
+        </label>
+        <label class="form-submit__group">
+          <input
+            class="form-submit__input"
+            type="tel"
+            placeholder="+7 (999) - 999 - 99 - 99"
+          />
+        </label>
+        <div class="form-submit__bottom">
+          <div class="form-submit__agree">
+            Нажимая кнопку «Записаться» вы принимаете <br />
+            правила <a href="#">политики конфиденциальности</a> и <br />
+            соглашаетесь с
+            <a href="#">условиями оферты</a>
+          </div>
+          <button class="form-submit__btn btn" type="submit">
+            ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--support">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">Тех. поддержка</h2>
+
+      <form class="enroll__form form-submit">
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="text" placeholder="Имя" />
+        </label>
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="email" placeholder="E-mail" />
+        </label>
+        <label class="form-submit__group">
+          <input
+            class="form-submit__input"
+            type="tel"
+            placeholder="+7 (999) - 999 - 99 - 99"
+          />
+        </label>
+        <label class="form-submit__group">
+          <input
+            class="form-submit__input"
+            type="text"
+            placeholder="Сообщение"
+          />
+        </label>
+        <div class="form-submit__bottom">
+          <div class="form-submit__agree">
+            Нажимая кнопку «Записаться» вы принимаете <br />
+            правила <a href="#">политики конфиденциальности</a> и <br />
+            соглашаетесь с
+            <a href="#">условиями оферты</a>
+          </div>
+          <button class="form-submit__btn btn" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup popup--consultation">
+  <div class="popup__container">
+    <button class="popup__close" type="button" aria-label="Закрыть">
+      <svg width="15" height="15">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <div class="popup__wrapper">
+      <h2 class="popup__title">
+        Заявка на консультацию <br />
+        со специалистом
+      </h2>
+
+      <form class="enroll__form form-submit">
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="text" placeholder="Имя" />
+        </label>
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="email" placeholder="E-mail" />
+        </label>
+        <label class="form-submit__group">
+          <input
+            class="form-submit__input"
+            type="tel"
+            placeholder="+7 (999) - 999 - 99 - 99"
+          />
+        </label>
+        <div class="form-submit__bottom">
+          <div class="form-submit__agree">
+            Нажимая кнопку «Записаться» вы принимаете <br />
+            правила <a href="#">политики конфиденциальности</a> и <br />
+            соглашаетесь с
+            <a href="#">условиями оферты</a>
+          </div>
+          <button class="form-submit__btn btn" type="submit">
+            ЗАКАЗАТЬ КОНСУЛЬТАЦИЮ
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+    <h1 class="visually-hidden">Проекты</h1>
+
+    <div class="site-wrapper">
+      <header class="header">
+  <!-- Mobile Menu -->
+
+  <div class="overlay"></div>
+
+  <div class="mobile-menu">
+    <a class="mobile-menu__logo logo" href="#">
+      <img src="images/logo.png" alt="Логотип" />
+    </a>
+
+    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">
+      <svg width="19" height="19">
+        <use xlink:href="images/sprite.svg#close"></use>
+      </svg>
+    </button>
+
+    <ul class="mobile-menu__body">
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Новости
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Новости</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Новости</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Мероприятия
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Мероприятия</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Мероприятия</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Обучение
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Обучение</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Обучение</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Проекты
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Проекты</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Проекты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Программные решения
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Программные решения</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Программные решения</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"
+                  >Программные решения</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Услуги
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Услуги</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#"> Услуги</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            Производственное оборудование
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Производственное оборудование</a
+                >
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">
+                  Производственное оборудование</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mobile-menu__item">
+        <div class="mobile-menu-box accordion">
+          <button
+            class="mobile-menu-box__name accordion__control"
+            type="button"
+          >
+            О компании
+          </button>
+
+          <div class="mobile-menu-box__content accordion__content">
+            <ul class="mobile-menu-box__list">
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">О компании</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">История</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Сотрудничество</a>
+              </li>
+              <li class="mobile-menu-box__item">
+                <a class="mobile-menu-box__link" href="#">Сертификаты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Mobile Menu -->
+
+  <div class="header__top">
+    <div class="container">
+      <div class="header__top-inner">
+        <div class="header__menu top-menu">
+          <ul class="top-menu__list">
+            <li class="top-menu__item">
+              <a class="top-menu__link top-menu__link--dropdown" href="#"
+                >Новости</a
+              >
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Новости</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Новости</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Новости</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Новости</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Новости</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link top-menu__link--dropdown" href="#"
+                >Мероприятия</a
+              >
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Мероприятия</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Мероприятия</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Мероприятия</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Мероприятия</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Мероприятия</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link top-menu__link--dropdown" href="#"
+                >Обучение</a
+              >
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">NX CAD</a>
+
+                    <div class="submenu">
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="dropmenu__link" href="#">
+                            Основы работы в NX для конструкторов
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">NX CAM</a>
+
+                    <div class="submenu">
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="dropmenu__link" href="#">
+                            Основы работы в NX для конструкторов
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">ZW3D</a>
+
+                    <div class="submenu">
+                      <ul class="submenu__list">
+                        <li class="submenu__item">
+                          <a class="dropmenu__link" href="#">
+                            Основы работы в NX для конструкторов
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="top-menu__item">
+              <a class="top-menu__link top-menu__link--dropdown" href="#"
+                >Проекты</a
+              >
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Проекты</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Проекты</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Проекты</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Проекты</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Проекты</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="header__items">
+          <address class="header__item header__item--location">
+            Санкт-Петербург, Кондратьевский пр-кт, д.15, к.2, лит.З, офис 301
+          </address>
+          <a class="header__phone" href="tel:+78123131810">
+            8 (812) 313-18-10
+          </a>
+          <a
+            class="header__item header__item--mail"
+            href="mailto:contact@connective-plm.com"
+          >
+            contact@connective-plm.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="header__bottom">
+    <div class="container">
+      <div class="header__bottom-inner">
+        <a class="header__logo logo" href="#">
+          <img src="images/logo.png" alt="Логотип" />
+        </a>
+
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--dropdown" href="#"
+                >Программные решения</a
+              >
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Программные решения </a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Программные решения </a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Программные решения </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--dropdown" href="#">Услуги</a>
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Услуги </a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Услуги </a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Услуги </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--dropdown" href="#"
+                >Производственное оборудование</a
+              >
+
+              <div class="dropmenu dropmenu--left">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Производственное оборудование
+                    </a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Производственное оборудование
+                    </a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#"
+                      >Производственное оборудование
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link menu__link--dropdown" href="#">
+                О компании
+              </a>
+
+              <div class="dropmenu">
+                <ul class="dropmenu__list">
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">О компании</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">История</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Сотрудники</a>
+                  </li>
+                  <li class="dropmenu__item">
+                    <a class="dropmenu__link" href="#">Сертификаты</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__tools">
+          <button class="header__btn btn btn-call" type="button">
+            Заказать звонок
+          </button>
+          <button
+            class="header__btn header__btn--support btn btn--transparent btn-support"
+          >
+            Техподдержка
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--active"
+              >Техподдержка</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <main class="main">
+        <section
+  class="hero hero--news hero--planning"
+  style="background-image: url('images/content/hero/hero-projects.jpg')"
+>
+  <div class="hero__nav">
+    <button class="header__toggle" type="button" aria-label="Открыть меню">
+      <span class="header__toggle-line"></span>
+    </button>
+    <div class="hero-nav__wrapper">
+      <div class="contacts__socials socials">
+        <ul class="socials__list socials__list--mb55">
+          <li class="socials__item">
+            <a class="socials__link socials__link--whatsapp" href="#"
+              ><span>WhatsApp</span></a
+            >
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--telegram" href="#"
+              ><span>Telegram</span></a
+            >
+          </li>
+          <li class="socials__item">
+            <a class="socials__link socials__link--vk" href="#"
+              ><span>Vkontakte</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="hero__wrapper swiper">
+    <div class="container">
+      <div class="hero__offer">
+        <h2 class="hero__title"><span> Техподдержка</span> <br /></h2>
+        <div class="hero__text hero__text--mb-0">
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+          <p>
+            Lorem Ipsum has been the industry's standard dummy text ever since.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section class="support">
+  <div class="container">
+    <div class="support__text">
+      <p>
+        Компания “Connective PLM” уделяет большое внимание качеству технической
+        поддержки.
+      </p>
+      <p>
+        Все пользователи могут отправить вопрос специалистам технической
+        поддержки и получить квалифицированную консультацию.
+      </p>
+      <p>
+        Обратиться в службу техподдержки можно через форму обратной связи или по
+        указанным ниже контактам.
+      </p>
+    </div>
+  </div>
+
+  <div class="support__inner">
+    <div class="container">
+      <div class="support__info">
+        <ul class="support__list">
+          <li class="support__item">
+            <a
+              class="support__link support__link--phone"
+              href="tel:+78123131810"
+            >
+              <span class="support__link-name">телефон:</span>
+              <span class="support__link-numbers">8 (812) 313-18-10</span>
+            </a>
+          </li>
+          <li class="support__item">
+            <a
+              class="support__link support__link--mail"
+              href="mailto:supportt@connective-plm.com"
+            >
+              <span class="support__link-name">e-mail: </span>
+              <span class="support__link-numbers">
+                supportt@connective-plm.com
+              </span>
+            </a>
+          </li>
+        </ul>
+        <div class="support__right">
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="socials__item">
+                <a class="socials__link socials__link--whatsapp" href="#"
+                  >WhatsApp</a
+                >
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--telegram" href="#"
+                  >Telegram</a
+                >
+              </li>
+              <li class="socials__item">
+                <a class="socials__link socials__link--vk" href="#"
+                  >Vkontakte</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+        <section
+  class="pickup-course"
+  style="background-image: url('images/content/pickup-course.jpg')"
+>
+  <div class="container">
+    <div class="pickup-course__wrapper">
+      <div class="pickup-course__top">
+        <h2 class="pickup-course__title">Запрос в тех поддержку</h2>
+        
+      </div>
+      <form class="pickup-course__form form-submit">
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="text" placeholder="Имя" />
+          <span class="form-submit__line"></span>
+        </label>
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="email" placeholder="E-mail" />
+          <span class="form-submit__line"></span>
+        </label>
+        <label class="form-submit__group">
+          <input
+            class="form-submit__input"
+            type="tel"
+            placeholder="+7 (999) - 999 - 99 - 99"
+          />
+          <span class="form-submit__line"></span>
+        </label>
+        <label class="form-submit__group">
+          <input class="form-submit__input" type="tel" placeholder="Вопрос" />
+          <span class="form-submit__line"></span>
+        </label>
+
+        <div class="form-submit__bottom">
+          <div class="form-submit__agree">
+            Отправляя заявку, Вы соглашаетесь с
+            <br />
+            <a href="#">правилами политики конфиденциальности</a>
+          </div>
+          <button class="form-submit__btn btn" type="submit">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__col">
+        <span class="footer__name">Програмные решения</span>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Система управления интеллектуальной собственностью предприятия
+              (PLM)</a
+            >
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Конструкторское проектирование</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              >Разработка управляющих программ для станков с ЧПУ</a
+            >
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Програмирование роботов</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              >Лабораторные измерительные системы (LIMS)</a
+            >
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Вычислительное моделирование</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Проектирование турбомашин</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Цифровой двойник предприятия</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">Програмные решения</span>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#"> Комплксная автоматизация КТПП </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              >Постановка процессов планирования производства
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              >Постановка методик проектирования
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              >Постановка методик вычеслительного моделирования
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              Разработка технологических процессов для становков с ЧПУ и
+              роботов</a
+            >
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              >Разработка постпроцессоров для станков с ЧПУ и роботов
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <span class="footer__name">Производственное оборудование</span>
+
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Станки с ЧПУ</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Станки лазерного раскроя метала</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Режущий инструмент</a>
+          </li>
+        </ul>
+
+        <a class="footer__phone" href="tel:+78123131810">8 (812) 313-18-10</a>
+
+        <button class="footer__btn btn" type="button">Заказать звонок</button>
+
+        <address class="footer__address">
+          Санкт-Петербург, Кондратьевский пр-кт, д.15, к.2, <br />
+          лит.З, офис 301
+        </address>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <a class="logo" href="#">
+        <img src="images/logo-white.png" alt="логотип" />
+      </a>
+      <div class="footer__text">
+        <div class="footer__text-wrap">
+          <p>ООО «КОННЕКТИВ ПЛМ»</p>
+          <p>ИНН:7804659283, КПП:780401001 ОГРН:119784720308</p>
+        </div>
+        <div class="footer__links">
+          <a class="footer__link" href="#">Политика конфиденциальности</a>
+          <a class="footer__link" href="#">Оферта</a>
+        </div>
+      </div>
+
+      <a
+        class="footer__link footer__link--mail"
+        href="mailto:contact@connective-plm.com"
+      >
+        contact@connective-plm.com
+      </a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+
+    <!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- nouislider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.5.0/nouislider.min.js"></script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Choices JS -->
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+<!-- Input Mask -->
+<script
+  src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"
+  type="text/javascript"
+></script>
+
+<!-- Nice Selct -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"
+></script>
+
+<!-- JS -->
+<script src="js/main.min.js"></script>
+
+  </body>
+</html>

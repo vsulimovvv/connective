@@ -119,6 +119,26 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   })();
 
+  // * ===== Slider
+  (function slider() {
+    const sliderEl = document.querySelector('.slider__slider');
+    new Swiper(sliderEl, {
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
+      navigation: {
+        nextEl: document.querySelector('.slider__content .swiper-button-next'),
+        prevEl: document.querySelector('.slider__content .swiper-button-prev'),
+      },
+      grabCursor: true,
+      freeMode: true,
+      loop: true,
+      spaceBetween: 20,
+      slidesPerView: 'auto',
+    });
+  })();
+
   (function slider() {
     const sliderEl = document.querySelector('.descr-adv__slider');
     new Swiper(sliderEl, {
